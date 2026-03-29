@@ -8,7 +8,6 @@ import viutiMain from '../../assets/projects/viuti/1.png';
 import prikly1 from '../../assets/projects/prikly/1.png';
 import standford1 from '../../assets/projects/gana con standford/standford1.webp';
 import djdivito1 from '../../assets/projects/dj-divito/1.png';
-import theriapp2 from '../../assets/projects/theriapp/2.png';
 import miarbol1 from '../../assets/projects/mi-arbol-en-el-mundo/1.png';
 import triso1 from '../../assets/projects/triso/1.png';
 import lolinails1 from '../../assets/projects/loli-nails/1.png';
@@ -24,7 +23,6 @@ export const projectImages = {
   prikly: { src: prikly1, alt: 'Vista general de Prikly' },
   djdivito: { src: djdivito1, alt: 'Landing Page de DJ DiVito' },
   miarbol: { src: miarbol1, alt: 'Landing page de Mi Árbol en el Mundo' },
-  theriapp: { src: theriapp2, alt: 'TheriApp - Preguntas del quiz' },
   triso: { src: triso1, alt: 'Triso - Landing page' },
   lolinails: { src: lolinails1, alt: 'Loli Nails - Landing page' },
   projecthub: { src: projecthub1, alt: 'ProjectHub - Dashboard' },
@@ -43,7 +41,6 @@ export const getProjects = (t) => [
   { key: 'djdivito', name: 'DJ DiVito', category: 'landing', tag: 'Landing', description: t.projects.djdivito.description, duration: t.projects.djdivito.duration },
   { key: 'viuti', name: 'Viutify', category: 'webapp', tag: 'SaaS', description: t.projects.viuti.description, duration: t.projects.viuti.duration },
   { key: 'lolinails', name: 'Loli Nails', category: 'landing', tag: 'Landing', description: t.projects.lolinails.description, duration: t.projects.lolinails.duration },
-  { key: 'theriapp', name: 'TheriApp', category: 'other', tag: 'IA', description: t.projects.theriapp.description, duration: t.projects.theriapp.duration },
   { key: 'refugioandino', name: 'Refugio Andino', category: 'landing', tag: 'Landing', description: t.projects.refugioandino.description, duration: t.projects.refugioandino.duration },
   { key: 'laspiedras', name: 'Cabañas Las Piedras', category: 'landing', tag: 'Landing', description: t.projects.laspiedras.description, duration: t.projects.laspiedras.duration },
   { key: 'ateliervalentina', name: 'Atelier Valentina', category: 'landing', tag: 'Landing', description: t.projects.ateliervalentina.description, duration: t.projects.ateliervalentina.duration },

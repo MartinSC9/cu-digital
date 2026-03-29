@@ -68,7 +68,6 @@ Trabajamos con clientes en Australia, Perú, Japón y Argentina. Nos encargamos 
 <strong><a href="/project/triso">Triso</a></strong> — Landing corporativa para empresa de ingeniería (11 versiones con el cliente)<br/><br/>
 <strong><a href="/project/djdivito">DJ DiVito</a></strong> — Landing profesional para DJ en Australia con sistema de booking<br/><br/>
 <strong><a href="/project/lolinails">Loli Nails</a></strong> — Catálogo digital para estudio de nail art<br/><br/>
-<strong><a href="/project/theriapp">TheriApp</a></strong> — App web interactiva con inteligencia artificial<br/><br/>
 <strong><a href="/project/projecthub">ProjectHub</a></strong> — Programa de escritorio para gestión de proyectos`,
       },
       servicios: {
@@ -159,7 +158,6 @@ We work with clients in Australia, Peru, Japan and Argentina. We handle everythi
 <strong><a href="/project/triso">Triso</a></strong> — Corporate landing for engineering company (11 versions with the client)<br/><br/>
 <strong><a href="/project/djdivito">DJ DiVito</a></strong> — Professional landing for DJ in Australia with booking system<br/><br/>
 <strong><a href="/project/lolinails">Loli Nails</a></strong> — Digital catalog for nail art studio<br/><br/>
-<strong><a href="/project/theriapp">TheriApp</a></strong> — Interactive web app with artificial intelligence<br/><br/>
 <strong><a href="/project/projecthub">ProjectHub</a></strong> — Desktop program for project management`,
       },
       servicios: {

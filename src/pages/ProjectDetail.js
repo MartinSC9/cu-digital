@@ -19,7 +19,6 @@ import standford2 from '../assets/projects/gana con standford/standford2.webp';
 import standford6 from '../assets/projects/gana con standford/standford6.webp';
 import djdivito1 from '../assets/projects/dj-divito/1.png';
 import djdivito2 from '../assets/projects/dj-divito/2.png';
-import theriapp2 from '../assets/projects/theriapp/2.png';
 import miarbol1 from '../assets/projects/mi-arbol-en-el-mundo/1.png';
 import miarbol2 from '../assets/projects/mi-arbol-en-el-mundo/2.png';
 import miarbol3 from '../assets/projects/mi-arbol-en-el-mundo/3.png';
@@ -80,18 +79,6 @@ const projectsData = {
       { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
       { type: 'list', title: t.projects.modals.mainFeatures, items: modal.features },
       { type: 'techGrid', title: t.projects.modals.technologies, items: modal.tech },
-    ],
-  },
-  theriapp: {
-    name: 'TheriApp',
-    images: [theriapp2],
-    links: (t) => [
-      { url: 'https://theriapp.vercel.app/', label: t.projects.viewApp },
-    ],
-    sections: (t, modal) => [
-      { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
-      { type: 'list', title: t.projects.modals.mainFeatures, items: modal.features },
-      { type: 'techGrid', title: t.projects.modals.technologiesUsed, items: modal.tech },
     ],
   },
   djdivito: {
