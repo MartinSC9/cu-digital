@@ -37,10 +37,10 @@ export const translations = {
       title: 'Sobre nosotros',
       description: [
         'Somos <a href="https://www.linkedin.com/in/joaquin-urtasun/" target="_blank" rel="noopener noreferrer" class="about-name-link">Joaquín Urtasun</a> y <a href="https://www.linkedin.com/in/martincontrera/" target="_blank" rel="noopener noreferrer" class="about-name-link">Martín Contrera</a>, un equipo de desarrolladores con experiencia llevando proyectos reales a producción. Nos especializamos en crear landing pages, aplicaciones web y apps móviles a medida para negocios y emprendedores.',
-        'Trabajamos con clientes de Argentina y el exterior. Nos encargamos de todo: diseño, desarrollo, publicación y soporte. Vos solo te preocupás por tu negocio.',
+        'Somos de Argentina y Japón, y trabajamos con clientes en Australia, Perú, Japón y Argentina. Nos encargamos de todo: diseño, desarrollo, publicación y soporte. Vos solo te preocupás por tu negocio.',
         'Usamos las últimas tecnologías para que tu producto sea rápido, seguro y se vea profesional en cualquier dispositivo.',
       ],
-      location: 'Córdoba, Argentina',
+      location: 'Argentina & Japón',
     },
 
     // Experience
@@ -48,7 +48,7 @@ export const translations = {
       title: 'Experiencia',
       freelance: {
         title: 'Proyectos para Clientes',
-        company: 'CU Digital — Córdoba, Argentina',
+        company: 'CU Digital — Argentina & Japón',
         period: '2024 - Actualidad',
         description: [
           'Landing corporativa para empresa de ingeniería con 11 rondas de revisión hasta la versión final',
@@ -844,7 +844,7 @@ export const translations = {
       quickLinks: 'Enlaces rápidos',
       faq: 'Preguntas frecuentes',
       contact: 'Contacto',
-      location: 'Córdoba, Argentina',
+      location: 'Argentina & Japón',
     },
 
     // Mobile nav
@@ -913,10 +913,10 @@ export const translations = {
       title: 'About us',
       description: [
         'We are <a href="https://www.linkedin.com/in/joaquin-urtasun/" target="_blank" rel="noopener noreferrer" class="about-name-link">Joaquín Urtasun</a> and <a href="https://www.linkedin.com/in/martincontrera/" target="_blank" rel="noopener noreferrer" class="about-name-link">Martín Contrera</a>, a development team with experience shipping real projects to production. We specialize in creating landing pages, web apps and mobile apps for businesses and entrepreneurs.',
-        'We work with clients from Argentina and abroad. We handle everything: design, development, deployment and support. You just focus on your business.',
+        'Based in Argentina and Japan, we work with clients in Australia, Peru, Japan and Argentina. We handle everything: design, development, deployment and support. You just focus on your business.',
         'We use the latest technologies to make your product fast, secure and professional-looking on any device.',
       ],
-      location: 'Córdoba, Argentina',
+      location: 'Argentina & Japan',
     },
 
     // Experience
@@ -924,7 +924,7 @@ export const translations = {
       title: 'Experience',
       freelance: {
         title: 'Client Projects',
-        company: 'CU Digital — Córdoba, Argentina',
+        company: 'CU Digital — Argentina & Japan',
         period: '2024 - Present',
         description: [
           'Corporate landing for engineering company with 11 revision rounds to final version',
@@ -1716,7 +1716,7 @@ export const translations = {
       quickLinks: 'Quick Links',
       faq: 'FAQ',
       contact: 'Contact',
-      location: 'Córdoba, Argentina',
+      location: 'Argentina & Japan',
     },
 
     // Mobile nav
