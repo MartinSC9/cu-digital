@@ -274,26 +274,6 @@ export default function Portfolio() {
                     )}
                   </ul>
                 </div>
-                <div className="experience-card">
-                  <div className="timeline-header">
-                    <h3 className="timeline-title">
-                      {t.experience.lilab.title}
-                    </h3>
-                    <span className="timeline-period">
-                      {t.experience.lilab.period}
-                    </span>
-                  </div>
-                  <div className="timeline-company">
-                    {t.experience.lilab.company}
-                  </div>
-                  <ul className="timeline-list">
-                    {t.experience.lilab.description.map(
-                      (item, index) => (
-                        <li key={index}>{item}</li>
-                      )
-                    )}
-                  </ul>
-                </div>
               </div>
             </div>
           </section>
