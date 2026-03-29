@@ -1,0 +1,332 @@
+/* Navbar Movil */
+.mobile-navbar {
+  display: none;
+}
+
+/* Boton del menu hamburguesa */
+.mobile-nav-toggle {
+  display: none;
+  position: static;
+  z-index: 1001;
+  background: transparent;
+  border: none;
+  border-radius: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-speed) ease;
+  color: var(--foreground);
+  flex-shrink: 0;
+}
+
+.mobile-nav-toggle:hover {
+  background: var(--mutedLight);
+  transform: scale(1.05);
+}
+
+.mobile-nav-toggle.open {
+  background: var(--primary);
+  color: white;
+}
+
+/* Lineas del hamburguesa */
+.hamburger {
+  position: relative;
+  width: 20px;
+  height: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.line {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  border-radius: 1px;
+  transition: all var(--transition-speed) ease;
+  transform-origin: center;
+}
+
+.mobile-nav-toggle.open .line-1,
+.mobile-nav-toggle.open .line-2,
+.mobile-nav-toggle.open .line-3 {
+  opacity: 0.5;
+}
+
+/* Overlay */
+.mobile-nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.mobile-nav-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Menu panel */
+.mobile-nav-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 280px;
+  height: 100vh;
+  height: 100dvh;
+  background: var(--background);
+  z-index: 1000;
+  transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid var(--border);
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.mobile-nav-menu.open {
+  right: 0;
+}
+
+/* Header con boton de cerrar */
+.mobile-nav-header {
+  padding: 0 0.75rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 60px;
+  flex-shrink: 0;
+}
+
+.mobile-nav-close {
+  background: transparent;
+  border-radius: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-speed) ease;
+  color: var(--muted);
+  border: none;
+}
+
+.mobile-nav-close:hover {
+  background: var(--mutedLight);
+  color: var(--foreground);
+}
+
+.mobile-nav-close svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2;
+}
+
+/* Enlaces de navegacion */
+.mobile-nav-links {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1.5rem;
+  gap: 0.25rem;
+}
+
+.mobile-nav-link {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0.85rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateX(20px);
+  border-radius: 10px;
+  text-align: left;
+}
+
+.mobile-nav-menu.open .mobile-nav-link {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.mobile-nav-link:hover {
+  background: var(--mutedLight);
+}
+
+.mobile-nav-link.active {
+  background: var(--primary);
+}
+
+.mobile-nav-link.active .mobile-nav-label {
+  color: white;
+  font-weight: 700;
+}
+
+.mobile-nav-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--foreground);
+  transition: color 0.3s ease;
+}
+
+.mobile-nav-link:hover .mobile-nav-label {
+  color: var(--primary);
+}
+
+.mobile-nav-link.active:hover .mobile-nav-label {
+  color: white;
+}
+
+/* Footer con acciones */
+.mobile-nav-footer {
+  padding: 1.25rem 1.5rem;
+  padding-bottom: calc(1.25rem + env(safe-area-inset-bottom));
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.mobile-nav-action-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 0.625rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-speed) ease;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 1.15rem;
+}
+
+.mobile-nav-action-btn:hover {
+  background: var(--mutedLight);
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .mobile-navbar {
+    display: block;
+  }
+
+  .header .nav {
+    display: none;
+  }
+
+  .header-container {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-container .logo {
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .mobile-nav-toggle {
+    display: flex !important;
+    margin-left: auto;
+    order: 2;
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .header-buttons {
+    gap: 0.5rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .mobile-nav-toggle {
+    display: none !important;
+  }
+}
+
+/* Temas */
+[data-theme='dark'] .mobile-nav-toggle {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+[data-theme='light'] .mobile-nav-toggle {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+[data-theme='light'] .mobile-nav-toggle:hover {
+  background: var(--mutedLight);
+  color: var(--primary);
+}
+
+[data-theme='light'] .mobile-nav-toggle.open {
+  background: var(--primary);
+  color: white;
+}
+
+[data-theme='dark'] .mobile-nav-menu {
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Prevenir scroll cuando el menu esta abierto */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Ocultar avatar flotante (ChatWidget) cuando el menu esta abierto */
+body.menu-open [class*="bubbleWrapper"] {
+  display: none;
+}
+
+/* Accesibilidad */
+.mobile-nav-toggle:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--primary);
+}
+
+.mobile-nav-close:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--primary);
+}
+
+.mobile-nav-link:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: -2px;
+}
+
+/* Scrollbar */
+.mobile-nav-links::-webkit-scrollbar {
+  width: 4px;
+}
+
+.mobile-nav-links::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.mobile-nav-links::-webkit-scrollbar-thumb {
+  background: var(--muted);
+  border-radius: 2px;
+}

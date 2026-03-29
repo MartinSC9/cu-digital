@@ -1,0 +1,160 @@
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 32px;
+  border: none;
+  border-radius: 20px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0;
+  overflow: visible;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.05);
+}
+
+.theme-toggle:active {
+  transform: scale(0.95);
+}
+
+.toggle-track {
+  width: 100%;
+  height: 100%;
+  background: var(--primary);
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.theme-toggle.light .toggle-track {
+  background: var(--primary);
+}
+
+.theme-toggle.dark .toggle-track {
+  background: var(--primaryDark);
+}
+
+.toggle-slider {
+  width: 24px;
+  height: 24px;
+  background: var(--background);
+  border-radius: 50%;
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.theme-toggle.dark .toggle-slider {
+  left: calc(100% - 28px);
+  background: var(--background);
+}
+
+.theme-icon {
+  width: 14px;
+  height: 14px;
+  transition: all 0.3s ease;
+  position: absolute;
+}
+
+.sun-icon {
+  color: #f59e0b;
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.moon-icon {
+  color: var(--primary);
+  opacity: 1;
+  transform: scale(1);
+}
+
+.theme-toggle.dark .sun-icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.theme-toggle.dark .moon-icon {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+/* Efecto de brillo en hover */
+.theme-toggle:hover .toggle-track {
+  box-shadow: 0 4px 16px rgba(31, 114, 158, 0.25);
+}
+
+.theme-toggle.light:hover .toggle-track {
+  box-shadow: 0 4px 16px rgba(31, 114, 158, 0.3);
+}
+
+.theme-toggle:hover .toggle-slider {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Animación de rotación para los iconos */
+.theme-toggle:hover .sun-icon {
+  transform: scale(1.1) rotate(15deg);
+}
+
+.theme-toggle:hover .moon-icon {
+  transform: scale(1.1) rotate(-15deg);
+}
+
+/* Efecto de pulso al hacer click */
+.theme-toggle:active .toggle-slider {
+  transform: translateY(-50%) scale(0.95);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .theme-toggle {
+    width: 52px;
+    height: 28px;
+  }
+
+  .toggle-slider {
+    width: 20px;
+    height: 20px;
+  }
+
+  .theme-icon {
+    width: 12px;
+    height: 12px;
+  }
+
+  .theme-toggle.dark .toggle-slider {
+    left: calc(100% - 24px);
+  }
+}
+
+/* Animación de entrada */
+.theme-toggle {
+  animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

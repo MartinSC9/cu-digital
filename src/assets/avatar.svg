@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <!-- Hair gradient -->
+    <linearGradient id="hair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c4a265"/>
+      <stop offset="60%" style="stop-color:#a8884d"/>
+      <stop offset="100%" style="stop-color:#8b7040"/>
+    </linearGradient>
+    <!-- Skin gradient -->
+    <radialGradient id="skin" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" style="stop-color:#f5d0a9"/>
+      <stop offset="100%" style="stop-color:#e8b88a"/>
+    </radialGradient>
+    <!-- Shirt gradient -->
+    <linearGradient id="shirt" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e6b"/>
+      <stop offset="100%" style="stop-color:#1a2744"/>
+    </linearGradient>
+    <!-- Shadow -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+    <!-- Soft glow behind avatar -->
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#58a6ff;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#58a6ff;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" rx="200" fill="url(#bg)"/>
+
+  <!-- Subtle glow -->
+  <circle cx="200" cy="200" r="180" fill="url(#glow)"/>
+
+  <!-- Neck -->
+  <rect x="170" y="265" width="60" height="45" rx="8" fill="url(#skin)"/>
+
+  <!-- Shirt / Body -->
+  <path d="M 105 310 Q 105 290 140 280 Q 170 270 200 268 Q 230 270 260 280 Q 295 290 295 310 L 300 400 L 100 400 Z" fill="url(#shirt)" filter="url(#shadow)"/>
+  <!-- Shirt collar V-neck -->
+  <path d="M 172 280 Q 185 270 200 300 Q 215 270 228 280" fill="none" stroke="#1a2744" stroke-width="2"/>
+  <!-- Collar detail -->
+  <path d="M 165 282 Q 182 275 200 295 Q 218 275 235 282" fill="none" stroke="#3d5a99" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Head shape -->
+  <ellipse cx="200" cy="195" rx="88" ry="95" fill="url(#skin)" filter="url(#shadow)"/>
+
+  <!-- Ears -->
+  <ellipse cx="112" cy="205" rx="14" ry="20" fill="#e8b88a"/>
+  <ellipse cx="112" cy="205" rx="8" ry="13" fill="#dea678"/>
+  <ellipse cx="288" cy="205" rx="14" ry="20" fill="#e8b88a"/>
+  <ellipse cx="288" cy="205" rx="8" ry="13" fill="#dea678"/>
+
+  <!-- Hair back -->
+  <path d="M 112 175 Q 110 120 150 95 Q 180 78 210 80 Q 260 85 280 120 Q 295 150 290 185 Q 288 170 275 145 Q 255 110 210 105 Q 165 100 140 125 Q 120 148 118 175 Z" fill="url(#hair)"/>
+
+  <!-- Hair top - messy/textured -->
+  <path d="M 118 180 Q 110 130 145 100 Q 170 82 205 80 Q 245 80 272 105 Q 295 130 290 175
+           Q 285 150 270 135 Q 250 115 225 108 Q 200 104 175 110 Q 148 120 135 145 Q 125 162 120 180 Z" fill="url(#hair)"/>
+
+  <!-- Hair strands - messy look -->
+  <path d="M 135 115 Q 128 95 140 85 Q 148 100 145 115" fill="#c4a265" opacity="0.8"/>
+  <path d="M 160 100 Q 155 78 170 72 Q 172 88 165 102" fill="#c4a265" opacity="0.7"/>
+  <path d="M 190 92 Q 192 70 208 68 Q 205 82 198 95" fill="#c4a265" opacity="0.8"/>
+  <path d="M 220 90 Q 228 68 242 72 Q 235 85 225 95" fill="#c4a265" opacity="0.7"/>
+  <path d="M 250 100 Q 262 82 272 90 Q 263 100 255 108" fill="#c4a265" opacity="0.6"/>
+
+  <!-- Fringe / bangs falling to the right -->
+  <path d="M 140 140 Q 130 115 148 98 Q 160 88 175 85 Q 165 100 155 118 Q 148 130 145 145" fill="#b89850" opacity="0.6"/>
+  <path d="M 240 130 Q 255 108 268 100 Q 278 95 282 105 Q 272 115 258 130 Q 250 140 248 145" fill="#b89850" opacity="0.5"/>
+
+  <!-- Eyebrows -->
+  <path d="M 155 175 Q 165 168 180 172" fill="none" stroke="#7a6035" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 220 172 Q 235 168 245 175" fill="none" stroke="#7a6035" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Eyes -->
+  <!-- Left eye -->
+  <ellipse cx="168" cy="195" rx="16" ry="14" fill="white"/>
+  <circle cx="170" cy="196" r="8" fill="#3d2b1f"/>
+  <circle cx="170" cy="196" r="5" fill="#1a1008"/>
+  <circle cx="173" cy="192" r="2.5" fill="white" opacity="0.9"/>
+  <circle cx="166" cy="198" r="1.2" fill="white" opacity="0.5"/>
+  <!-- Eyelid line -->
+  <path d="M 152 190 Q 168 182 184 190" fill="none" stroke="#c4956a" stroke-width="1.5"/>
+
+  <!-- Right eye -->
+  <ellipse cx="232" cy="195" rx="16" ry="14" fill="white"/>
+  <circle cx="230" cy="196" r="8" fill="#3d2b1f"/>
+  <circle cx="230" cy="196" r="5" fill="#1a1008"/>
+  <circle cx="233" cy="192" r="2.5" fill="white" opacity="0.9"/>
+  <circle cx="226" cy="198" r="1.2" fill="white" opacity="0.5"/>
+  <!-- Eyelid line -->
+  <path d="M 216 190 Q 232 182 248 190" fill="none" stroke="#c4956a" stroke-width="1.5"/>
+
+  <!-- Nose -->
+  <path d="M 198 200 Q 195 218 190 228 Q 195 232 200 233 Q 205 232 210 228 Q 205 218 202 200" fill="none" stroke="#d4a070" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Nostril hints -->
+  <circle cx="192" cy="229" r="2" fill="#d4a070" opacity="0.5"/>
+  <circle cx="208" cy="229" r="2" fill="#d4a070" opacity="0.5"/>
+
+  <!-- Mouth - slight smile -->
+  <path d="M 175 252 Q 188 262 200 263 Q 212 262 225 252" fill="none" stroke="#c4785a" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Upper lip detail -->
+  <path d="M 183 253 Q 192 249 200 250 Q 208 249 217 253" fill="none" stroke="#d48a6a" stroke-width="1" opacity="0.5"/>
+
+  <!-- Subtle cheek blush -->
+  <circle cx="148" cy="230" r="18" fill="#e8a090" opacity="0.12"/>
+  <circle cx="252" cy="230" r="18" fill="#e8a090" opacity="0.12"/>
+
+  <!-- Chin shadow -->
+  <ellipse cx="200" cy="275" rx="35" ry="8" fill="#d4a070" opacity="0.15"/>
+
+  <!-- Decorative ring around avatar -->
+  <circle cx="200" cy="200" r="190" fill="none" stroke="#58a6ff" stroke-width="2" opacity="0.2"/>
+  <circle cx="200" cy="200" r="195" fill="none" stroke="#58a6ff" stroke-width="0.5" opacity="0.1"/>
+</svg>

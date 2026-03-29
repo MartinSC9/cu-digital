@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a6fa0"/>
+      <stop offset="100%" style="stop-color:#0d3b5c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4fc3f7"/>
+      <stop offset="100%" style="stop-color:#29b6f6"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="40" fill="url(#bg)"/>
+  <rect x="15" y="15" width="170" height="170" rx="30" fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.4"/>
+  <text x="100" y="125" text-anchor="middle" font-family="'Space Grotesk', 'Segoe UI', sans-serif" font-weight="700" font-size="88" fill="#ffffff" letter-spacing="-2">CU</text>
+  <rect x="45" y="145" width="110" height="3" rx="1.5" fill="url(#accent)" opacity="0.7"/>
+</svg>

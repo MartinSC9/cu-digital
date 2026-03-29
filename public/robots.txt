@@ -1,0 +1,18 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://martin-contrera.vercel.app/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow admin areas (if you have any)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow important files
+Allow: /manifest.json
+Allow: /icon-portfolio.png
+Allow: /favicon.ico

@@ -1,0 +1,29 @@
+{
+  "short_name": "CU Digital",
+  "name": "CU Digital — Desarrollo a Medida",
+  "description": "Estudio de desarrollo especializado en landing pages, apps web y apps móviles a medida",
+  "icons": [
+    {
+      "src": "android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "categories": ["business", "productivity", "utilities"],
+  "lang": "es-AR",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false
+}
