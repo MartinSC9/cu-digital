@@ -667,10 +667,10 @@ export const translations = {
       // Service cards
       landing: {
         title: 'Landing Page',
-        tag: 'Desde $70 USD',
+        tag: 'Desde $150 USD',
         badge: 'Popular',
         description: 'Tu página web profesional, lista para recibir clientes.',
-        price: '$70 - $250 USD',
+        price: 'Desde $150 USD',
       },
       webapp: {
         title: 'App Web',
@@ -1539,10 +1539,10 @@ export const translations = {
       // Service cards
       landing: {
         title: 'Landing Page',
-        tag: 'From $70 USD',
+        tag: 'From $150 USD',
         badge: 'Popular',
         description: 'Your professional website, ready to welcome clients.',
-        price: '$70 - $250 USD',
+        price: 'From $150 USD',
       },
       webapp: {
         title: 'Web App',

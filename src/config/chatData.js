@@ -74,8 +74,8 @@ Nos encargamos de todo: diseño, desarrollo, publicación y soporte.`,
       servicios: {
         keywords: ['servicio', 'servicios', 'landing', 'app', 'mobile', 'precio', 'presupuesto', 'contratar', 'freelance', 'web', 'desktop', 'escritorio'],
         response: `<strong>Nuestros servicios:</strong><br/><br/>
-<strong>Landing Page</strong> — <span style="color:var(--primary)">$70 - $250 USD</span><br/>
-Tu página web profesional con diseño a medida, responsive, SEO y hosting incluido.<br/><br/>
+<strong>Landing Page</strong> — <span style="color:var(--primary)">Desde $150 USD</span><br/>
+Tu página web profesional, lista para recibir clientes. Diseño a medida, se ve bien en celular y PC, aparecés en Google, formulario de contacto, hosting incluido y soporte continuo.<br/><br/>
 <strong>App Web</strong> — <span style="color:var(--muted)">A definir en reunión</span><br/>
 Sistema online completo para gestionar tu negocio: panel admin, base de datos, login y soporte.<br/><br/>
 <strong>App Mobile</strong> — <span style="color:var(--muted)">A definir en reunión</span><br/>
@@ -165,8 +165,8 @@ We handle everything: design, development, deployment and support.`,
       servicios: {
         keywords: ['service', 'services', 'landing', 'app', 'mobile', 'price', 'budget', 'hire', 'freelance', 'web', 'desktop'],
         response: `<strong>Our services:</strong><br/><br/>
-<strong>Landing Page</strong> — <span style="color:var(--primary)">$70 - $250 USD</span><br/>
-Professional website with custom design, responsive, SEO & hosting included.<br/><br/>
+<strong>Landing Page</strong> — <span style="color:var(--primary)">From $150 USD</span><br/>
+Your professional website, ready to receive clients. Custom design, mobile & desktop responsive, Google-optimized, contact form, hosting included and ongoing support.<br/><br/>
 <strong>Web App</strong> — <span style="color:var(--muted)">To be defined in meeting</span><br/>
 Complete online system for your business: admin panel, database, login & support.<br/><br/>
 <strong>Mobile App</strong> — <span style="color:var(--muted)">To be defined in meeting</span><br/>
