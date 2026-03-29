@@ -15,7 +15,7 @@ const CATEGORIES = {
 };
 
 const GRID_OPTIONS = [
-  { cols: 3, icon: FiGrid },
+  { cols: 4, icon: FiGrid },
   { cols: 1, icon: FiSquare },
 ];
 
@@ -27,7 +27,7 @@ export default function Projects() {
     try { return sessionStorage.getItem('projects-filter') || 'all'; } catch { return 'all'; }
   });
   const [cols, setCols] = useState(() => {
-    try { return parseInt(sessionStorage.getItem('projects-cols'), 10) || 3; } catch { return 3; }
+    try { return parseInt(sessionStorage.getItem('projects-cols'), 10) || 4; } catch { return 4; }
   });
 
   useEffect(() => {

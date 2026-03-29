@@ -254,24 +254,16 @@
 /* Responsive - tablet */
 @media (max-width: 900px) {
   .projectsGrid {
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: repeat(min(var(--grid-cols, 2), 2), 1fr) !important;
     gap: 1.5rem;
-  }
-
-  .gridToggle {
-    display: none;
   }
 }
 
 /* Responsive - mobile */
 @media (max-width: 640px) {
   .projectsGrid {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: repeat(min(var(--grid-cols, 1), 2), 1fr) !important;
     gap: 1.25rem;
-  }
-
-  .gridToggle {
-    display: none;
   }
 
   .filters {
