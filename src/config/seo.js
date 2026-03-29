@@ -1,7 +1,7 @@
 // Configuración centralizada para SEO
 export const SEO_CONFIG = {
   siteName: 'CU Digital',
-  siteUrl: 'https://www.cudigital.com.ar',
+  siteUrl: 'https://cu-digital-nu.vercel.app',
   siteLanguage: 'es-AR',
   siteLocale: 'es_AR',
 
@@ -13,7 +13,7 @@ export const SEO_CONFIG = {
       'Estudio de desarrollo especializado en landing pages, apps web y apps móviles a medida. Llevamos tu idea a producción.',
     email: '',
     location: 'Argentina',
-    website: 'https://www.cudigital.com.ar',
+    website: 'https://cu-digital-nu.vercel.app',
   },
 
   social: {
