@@ -1,8 +1,4 @@
 import React, { useEffect, useCallback } from 'react';
-import {
-  FaGithub,
-  FaLinkedin,
-} from 'react-icons/fa';
 import { useLanguage } from '../../contexts/LanguageContext';
 import './MobileNavbar.css';
 
