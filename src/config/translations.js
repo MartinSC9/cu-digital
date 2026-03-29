@@ -172,6 +172,11 @@ export const translations = {
         duration: '1 semana',
         description: 'Landing para clínica veterinaria con servicios, equipo médico y emergencias 24hs',
       },
+      hquniversitario: {
+        period: 'Mar 2026',
+        duration: '1 semana',
+        description: 'Landing para cursos de ingreso universitario con carreras, estadísticas y FAQ',
+      },
 
       // Modals
       modals: {
@@ -726,6 +731,27 @@ export const translations = {
             deploy: { label: 'Deploy', value: 'GitHub Pages' },
           },
         },
+
+        hquniversitario: {
+          role: 'Diseño y desarrollo completo de landing page para plataforma de cursos de ingreso universitario.',
+          description: 'Landing profesional para HQ Universitario, plataforma de cursos online con clases en vivo para ingreso a UBA, UNC, UTN y UNCuyo. Incluye árbol de carreras interactivo, estadísticas de aprobación, testimonios de alumnos, FAQ y contacto por WhatsApp.',
+          sections: [
+            'Hero con gradiente animado y CTA de inscripción',
+            'Barra de estadísticas (alumnos, tasa de aprobación, universidades)',
+            'Árbol de carreras interactivo por universidad',
+            'Sección de prueba social con testimonios',
+            'FAQ accordion con preguntas frecuentes',
+            'Footer completo con links y contacto',
+            'WhatsApp flotante',
+          ],
+          tech: {
+            frontend: { label: 'Frontend', value: 'Next.js 16, React 19, TypeScript' },
+            styling: { label: 'Estilos', value: 'Tailwind CSS, shadcn/ui, Lucide icons' },
+            animations: { label: 'Animaciones', value: 'CSS transitions, scroll animations' },
+            seo: { label: 'SEO', value: 'SSG, meta tags, Open Graph' },
+            deploy: { label: 'Deploy', value: 'Vercel' },
+          },
+        },
       },
     },
 
@@ -1154,6 +1180,11 @@ export const translations = {
         period: 'Mar 2026',
         duration: '1 week',
         description: 'Landing page for veterinary clinic with services, medical team and 24/7 emergencies',
+      },
+      hquniversitario: {
+        period: 'Mar 2026',
+        duration: '1 week',
+        description: 'Landing page for university entrance courses with careers, stats and FAQ',
       },
 
       // Modals
@@ -1703,6 +1734,27 @@ export const translations = {
             seo: { label: 'SEO', value: 'Open Graph, Twitter Cards, Schema.org VeterinaryCare (JSON-LD)' },
             design: { label: 'Design', value: 'Mobile-first, responsive, Quicksand + Lato' },
             deploy: { label: 'Deploy', value: 'GitHub Pages' },
+          },
+        },
+
+        hquniversitario: {
+          role: 'Full design and development of a landing page for a university entrance courses platform.',
+          description: 'Professional landing for HQ Universitario, an online courses platform with live classes for university entrance exams at UBA, UNC, UTN and UNCuyo. Includes interactive career tree, approval statistics, student testimonials, FAQ and WhatsApp contact.',
+          sections: [
+            'Hero with animated gradient and enrollment CTA',
+            'Stats bar (students, approval rate, universities)',
+            'Interactive career tree by university',
+            'Social proof section with testimonials',
+            'FAQ accordion',
+            'Full footer with links and contact',
+            'Floating WhatsApp',
+          ],
+          tech: {
+            frontend: { label: 'Frontend', value: 'Next.js 16, React 19, TypeScript' },
+            styling: { label: 'Styling', value: 'Tailwind CSS, shadcn/ui, Lucide icons' },
+            animations: { label: 'Animations', value: 'CSS transitions, scroll animations' },
+            seo: { label: 'SEO', value: 'SSG, meta tags, Open Graph' },
+            deploy: { label: 'Deploy', value: 'Vercel' },
           },
         },
       },

@@ -20,6 +20,7 @@ import yateatiendo1 from '../../assets/projects/yateatiendo/1.webp';
 import fitnesscoach1 from '../../assets/projects/fitness-coach/1.webp';
 import cursosonline1 from '../../assets/projects/cursos-online/1.webp';
 import veterinaria1 from '../../assets/projects/veterinaria/1.webp';
+import hquniversitario1 from '../../assets/projects/hq-universitario/1.webp';
 
 export const projectImages = {
   viuti: { src: viutiMain, alt: 'Dashboard de Viutify' },
@@ -38,6 +39,7 @@ export const projectImages = {
   fitnesscoach: { src: fitnesscoach1, alt: 'FitPro - Personal Trainer' },
   cursosonline: { src: cursosonline1, alt: 'Aprende Digital - Cursos Online' },
   veterinaria: { src: veterinaria1, alt: 'PetVida - Clínica Veterinaria' },
+  hquniversitario: { src: hquniversitario1, alt: 'HQ Universitario - Cursos de Ingreso' },
 };
 
 export const getProjects = (t) => [
@@ -57,6 +59,7 @@ export const getProjects = (t) => [
   { key: 'fitnesscoach', name: 'FitPro', category: 'landing', tag: 'Landing', description: t.projects.fitnesscoach.description, duration: t.projects.fitnesscoach.duration },
   { key: 'cursosonline', name: 'Aprende Digital', category: 'landing', tag: 'Landing', description: t.projects.cursosonline.description, duration: t.projects.cursosonline.duration },
   { key: 'veterinaria', name: 'PetVida', category: 'landing', tag: 'Landing', description: t.projects.veterinaria.description, duration: t.projects.veterinaria.duration },
+  { key: 'hquniversitario', name: 'HQ Universitario', category: 'landing', tag: 'Landing', description: t.projects.hquniversitario.description, duration: t.projects.hquniversitario.duration },
 ];
 
 const HOME_LIMIT = 4;

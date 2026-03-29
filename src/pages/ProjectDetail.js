@@ -34,6 +34,7 @@ import yateatiendo1 from '../assets/projects/yateatiendo/1.webp';
 import fitnesscoach1 from '../assets/projects/fitness-coach/1.webp';
 import cursosonline1 from '../assets/projects/cursos-online/1.webp';
 import veterinaria1 from '../assets/projects/veterinaria/1.webp';
+import hquniversitario1 from '../assets/projects/hq-universitario/1.webp';
 
 const projectsData = {
   prikly: {
@@ -235,6 +236,18 @@ const projectsData = {
     images: [veterinaria1],
     links: () => [
       { url: 'https://martinsc9.github.io/landings-portfolio/veterinaria/', label: 'Landing' },
+    ],
+    sections: (t, modal) => [
+      { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
+      { type: 'list', title: t.projects.modals.implementedSections, items: modal.sections },
+      { type: 'techGrid', title: t.projects.modals.technologiesUsed, items: modal.tech },
+    ],
+  },
+  hquniversitario: {
+    name: 'HQ Universitario',
+    images: [hquniversitario1],
+    links: () => [
+      { url: 'https://landing-hq-universitario.vercel.app/', label: 'Landing' },
     ],
     sections: (t, modal) => [
       { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
