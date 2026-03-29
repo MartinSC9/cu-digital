@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { chatData } from '../../config/chatData';
 import { FaLinkedinIn, FaPaintBrush, FaServer, FaCloud, FaRobot } from 'react-icons/fa';
-import { FiMail, FiMessageCircle, FiExternalLink } from 'react-icons/fi';
+import { FiMessageCircle, FiExternalLink } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import avatarImg1 from '../../assets/logo-cu.svg';
 import avatarImg2 from '../../assets/logo-cu.svg';
@@ -48,7 +48,7 @@ const ChatWidget = () => {
   const [botResponse, setBotResponse] = useState(null);
   const [subOptions, setSubOptions] = useState(null);
   const [isTabLoading, setIsTabLoading] = useState(false);
-  const [emailCopied, setEmailCopied] = useState(false);
+
   const [showTooltip, setShowTooltip] = useState(true);
   const responseRef = useRef(null);
   const sidebarRef = useRef(null);
@@ -177,12 +177,7 @@ const ChatWidget = () => {
     }, 400);
   }, [data, activeTab]);
 
-  const handleCopyEmail = useCallback(() => {
-    navigator.clipboard.writeText('cudigital.contacto@gmail.com').then(() => {
-      setEmailCopied(true);
-      setTimeout(() => setEmailCopied(false), 2000);
-    });
-  }, []);
+
 
   const minimizeChat = useCallback(() => {
     setIsClosing(true);
@@ -298,11 +293,6 @@ const ChatWidget = () => {
                 <div className={styles.botMsg}>
                   <strong>{currentLanguage === 'es' ? '¡Contactanos!' : 'Get in touch!'}</strong>
                   <div className={styles.contactLinks}>
-                    <button onClick={handleCopyEmail} className={styles.contactLink}>
-                      <FiMail /> {emailCopied
-                        ? (currentLanguage === 'es' ? '¡Copiado!' : 'Copied!')
-                        : (currentLanguage === 'es' ? 'Copiar correo' : 'Copy email')}
-                    </button>
                     <button onClick={handleGoToContact} className={styles.contactLink}>
                       <FiMessageCircle /> {currentLanguage === 'es' ? 'Enviar mensaje' : 'Send message'}
                     </button>
