@@ -21,6 +21,9 @@ import fitnesscoach1 from '../../assets/projects/fitness-coach/1.webp';
 import cursosonline1 from '../../assets/projects/cursos-online/1.webp';
 import veterinaria1 from '../../assets/projects/veterinaria/1.webp';
 import hquniversitario1 from '../../assets/projects/hq-universitario/1.webp';
+import arcoestudio1 from '../../assets/projects/arco-estudio/1.webp';
+import brewandco1 from '../../assets/projects/brew-and-co/1.webp';
+import nomadetravel1 from '../../assets/projects/nomade-travel/1.webp';
 
 export const projectImages = {
   viuti: { src: viutiMain, alt: 'Dashboard de Viutify' },
@@ -40,6 +43,9 @@ export const projectImages = {
   cursosonline: { src: cursosonline1, alt: 'Aprende Digital - Cursos Online' },
   veterinaria: { src: veterinaria1, alt: 'PetVida - Clínica Veterinaria' },
   hquniversitario: { src: hquniversitario1, alt: 'HQ Universitario - Cursos de Ingreso' },
+  arcoestudio: { src: arcoestudio1, alt: 'ARCO Estudio - Arquitectura' },
+  brewandco: { src: brewandco1, alt: 'Brew & Co. - Cafetería Artesanal' },
+  nomadetravel: { src: nomadetravel1, alt: 'Nómade Travel - Viajes de Aventura' },
 };
 
 export const getProjects = (t) => [
@@ -60,6 +66,9 @@ export const getProjects = (t) => [
   { key: 'cursosonline', name: 'Aprende Digital', category: 'landing', tag: 'Landing', description: t.projects.cursosonline.description, duration: t.projects.cursosonline.duration },
   { key: 'veterinaria', name: 'PetVida', category: 'landing', tag: 'Landing', description: t.projects.veterinaria.description, duration: t.projects.veterinaria.duration },
   { key: 'hquniversitario', name: 'HQ Universitario', category: 'landing', tag: 'Landing', description: t.projects.hquniversitario.description, duration: t.projects.hquniversitario.duration },
+  { key: 'arcoestudio', name: 'ARCO Estudio', category: 'landing', tag: 'Landing', description: t.projects.arcoestudio.description, duration: t.projects.arcoestudio.duration },
+  { key: 'brewandco', name: 'Brew & Co.', category: 'landing', tag: 'Landing', description: t.projects.brewandco.description, duration: t.projects.brewandco.duration },
+  { key: 'nomadetravel', name: 'Nómade Travel', category: 'landing', tag: 'Landing', description: t.projects.nomadetravel.description, duration: t.projects.nomadetravel.duration },
 ];
 
 const HOME_LIMIT = 4;

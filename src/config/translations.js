@@ -177,6 +177,21 @@ export const translations = {
         duration: '1 semana',
         description: 'Landing para cursos de ingreso universitario con carreras, estadísticas y FAQ',
       },
+      arcoestudio: {
+        period: 'Mar 2026',
+        duration: '1 semana',
+        description: 'Landing premium para estudio de arquitectura con portfolio de proyectos, timeline de proceso y cursor personalizado',
+      },
+      brewandco: {
+        period: 'Mar 2026',
+        duration: '1 semana',
+        description: 'Landing para cafetería artesanal con menú interactivo por categorías, orígenes de café y galería de fotos',
+      },
+      nomadetravel: {
+        period: 'Mar 2026',
+        duration: '1 semana',
+        description: 'Landing para agencia de viajes de aventura con paquetes turísticos, destinos destacados y próximas salidas',
+      },
 
       // Modals
       modals: {
@@ -752,6 +767,66 @@ export const translations = {
             deploy: { label: 'Deploy', value: 'Vercel' },
           },
         },
+
+        arcoestudio: {
+          role: 'Desarrollo Frontend',
+          description: 'Landing premium para ARCO Estudio, estudio de arquitectura con diseño minimalista de lujo. Portfolio estilo masonry con proyectos, timeline animado del proceso de trabajo, cursor personalizado interactivo, carrusel de testimonios y efecto parallax en hero y secciones.',
+          sections: [
+            'Diseño minimalista de lujo con paleta negro, blanco y dorado',
+            'Cursor personalizado interactivo que sigue el mouse',
+            'Portfolio estilo masonry con 6 proyectos y overlay al hover',
+            'Timeline animado del proceso de trabajo en 5 pasos',
+            'Carrusel de testimonios con rotación automática',
+            'Loader de entrada con animación letra por letra',
+            'Efecto parallax en hero y secciones',
+          ],
+          tech: {
+            html: { label: 'HTML5', value: 'Estructura' },
+            css: { label: 'CSS3', value: 'Estilos y animaciones' },
+            js: { label: 'JavaScript', value: 'Interactividad' },
+            aos: { label: 'AOS', value: 'Animaciones scroll' },
+          },
+        },
+
+        brewandco: {
+          role: 'Desarrollo Frontend',
+          description: 'Landing para Brew & Co., cafetería artesanal con menú interactivo organizado por categorías con precios. Sección de orígenes de café con scroll horizontal, animación de vapor en CSS puro, galería masonry de fotos, feed de Instagram y contadores animados.',
+          sections: [
+            'Menú interactivo con tabs (Cafés, Pastelería, Brunch) y precios',
+            'Sección de orígenes de café con scroll horizontal (Colombia, Etiopía, Brasil, Guatemala)',
+            'Animación de vapor en CSS puro en la sección hero',
+            'Galería masonry de 8 fotos con zoom al hover',
+            'Feed de Instagram con overlay de likes y comentarios',
+            'Divisores de sección con formas onduladas SVG',
+            'Contadores animados de estadísticas',
+          ],
+          tech: {
+            html: { label: 'HTML5', value: 'Estructura' },
+            css: { label: 'CSS3', value: 'Estilos y animaciones' },
+            js: { label: 'JavaScript', value: 'Interactividad' },
+            aos: { label: 'AOS', value: 'Animaciones scroll' },
+          },
+        },
+
+        nomadetravel: {
+          role: 'Desarrollo Frontend',
+          description: 'Landing para Nómade Travel, agencia de viajes de aventura con buscador de destinos, cards con efecto 3D tilt, paquetes turísticos con precio y dificultad, próximas salidas con badges de urgencia y galería horizontal de fotos de aventura.',
+          sections: [
+            'Buscador de destinos con filtros (destino, fecha, personas)',
+            'Cards con efecto 3D tilt al hover usando CSS perspective',
+            '6 paquetes turísticos con precio, duración y dificultad',
+            'Sección de próximas salidas con badges de urgencia',
+            'Galería horizontal con scroll de fotos de aventura',
+            'Glassmorphism en cards y elementos decorativos',
+            'Gradientes animados en hero con efecto mesh',
+          ],
+          tech: {
+            html: { label: 'HTML5', value: 'Estructura' },
+            css: { label: 'CSS3', value: 'Estilos y animaciones' },
+            js: { label: 'JavaScript', value: 'Interactividad' },
+            aos: { label: 'AOS', value: 'Animaciones scroll' },
+          },
+        },
       },
     },
 
@@ -1185,6 +1260,21 @@ export const translations = {
         period: 'Mar 2026',
         duration: '1 week',
         description: 'Landing page for university entrance courses with careers, stats and FAQ',
+      },
+      arcoestudio: {
+        period: 'Mar 2026',
+        duration: '1 week',
+        description: 'Premium landing for architecture studio with project portfolio, process timeline and custom cursor',
+      },
+      brewandco: {
+        period: 'Mar 2026',
+        duration: '1 week',
+        description: 'Landing for artisan coffee shop with interactive categorized menu, coffee origins and photo gallery',
+      },
+      nomadetravel: {
+        period: 'Mar 2026',
+        duration: '1 week',
+        description: 'Landing for adventure travel agency with tour packages, featured destinations and upcoming trips',
       },
 
       // Modals
@@ -1755,6 +1845,66 @@ export const translations = {
             animations: { label: 'Animations', value: 'CSS transitions, scroll animations' },
             seo: { label: 'SEO', value: 'SSG, meta tags, Open Graph' },
             deploy: { label: 'Deploy', value: 'Vercel' },
+          },
+        },
+
+        arcoestudio: {
+          role: 'Frontend Development',
+          description: 'Premium landing for ARCO Estudio, an architecture studio with luxury minimalist design. Masonry-style project portfolio, animated work process timeline, interactive custom cursor, testimonial carousel and parallax effects on hero and sections.',
+          sections: [
+            'Luxury minimalist design with black, white and gold palette',
+            'Interactive custom cursor that follows the mouse',
+            'Masonry-style portfolio with 6 projects and hover overlay',
+            'Animated work process timeline in 5 steps',
+            'Testimonial carousel with auto-rotation',
+            'Entry loader with letter-by-letter animation',
+            'Parallax effect on hero and sections',
+          ],
+          tech: {
+            html: { label: 'HTML5', value: 'Structure' },
+            css: { label: 'CSS3', value: 'Styles and animations' },
+            js: { label: 'JavaScript', value: 'Interactivity' },
+            aos: { label: 'AOS', value: 'Scroll animations' },
+          },
+        },
+
+        brewandco: {
+          role: 'Frontend Development',
+          description: 'Landing for Brew & Co., an artisan coffee shop with interactive menu organized by categories with prices. Coffee origins section with horizontal scroll, pure CSS steam animation, masonry photo gallery, Instagram feed and animated counters.',
+          sections: [
+            'Interactive menu with tabs (Coffees, Pastry, Brunch) and prices',
+            'Coffee origins section with horizontal scroll (Colombia, Ethiopia, Brazil, Guatemala)',
+            'Pure CSS steam animation in the hero section',
+            'Masonry gallery of 8 photos with zoom on hover',
+            'Instagram feed with likes and comments overlay',
+            'Section dividers with wavy SVG shapes',
+            'Animated statistics counters',
+          ],
+          tech: {
+            html: { label: 'HTML5', value: 'Structure' },
+            css: { label: 'CSS3', value: 'Styles and animations' },
+            js: { label: 'JavaScript', value: 'Interactivity' },
+            aos: { label: 'AOS', value: 'Scroll animations' },
+          },
+        },
+
+        nomadetravel: {
+          role: 'Frontend Development',
+          description: 'Landing for Nómade Travel, an adventure travel agency with destination search, 3D tilt effect cards, tour packages with price and difficulty, upcoming trips with urgency badges and horizontal adventure photo gallery.',
+          sections: [
+            'Destination search with filters (destination, date, people)',
+            'Cards with 3D tilt hover effect using CSS perspective',
+            '6 tour packages with price, duration and difficulty',
+            'Upcoming trips section with urgency badges',
+            'Horizontal scroll gallery with adventure photos',
+            'Glassmorphism on cards and decorative elements',
+            'Animated gradients in hero with mesh effect',
+          ],
+          tech: {
+            html: { label: 'HTML5', value: 'Structure' },
+            css: { label: 'CSS3', value: 'Styles and animations' },
+            js: { label: 'JavaScript', value: 'Interactivity' },
+            aos: { label: 'AOS', value: 'Scroll animations' },
           },
         },
       },
