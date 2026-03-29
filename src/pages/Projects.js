@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
 import { projectImages, getProjects } from '../components/GitTimeline/GitTimeline';
 import styles from '../components/GitTimeline/GitTimeline.module.css';
-import { FiGrid, FiColumns, FiSquare, FiList } from 'react-icons/fi';
+import { FiGrid, FiSquare } from 'react-icons/fi';
 import SEO from '../components/SEO';
 import Footer from '../components/Footer/Footer';
 
@@ -15,10 +15,8 @@ const CATEGORIES = {
 };
 
 const GRID_OPTIONS = [
-  { cols: 1, icon: FiList },
-  { cols: 2, icon: FiColumns },
   { cols: 3, icon: FiGrid },
-  { cols: 4, icon: FiSquare },
+  { cols: 1, icon: FiSquare },
 ];
 
 export default function Projects() {
