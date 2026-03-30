@@ -22,6 +22,7 @@ import hquniversitario1 from '../../assets/projects/hq-universitario/1.webp';
 import arcoestudio1 from '../../assets/projects/arco-estudio/1.webp';
 import brewandco1 from '../../assets/projects/brew-and-co/1.webp';
 import nomadetravel1 from '../../assets/projects/nomade-travel/1.webp';
+import quicknotes1 from '../../assets/projects/quick-notes/1.png';
 
 export const projectImages = {
   viuti: { src: viutiMain, alt: 'Dashboard de Viutify' },
@@ -42,11 +43,13 @@ export const projectImages = {
   arcoestudio: { src: arcoestudio1, alt: 'ARCO Estudio - Arquitectura' },
   brewandco: { src: brewandco1, alt: 'Brew & Co. - Cafetería Artesanal' },
   nomadetravel: { src: nomadetravel1, alt: 'Nómade Travel - Viajes de Aventura' },
+  quicknotes: { src: quicknotes1, alt: 'Quick Notes - Desktop App' },
 };
 
 export const getProjects = (t) => [
   { key: 'prikly', name: 'Prikly', category: 'webapp', tag: 'SaaS', description: t.projects.prikly.description, duration: t.projects.prikly.duration },
   { key: 'miarbol', name: 'Mi Árbol en el Mundo', category: 'webapp', tag: 'Web + Mobile', description: t.projects.miarbol.description, duration: t.projects.miarbol.duration },
+  { key: 'quicknotes', name: 'Quick Notes', category: 'other', tag: 'Desktop', description: t.projects.quicknotes.description, duration: t.projects.quicknotes.duration },
   { key: 'triso', name: 'Triso', category: 'landing', tag: 'Landing', description: t.projects.triso.description, duration: t.projects.triso.duration },
   { key: 'standford', name: 'Gana con Standford', category: 'webapp', tag: 'Web App', description: t.projects.standford.description, duration: t.projects.standford.duration },
   { key: 'djdivito', name: 'DJ DiVito', category: 'landing', tag: 'Landing', description: t.projects.djdivito.description, duration: t.projects.djdivito.duration },

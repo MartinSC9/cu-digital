@@ -36,6 +36,7 @@ import hquniversitario1 from '../assets/projects/hq-universitario/1.webp';
 import arcoestudio1 from '../assets/projects/arco-estudio/1.webp';
 import brewandco1 from '../assets/projects/brew-and-co/1.webp';
 import nomadetravel1 from '../assets/projects/nomade-travel/1.webp';
+import quicknotes1 from '../assets/projects/quick-notes/1.png';
 
 const projectsData = {
   prikly: {
@@ -132,6 +133,18 @@ const projectsData = {
     sections: (t, modal) => [
       { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
       { type: 'list', title: t.projects.modals.implementedSections, items: modal.sections },
+      { type: 'techGrid', title: t.projects.modals.technologiesUsed, items: modal.tech },
+    ],
+  },
+  quicknotes: {
+    name: 'Quick Notes',
+    images: [quicknotes1],
+    links: (t) => [
+      { url: 'https://github.com/MartinSC9/QuickNotes', label: 'GitHub' },
+    ],
+    sections: (t, modal) => [
+      { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
+      { type: 'list', title: t.projects.modals.mainFeatures, items: modal.features },
       { type: 'techGrid', title: t.projects.modals.technologiesUsed, items: modal.tech },
     ],
   },

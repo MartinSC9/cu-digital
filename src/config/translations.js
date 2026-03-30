@@ -127,6 +127,11 @@ export const translations = {
         duration: '1 semana',
         description: 'Catálogo digital de diseños de uñas con galería de fotos, precios y contacto por WhatsApp',
       },
+      quicknotes: {
+        period: 'Mar 2026',
+        duration: '1 semana',
+        description: 'App de escritorio para notas rápidas con diseño nativo Windows 11 y macOS, modo oscuro y claro',
+      },
       refugioandino: {
         period: 'Mar 2026',
         duration: '1 semana',
@@ -501,6 +506,37 @@ export const translations = {
             type: { label: 'Tipo', value: 'Proyecto Propio' },
             status: { label: 'Estado', value: 'Completado - Feb 2026' },
             language: { label: 'Idioma', value: 'Español' },
+          },
+        },
+
+        // Quick Notes modal
+        quicknotes: {
+          role: 'Creación y desarrollo completo. Diseño UI/UX con estilos nativos de Windows 11 y macOS, desarrollo full stack con Electron y empaquetado como app de escritorio.',
+          description: 'App de escritorio minimalista para tomar notas rápidas. Interfaz con dos estilos: Windows 11 (Fluent Design) y macOS (traffic lights), ambos con modo oscuro y claro. Las notas se organizan en un grid visual con colores, pins y búsqueda. Se minimiza al system tray y tiene hotkey global (Ctrl+Shift+N) para crear notas desde cualquier lado.',
+          features: [
+            'Grid visual de notas con colores personalizables',
+            'Diseño nativo Windows 11 (Fluent) y macOS (traffic lights)',
+            'Modo oscuro y modo claro con toggle',
+            'Pin de notas importantes',
+            'Búsqueda en tiempo real por título y contenido',
+            'System tray — se minimiza y sigue corriendo',
+            'Hotkey global Ctrl+Shift+N para crear nota rápida',
+            'Datos persistentes en JSON local',
+            'Ctrl+Enter para guardar nota rápido',
+            'App de escritorio nativa con Electron',
+          ],
+          tech: {
+            backend: { label: 'Runtime', value: 'Node.js, Electron' },
+            frontend: { label: 'Frontend', value: 'HTML, CSS, JavaScript (vanilla)' },
+            desktop: { label: 'Desktop', value: 'Electron + electron-builder' },
+            storage: { label: 'Storage', value: 'JSON local (userData)' },
+            design: { label: 'Diseño', value: 'Fluent Design + macOS native' },
+          },
+          details: {
+            platform: { label: 'Plataforma', value: 'Windows / macOS (escritorio)' },
+            language: { label: 'Idioma', value: 'Inglés' },
+            type: { label: 'Tipo', value: 'Open Source' },
+            status: { label: 'Estado', value: 'Completado - Mar 2026' },
           },
         },
 
@@ -1148,6 +1184,11 @@ export const translations = {
         duration: '1 week',
         description: 'Digital nail art catalog with photo gallery, prices and WhatsApp contact',
       },
+      quicknotes: {
+        period: 'Mar 2026',
+        duration: '1 week',
+        description: 'Desktop sticky notes app with native Windows 11 and macOS design, dark and light mode',
+      },
       refugioandino: {
         period: 'Mar 2026',
         duration: '1 week',
@@ -1522,6 +1563,37 @@ export const translations = {
             type: { label: 'Type', value: 'Own Project' },
             status: { label: 'Status', value: 'Completed - Feb 2026' },
             language: { label: 'Language', value: 'Spanish' },
+          },
+        },
+
+        // Quick Notes modal
+        quicknotes: {
+          role: 'Full creation and development. UI/UX design with native Windows 11 and macOS styles, full stack development with Electron and desktop packaging.',
+          description: 'Minimalist desktop app for quick note-taking. Dual interface: Windows 11 (Fluent Design) and macOS (traffic lights), both with dark and light mode. Notes are organized in a visual grid with colors, pins and search. Minimizes to system tray with global hotkey (Ctrl+Shift+N) to create notes from anywhere.',
+          features: [
+            'Visual note grid with customizable colors',
+            'Native Windows 11 (Fluent) and macOS (traffic lights) design',
+            'Dark and light mode toggle',
+            'Pin important notes',
+            'Real-time search by title and content',
+            'System tray — minimizes and keeps running',
+            'Global hotkey Ctrl+Shift+N for quick note',
+            'Persistent data in local JSON',
+            'Ctrl+Enter to save note quickly',
+            'Native desktop app with Electron',
+          ],
+          tech: {
+            backend: { label: 'Runtime', value: 'Node.js, Electron' },
+            frontend: { label: 'Frontend', value: 'HTML, CSS, JavaScript (vanilla)' },
+            desktop: { label: 'Desktop', value: 'Electron + electron-builder' },
+            storage: { label: 'Storage', value: 'Local JSON (userData)' },
+            design: { label: 'Design', value: 'Fluent Design + macOS native' },
+          },
+          details: {
+            platform: { label: 'Platform', value: 'Windows / macOS (desktop)' },
+            language: { label: 'Language', value: 'English' },
+            type: { label: 'Type', value: 'Open Source' },
+            status: { label: 'Status', value: 'Completed - Mar 2026' },
           },
         },
 
