@@ -11,7 +11,6 @@ import djdivito1 from '../../assets/projects/dj-divito/1.png';
 import miarbol1 from '../../assets/projects/mi-arbol-en-el-mundo/1.png';
 import triso1 from '../../assets/projects/triso/1.png';
 import lolinails1 from '../../assets/projects/loli-nails/1.png';
-import projecthub1 from '../../assets/projects/project-hub/project-hub-image.png';
 import refugioandino1 from '../../assets/projects/refugio-andino/1.webp';
 import laspiedras1 from '../../assets/projects/las-piedras/1.webp';
 import ateliervalentina1 from '../../assets/projects/atelier-valentina/1.webp';
@@ -32,7 +31,6 @@ export const projectImages = {
   miarbol: { src: miarbol1, alt: 'Landing page de Mi Árbol en el Mundo' },
   triso: { src: triso1, alt: 'Triso - Landing page' },
   lolinails: { src: lolinails1, alt: 'Loli Nails - Landing page' },
-  projecthub: { src: projecthub1, alt: 'ProjectHub - Dashboard' },
   refugioandino: { src: refugioandino1, alt: 'Refugio Andino - Cabañas Patagonia' },
   laspiedras: { src: laspiedras1, alt: 'Las Piedras - Cabañas Córdoba' },
   ateliervalentina: { src: ateliervalentina1, alt: 'Atelier Valentina - Diseño de Modas' },
@@ -50,7 +48,6 @@ export const getProjects = (t) => [
   { key: 'prikly', name: 'Prikly', category: 'webapp', tag: 'SaaS', description: t.projects.prikly.description, duration: t.projects.prikly.duration },
   { key: 'miarbol', name: 'Mi Árbol en el Mundo', category: 'webapp', tag: 'Web + Mobile', description: t.projects.miarbol.description, duration: t.projects.miarbol.duration },
   { key: 'triso', name: 'Triso', category: 'landing', tag: 'Landing', description: t.projects.triso.description, duration: t.projects.triso.duration },
-  { key: 'projecthub', name: 'ProjectHub', category: 'other', tag: 'Desktop', description: t.projects.projecthub.description, duration: t.projects.projecthub.duration },
   { key: 'standford', name: 'Gana con Standford', category: 'webapp', tag: 'Web App', description: t.projects.standford.description, duration: t.projects.standford.duration },
   { key: 'djdivito', name: 'DJ DiVito', category: 'landing', tag: 'Landing', description: t.projects.djdivito.description, duration: t.projects.djdivito.duration },
   { key: 'viuti', name: 'Viutify', category: 'webapp', tag: 'SaaS', description: t.projects.viuti.description, duration: t.projects.viuti.duration },

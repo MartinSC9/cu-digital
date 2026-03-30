@@ -25,7 +25,6 @@ import miarbol3 from '../assets/projects/mi-arbol-en-el-mundo/3.png';
 import triso1 from '../assets/projects/triso/1.png';
 import lolinails1 from '../assets/projects/loli-nails/1.png';
 import lolinails2 from '../assets/projects/loli-nails/2.png';
-import projecthub1 from '../assets/projects/project-hub/project-hub-image.png';
 import refugioandino1 from '../assets/projects/refugio-andino/1.webp';
 import laspiedras1 from '../assets/projects/las-piedras/1.webp';
 import ateliervalentina1 from '../assets/projects/atelier-valentina/1.webp';
@@ -133,18 +132,6 @@ const projectsData = {
     sections: (t, modal) => [
       { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
       { type: 'list', title: t.projects.modals.implementedSections, items: modal.sections },
-      { type: 'techGrid', title: t.projects.modals.technologiesUsed, items: modal.tech },
-    ],
-  },
-  projecthub: {
-    name: 'ProjectHub',
-    images: [projecthub1],
-    links: (t) => [
-      { url: 'https://martinsc9.github.io/ProjectHub-landing/', label: t.projects.viewLanding },
-    ],
-    sections: (t, modal) => [
-      { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
-      { type: 'list', title: t.projects.modals.mainFeatures, items: modal.features },
       { type: 'techGrid', title: t.projects.modals.technologiesUsed, items: modal.tech },
     ],
   },

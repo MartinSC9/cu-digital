@@ -127,11 +127,6 @@ export const translations = {
         duration: '1 semana',
         description: 'Catálogo digital de diseños de uñas con galería de fotos, precios y contacto por WhatsApp',
       },
-      projecthub: {
-        period: 'Mar 2026',
-        duration: '1 semana',
-        description: 'Programa de escritorio para organizar proyectos, tareas y bugs en un solo lugar',
-      },
       refugioandino: {
         period: 'Mar 2026',
         duration: '1 semana',
@@ -464,37 +459,6 @@ export const translations = {
             market: { label: 'Mercado', value: 'Córdoba, Argentina' },
             language: { label: 'Idioma', value: 'Español' },
             type: { label: 'Tipo', value: 'Cliente' },
-            status: { label: 'Estado', value: 'Completado - Mar 2026' },
-          },
-        },
-
-        // ProjectHub modal
-        projecthub: {
-          role: 'Creación y desarrollo completo. Diseño, desarrollo full stack, integración con Claude Code CLI y empaquetado como app de escritorio con Electron.',
-          description: 'Programa de escritorio para Windows que centraliza la gestión de todos tus proyectos de desarrollo. Dashboard visual para iniciar/parar servidores, trackear tareas y bugs, y enviar prompts a Claude Code directamente desde la interfaz. Datos 100% locales, sin cloud.',
-          features: [
-            'Dashboard visual con todos los proyectos',
-            'Iniciar/parar servidores (frontend, backend, mobile) con un clic',
-            'Enviar prompts a Claude Code desde la UI con respuesta en tiempo real',
-            'Tracking de tareas con checkboxes',
-            'Tracking de bugs con niveles de severidad',
-            'Sistema de favoritos persistente',
-            'Dark/Light mode con preferencia guardada',
-            'Terminal integrada con output en tiempo real vía WebSocket',
-            'Datos persistentes en JSON local',
-            'App de escritorio nativa con Electron',
-          ],
-          tech: {
-            backend: { label: 'Backend', value: 'Node.js, Express 5, WebSocket' },
-            frontend: { label: 'Frontend', value: 'HTML, CSS, JavaScript (vanilla)' },
-            desktop: { label: 'Desktop', value: 'Electron' },
-            ai: { label: 'IA', value: 'Claude Code CLI' },
-            design: { label: 'Diseño', value: 'Google Material Design' },
-          },
-          details: {
-            platform: { label: 'Plataforma', value: 'Windows (escritorio)' },
-            language: { label: 'Idioma', value: 'Español' },
-            type: { label: 'Tipo', value: 'Open Source' },
             status: { label: 'Estado', value: 'Completado - Mar 2026' },
           },
         },
@@ -1184,11 +1148,6 @@ export const translations = {
         duration: '1 week',
         description: 'Digital nail art catalog with photo gallery, prices and WhatsApp contact',
       },
-      projecthub: {
-        period: 'Mar 2026',
-        duration: '1 week',
-        description: 'Desktop program to organize projects, tasks and bugs in one place',
-      },
       refugioandino: {
         period: 'Mar 2026',
         duration: '1 week',
@@ -1521,37 +1480,6 @@ export const translations = {
             market: { label: 'Market', value: 'Córdoba, Argentina' },
             language: { label: 'Language', value: 'Spanish' },
             type: { label: 'Type', value: 'Client' },
-            status: { label: 'Status', value: 'Completed - Mar 2026' },
-          },
-        },
-
-        // ProjectHub modal
-        projecthub: {
-          role: 'Creation and full development. Design, full stack development, Claude Code CLI integration and desktop packaging with Electron.',
-          description: 'Windows desktop app that centralizes management of all your dev projects. Visual dashboard to start/stop servers, track tasks and bugs, and send prompts to Claude Code directly from the interface. 100% local data, no cloud.',
-          features: [
-            'Visual dashboard with all projects',
-            'Start/stop servers (frontend, backend, mobile) with one click',
-            'Send prompts to Claude Code from UI with real-time responses',
-            'Task tracking with checkboxes',
-            'Bug tracking with severity levels',
-            'Persistent favorites system',
-            'Dark/Light mode with saved preference',
-            'Built-in terminal with real-time output via WebSocket',
-            'Persistent data in local JSON',
-            'Native desktop app with Electron',
-          ],
-          tech: {
-            backend: { label: 'Backend', value: 'Node.js, Express 5, WebSocket' },
-            frontend: { label: 'Frontend', value: 'HTML, CSS, JavaScript (vanilla)' },
-            desktop: { label: 'Desktop', value: 'Electron' },
-            ai: { label: 'AI', value: 'Claude Code CLI' },
-            design: { label: 'Design', value: 'Google Material Design' },
-          },
-          details: {
-            platform: { label: 'Platform', value: 'Windows (desktop)' },
-            language: { label: 'Language', value: 'Spanish' },
-            type: { label: 'Type', value: 'Open Source' },
             status: { label: 'Status', value: 'Completed - Mar 2026' },
           },
         },
