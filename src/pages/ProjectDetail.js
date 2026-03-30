@@ -140,6 +140,7 @@ const projectsData = {
     name: 'Quick Notes',
     images: [quicknotes1],
     links: (t) => [
+      { url: 'https://martinsc9.github.io/landings-portfolio/quick-notes/', label: t.projects.viewLanding },
       { url: 'https://github.com/MartinSC9/QuickNotes', label: 'GitHub' },
     ],
     sections: (t, modal) => [
