@@ -152,11 +152,6 @@ export const translations = {
         duration: '1 semana',
         description: 'Landing para mueblería con catálogo de productos, showroom y financiación',
       },
-      yateatiendo: {
-        period: 'Mar 2026',
-        duration: '2 semanas',
-        description: 'Prototipo SaaS de gestión de turnos con dashboard, login y perfil de usuario',
-      },
       fitnesscoach: {
         period: 'Mar 2026',
         duration: '1 semana',
@@ -648,28 +643,6 @@ export const translations = {
             animations: { label: 'Animaciones', value: 'AOS, CSS transitions, hover effects' },
             seo: { label: 'SEO', value: 'Open Graph, Twitter Cards, Schema.org (JSON-LD)' },
             design: { label: 'Diseño', value: 'Mobile-first, responsive, DM Serif Display + Inter' },
-            deploy: { label: 'Deploy', value: 'GitHub Pages' },
-          },
-        },
-
-        yateatiendo: {
-          role: 'Diseño y desarrollo completo de prototipo SaaS con landing, sistema de autenticación, dashboard y perfil.',
-          description: 'Prototipo funcional de Ya Te Atiendo, plataforma SaaS de gestión de turnos para negocios. Incluye landing de venta, sistema de login/registro, dashboard con métricas en tiempo real, gráficos de rendimiento y perfil de usuario con configuración.',
-          features: [
-            'Landing page con hero, pricing (3 planes), FAQ y testimonios',
-            'Login/Registro con formularios validados y login social',
-            'Dashboard con 4 KPIs, gráficos de turnos e ingresos',
-            'Tabla de turnos próximos con estados',
-            'Feed de actividad reciente',
-            'Perfil de usuario con edición y preferencias',
-            'Sidebar colapsable con navegación completa',
-            'Tema oscuro profesional con acentos púrpura',
-          ],
-          tech: {
-            frontend: { label: 'Frontend', value: 'HTML5, CSS3, JavaScript vanilla' },
-            ui: { label: 'UI/UX', value: 'Dashboard dark theme, Inter + Poppins, CSS Grid/Flexbox' },
-            charts: { label: 'Gráficos', value: 'SVG/CSS puro (sin librerías)' },
-            auth: { label: 'Auth UI', value: 'Login/Register con social login (Google, GitHub)' },
             deploy: { label: 'Deploy', value: 'GitHub Pages' },
           },
         },
@@ -1236,11 +1209,6 @@ export const translations = {
         duration: '1 week',
         description: 'Landing page for a furniture store with product catalog, showroom and financing',
       },
-      yateatiendo: {
-        period: 'Mar 2026',
-        duration: '2 weeks',
-        description: 'SaaS prototype for appointment management with dashboard, login and user profile',
-      },
       fitnesscoach: {
         period: 'Mar 2026',
         duration: '1 week',
@@ -1728,28 +1696,6 @@ export const translations = {
             animations: { label: 'Animations', value: 'AOS, CSS transitions, hover effects' },
             seo: { label: 'SEO', value: 'Open Graph, Twitter Cards, Schema.org (JSON-LD)' },
             design: { label: 'Design', value: 'Mobile-first, responsive, DM Serif Display + Inter' },
-            deploy: { label: 'Deploy', value: 'GitHub Pages' },
-          },
-        },
-
-        yateatiendo: {
-          role: 'Full design and development of a SaaS prototype with landing, auth system, dashboard and profile.',
-          description: 'Functional prototype of Ya Te Atiendo, a SaaS appointment management platform for businesses. Includes sales landing, login/register system, dashboard with real-time metrics, performance charts and user profile with settings.',
-          features: [
-            'Landing page with hero, pricing (3 plans), FAQ and testimonials',
-            'Login/Register with validated forms and social login',
-            'Dashboard with 4 KPIs, appointment and revenue charts',
-            'Upcoming appointments table with status badges',
-            'Recent activity feed',
-            'User profile with editing and preferences',
-            'Collapsible sidebar with full navigation',
-            'Professional dark theme with purple accents',
-          ],
-          tech: {
-            frontend: { label: 'Frontend', value: 'HTML5, CSS3, vanilla JavaScript' },
-            ui: { label: 'UI/UX', value: 'Dashboard dark theme, Inter + Poppins, CSS Grid/Flexbox' },
-            charts: { label: 'Charts', value: 'Pure SVG/CSS (no libraries)' },
-            auth: { label: 'Auth UI', value: 'Login/Register with social login (Google, GitHub)' },
             deploy: { label: 'Deploy', value: 'GitHub Pages' },
           },
         },

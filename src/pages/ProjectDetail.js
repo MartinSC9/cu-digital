@@ -30,7 +30,6 @@ import refugioandino1 from '../assets/projects/refugio-andino/1.webp';
 import laspiedras1 from '../assets/projects/las-piedras/1.webp';
 import ateliervalentina1 from '../assets/projects/atelier-valentina/1.webp';
 import roblemuebles1 from '../assets/projects/roble-muebles/1.webp';
-import yateatiendo1 from '../assets/projects/yateatiendo/1.webp';
 import fitnesscoach1 from '../assets/projects/fitness-coach/1.webp';
 import cursosonline1 from '../assets/projects/cursos-online/1.webp';
 import veterinaria1 from '../assets/projects/veterinaria/1.webp';
@@ -194,19 +193,6 @@ const projectsData = {
     sections: (t, modal) => [
       { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
       { type: 'list', title: t.projects.modals.implementedSections, items: modal.sections },
-      { type: 'techGrid', title: t.projects.modals.technologiesUsed, items: modal.tech },
-    ],
-  },
-  yateatiendo: {
-    name: 'Ya Te Atiendo',
-    images: [yateatiendo1],
-    links: () => [
-      { url: 'https://martinsc9.github.io/landings-portfolio/yateatiendo/', label: 'Landing' },
-      { url: 'https://martinsc9.github.io/landings-portfolio/yateatiendo/dashboard.html', label: 'Dashboard' },
-    ],
-    sections: (t, modal) => [
-      { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
-      { type: 'list', title: t.projects.modals.mainFeatures, items: modal.features },
       { type: 'techGrid', title: t.projects.modals.technologiesUsed, items: modal.tech },
     ],
   },

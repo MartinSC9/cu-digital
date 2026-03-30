@@ -16,7 +16,6 @@ import refugioandino1 from '../../assets/projects/refugio-andino/1.webp';
 import laspiedras1 from '../../assets/projects/las-piedras/1.webp';
 import ateliervalentina1 from '../../assets/projects/atelier-valentina/1.webp';
 import roblemuebles1 from '../../assets/projects/roble-muebles/1.webp';
-import yateatiendo1 from '../../assets/projects/yateatiendo/1.webp';
 import fitnesscoach1 from '../../assets/projects/fitness-coach/1.webp';
 import cursosonline1 from '../../assets/projects/cursos-online/1.webp';
 import veterinaria1 from '../../assets/projects/veterinaria/1.webp';
@@ -38,7 +37,6 @@ export const projectImages = {
   laspiedras: { src: laspiedras1, alt: 'Las Piedras - Cabañas Córdoba' },
   ateliervalentina: { src: ateliervalentina1, alt: 'Atelier Valentina - Diseño de Modas' },
   roblemuebles: { src: roblemuebles1, alt: 'Roble Muebles - Mueblería' },
-  yateatiendo: { src: yateatiendo1, alt: 'Ya Te Atiendo - Dashboard SaaS' },
   fitnesscoach: { src: fitnesscoach1, alt: 'FitPro - Personal Trainer' },
   cursosonline: { src: cursosonline1, alt: 'Aprende Digital - Cursos Online' },
   veterinaria: { src: veterinaria1, alt: 'PetVida - Clínica Veterinaria' },
@@ -61,7 +59,6 @@ export const getProjects = (t) => [
   { key: 'laspiedras', name: 'Cabañas Las Piedras', category: 'landing', tag: 'Landing', description: t.projects.laspiedras.description, duration: t.projects.laspiedras.duration },
   { key: 'ateliervalentina', name: 'Atelier Valentina', category: 'landing', tag: 'Landing', description: t.projects.ateliervalentina.description, duration: t.projects.ateliervalentina.duration },
   { key: 'roblemuebles', name: 'Roble Muebles', category: 'landing', tag: 'Landing', description: t.projects.roblemuebles.description, duration: t.projects.roblemuebles.duration },
-  { key: 'yateatiendo', name: 'Ya Te Atiendo', category: 'webapp', tag: 'SaaS', description: t.projects.yateatiendo.description, duration: t.projects.yateatiendo.duration },
   { key: 'fitnesscoach', name: 'FitPro', category: 'landing', tag: 'Landing', description: t.projects.fitnesscoach.description, duration: t.projects.fitnesscoach.duration },
   { key: 'cursosonline', name: 'Aprende Digital', category: 'landing', tag: 'Landing', description: t.projects.cursosonline.description, duration: t.projects.cursosonline.duration },
   { key: 'veterinaria', name: 'PetVida', category: 'landing', tag: 'Landing', description: t.projects.veterinaria.description, duration: t.projects.veterinaria.duration },
