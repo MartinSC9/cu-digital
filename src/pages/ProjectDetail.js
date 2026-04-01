@@ -37,6 +37,7 @@ import arcoestudio1 from '../assets/projects/arco-estudio/1.webp';
 import brewandco1 from '../assets/projects/brew-and-co/1.webp';
 import nomadetravel1 from '../assets/projects/nomade-travel/1.webp';
 import quicknotes1 from '../assets/projects/quick-notes/1.png';
+import mlscouting1 from '../assets/projects/ml-scouting/1.png';
 
 const projectsData = {
   prikly: {
@@ -278,6 +279,18 @@ const projectsData = {
     sections: (t, modal) => [
       { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
       { type: 'list', title: t.projects.modals.implementedSections, items: modal.sections },
+      { type: 'techGrid', title: t.projects.modals.technologiesUsed, items: modal.tech },
+    ],
+  },
+  mlscouting: {
+    name: 'ML Scouting',
+    images: [mlscouting1],
+    links: (t) => [
+      { url: 'https://ml-scouting-prototype.vercel.app/', label: t.projects.viewApp },
+    ],
+    sections: (t, modal) => [
+      { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
+      { type: 'list', title: t.projects.modals.mainFeatures, items: modal.features },
       { type: 'techGrid', title: t.projects.modals.technologiesUsed, items: modal.tech },
     ],
   },

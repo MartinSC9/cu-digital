@@ -187,6 +187,11 @@ export const translations = {
         duration: '1 semana',
         description: 'Landing para agencia de viajes de aventura con paquetes turísticos, destinos destacados y próximas salidas',
       },
+      mlscouting: {
+        period: 'Mar 2026',
+        duration: '2 semanas',
+        description: 'Plataforma de scouting deportivo con portal de jugadores, panel admin, CRM, cursos y analíticas',
+      },
 
       // Modals
       modals: {
@@ -800,6 +805,36 @@ export const translations = {
             aos: { label: 'AOS', value: 'Animaciones scroll' },
           },
         },
+
+        // ML Scouting modal
+        mlscouting: {
+          role: 'Desarrollo completo del prototipo. Diseño UI/UX, arquitectura frontend, sistema de rutas multi-nivel, dashboards con métricas y deploy en Vercel.',
+          description: 'Plataforma integral de scouting deportivo para fútbol. Incluye portal de jugadores con dashboard, perfil, cursos y clases en vivo, y panel de administración con gestión de jugadores, CRM, cursos, blog, finanzas, referidos, analíticas y configuración. Diseño profesional con navegación multi-nivel.',
+          features: [
+            'Portal de jugador con dashboard personalizado',
+            'Sistema de cursos y clases en vivo',
+            'Panel admin con gestión completa de jugadores',
+            'CRM integrado para seguimiento de prospectos',
+            'Gestión de contenido (blog) y cursos',
+            'Dashboard financiero con métricas de ingresos',
+            'Sistema de referidos con tracking',
+            'Analíticas y reportes detallados',
+            'Configuración del sistema',
+            'Autenticación con múltiples roles (jugador, admin)',
+            'Diseño responsive mobile-first',
+          ],
+          tech: {
+            frontend: { label: 'Frontend', value: 'React 19, Vite 8, Tailwind CSS 4' },
+            routing: { label: 'Routing', value: 'React Router DOM 7' },
+            deploy: { label: 'Deploy', value: 'Vercel' },
+            design: { label: 'Diseño', value: 'Mobile-first, responsive' },
+          },
+          details: {
+            platform: { label: 'Plataforma', value: 'Web (responsive)' },
+            type: { label: 'Tipo', value: 'Prototipo para cliente' },
+            status: { label: 'Estado', value: 'Completado - Mar 2026' },
+          },
+        },
       },
     },
 
@@ -1243,6 +1278,11 @@ export const translations = {
         period: 'Mar 2026',
         duration: '1 week',
         description: 'Landing for adventure travel agency with tour packages, featured destinations and upcoming trips',
+      },
+      mlscouting: {
+        period: 'Mar 2026',
+        duration: '2 weeks',
+        description: 'Sports scouting platform with player portal, admin panel, CRM, courses and analytics',
       },
 
       // Modals
@@ -1851,6 +1891,36 @@ export const translations = {
             css: { label: 'CSS3', value: 'Styles and animations' },
             js: { label: 'JavaScript', value: 'Interactivity' },
             aos: { label: 'AOS', value: 'Scroll animations' },
+          },
+        },
+
+        // ML Scouting modal
+        mlscouting: {
+          role: 'Full prototype development. UI/UX design, frontend architecture, multi-level routing system, dashboards with metrics and Vercel deployment.',
+          description: 'Comprehensive sports scouting platform for football. Includes player portal with dashboard, profile, courses and live classes, and admin panel with player management, CRM, courses, blog, finances, referrals, analytics and settings. Professional design with multi-level navigation.',
+          features: [
+            'Player portal with personalized dashboard',
+            'Courses and live classes system',
+            'Admin panel with full player management',
+            'Integrated CRM for prospect tracking',
+            'Content management (blog) and courses',
+            'Financial dashboard with revenue metrics',
+            'Referral system with tracking',
+            'Detailed analytics and reports',
+            'System configuration',
+            'Authentication with multiple roles (player, admin)',
+            'Responsive mobile-first design',
+          ],
+          tech: {
+            frontend: { label: 'Frontend', value: 'React 19, Vite 8, Tailwind CSS 4' },
+            routing: { label: 'Routing', value: 'React Router DOM 7' },
+            deploy: { label: 'Deploy', value: 'Vercel' },
+            design: { label: 'Design', value: 'Mobile-first, responsive' },
+          },
+          details: {
+            platform: { label: 'Platform', value: 'Web (responsive)' },
+            type: { label: 'Type', value: 'Client Prototype' },
+            status: { label: 'Status', value: 'Completed - Mar 2026' },
           },
         },
       },
