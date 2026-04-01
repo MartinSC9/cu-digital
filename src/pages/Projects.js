@@ -76,14 +76,9 @@ export default function Projects() {
                   onClick={() => setActiveFilter(key)}
                 >
                   {t.projects[labelKey]}
-                  {activeFilter === 'all' && key !== 'all' && (
-                    <span className={styles.filterCount}>
-                      {projects.filter(p => p.category === key).length}
-                    </span>
-                  )}
-                  {key === 'all' && (
-                    <span className={styles.filterCount}>{projects.length}</span>
-                  )}
+                  <span className={styles.filterCount}>
+                    {key === 'all' ? projects.length : projects.filter(p => p.category === key).length}
+                  </span>
                 </button>
               ))}
             </div>
