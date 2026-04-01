@@ -50,8 +50,8 @@ export const projectImages = {
 
 export const getProjects = (t) => [
   { key: 'prikly', name: 'Prikly', category: 'webapp', tag: 'SaaS', description: t.projects.prikly.description, duration: t.projects.prikly.duration },
-  { key: 'miarbol', name: 'Mi Árbol en el Mundo', category: 'webapp', tag: 'Web + Mobile', description: t.projects.miarbol.description, duration: t.projects.miarbol.duration },
-  { key: 'quicknotes', name: 'Quick Notes', category: 'other', tag: 'Desktop', description: t.projects.quicknotes.description, duration: t.projects.quicknotes.duration },
+  { key: 'miarbol', name: 'Mi Árbol en el Mundo', category: 'mobile', tag: 'Web + Mobile', description: t.projects.miarbol.description, duration: t.projects.miarbol.duration },
+  { key: 'quicknotes', name: 'Quick Notes', category: 'desktop', tag: 'Desktop', description: t.projects.quicknotes.description, duration: t.projects.quicknotes.duration },
   { key: 'triso', name: 'Triso', category: 'landing', tag: 'Landing', description: t.projects.triso.description, duration: t.projects.triso.duration },
   { key: 'standford', name: 'Gana con Standford', category: 'webapp', tag: 'Web App', description: t.projects.standford.description, duration: t.projects.standford.duration },
   { key: 'djdivito', name: 'DJ DiVito', category: 'landing', tag: 'Landing', description: t.projects.djdivito.description, duration: t.projects.djdivito.duration },

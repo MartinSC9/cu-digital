@@ -11,7 +11,8 @@ const CATEGORIES = {
   all: 'filterAll',
   landing: 'filterLanding',
   webapp: 'filterWebApp',
-  other: 'filterOther',
+  mobile: 'filterMobile',
+  desktop: 'filterDesktop',
 };
 
 const GRID_OPTIONS = [
