@@ -49,11 +49,11 @@ export const projectImages = {
 };
 
 export const getProjects = (t) => [
-  { key: 'prikly', name: 'Prikly', category: 'webapp', tag: 'SaaS', description: t.projects.prikly.description, duration: t.projects.prikly.duration },
-  { key: 'miarbol', name: 'Mi Árbol en el Mundo', category: 'mobile', tag: 'Web + Mobile', description: t.projects.miarbol.description, duration: t.projects.miarbol.duration },
+  { key: 'prikly', name: 'Prikly', category: ['webapp', 'landing'], tag: 'SaaS', description: t.projects.prikly.description, duration: t.projects.prikly.duration },
+  { key: 'miarbol', name: 'Mi Árbol en el Mundo', category: ['mobile', 'landing'], tag: 'Web + Mobile', description: t.projects.miarbol.description, duration: t.projects.miarbol.duration },
   { key: 'quicknotes', name: 'Quick Notes', category: 'desktop', tag: 'Desktop', description: t.projects.quicknotes.description, duration: t.projects.quicknotes.duration },
   { key: 'triso', name: 'Triso', category: 'landing', tag: 'Landing', description: t.projects.triso.description, duration: t.projects.triso.duration },
-  { key: 'standford', name: 'Gana con Standford', category: 'webapp', tag: 'Web App', description: t.projects.standford.description, duration: t.projects.standford.duration },
+  { key: 'standford', name: 'Gana con Standford', category: ['webapp', 'landing'], tag: 'Web App', description: t.projects.standford.description, duration: t.projects.standford.duration },
   { key: 'djdivito', name: 'DJ DiVito', category: 'landing', tag: 'Landing', description: t.projects.djdivito.description, duration: t.projects.djdivito.duration },
   { key: 'viuti', name: 'Viutify', category: 'webapp', tag: 'SaaS', description: t.projects.viuti.description, duration: t.projects.viuti.duration },
   { key: 'lolinails', name: 'Loli Nails', category: 'landing', tag: 'Landing', description: t.projects.lolinails.description, duration: t.projects.lolinails.duration },
@@ -68,7 +68,7 @@ export const getProjects = (t) => [
   { key: 'arcoestudio', name: 'ARCO Estudio', category: 'landing', tag: 'Landing', description: t.projects.arcoestudio.description, duration: t.projects.arcoestudio.duration },
   { key: 'brewandco', name: 'Brew & Co.', category: 'landing', tag: 'Landing', description: t.projects.brewandco.description, duration: t.projects.brewandco.duration },
   { key: 'nomadetravel', name: 'Nómade Travel', category: 'landing', tag: 'Landing', description: t.projects.nomadetravel.description, duration: t.projects.nomadetravel.duration },
-  { key: 'mlscouting', name: 'ML Scouting', category: 'webapp', tag: 'Web App', description: t.projects.mlscouting.description, duration: t.projects.mlscouting.duration },
+  { key: 'mlscouting', name: 'ML Scouting', category: ['webapp', 'landing'], tag: 'Web App', description: t.projects.mlscouting.description, duration: t.projects.mlscouting.duration },
 ];
 
 const HOME_LIMIT = 4;

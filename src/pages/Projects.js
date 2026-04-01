@@ -50,7 +50,7 @@ export default function Projects() {
   const projects = getProjects(t);
   const filtered = activeFilter === 'all'
     ? projects
-    : projects.filter((p) => p.category === activeFilter);
+    : projects.filter((p) => Array.isArray(p.category) ? p.category.includes(activeFilter) : p.category === activeFilter);
 
   return (
     <>
@@ -77,7 +77,7 @@ export default function Projects() {
                 >
                   {t.projects[labelKey]}
                   <span className={styles.filterCount}>
-                    {key === 'all' ? projects.length : projects.filter(p => p.category === key).length}
+                    {key === 'all' ? projects.length : projects.filter(p => Array.isArray(p.category) ? p.category.includes(key) : p.category === key).length}
                   </span>
                 </button>
               ))}

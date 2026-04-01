@@ -44,7 +44,8 @@ const projectsData = {
     name: 'Prikly',
     images: [prikly1, prikly3, prikly4, prikly12, prikly15, prikly17],
     links: (t) => [
-      { url: 'https://www.prikly.io/', label: t.projects.viewApp },
+      { url: 'https://app.prikly.io/', label: t.projects.viewApp },
+      { url: 'https://www.prikly.io/', label: t.projects.viewLanding },
     ],
     sections: (t, modal) => [
       { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
