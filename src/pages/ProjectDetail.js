@@ -286,7 +286,8 @@ const projectsData = {
     name: 'ML Scouting',
     images: [mlscouting1],
     links: (t) => [
-      { url: 'https://ml-scouting-prototype.vercel.app/', label: t.projects.viewApp },
+      { url: 'https://ml-scouting-prototype.vercel.app/login', label: t.projects.viewApp },
+      { url: 'https://ml-scouting-prototype.vercel.app/', label: t.projects.viewLanding },
     ],
     sections: (t, modal) => [
       { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
