@@ -24,6 +24,7 @@ import brewandco1 from '../../assets/projects/brew-and-co/1.webp';
 import nomadetravel1 from '../../assets/projects/nomade-travel/1.webp';
 import quicknotes1 from '../../assets/projects/quick-notes/1.png';
 import mlscouting1 from '../../assets/projects/ml-scouting/1.png';
+import eyas1 from '../../assets/projects/eyas/1.png';
 
 export const projectImages = {
   viuti: { src: viutiMain, alt: 'Dashboard de Viutify' },
@@ -46,6 +47,7 @@ export const projectImages = {
   nomadetravel: { src: nomadetravel1, alt: 'Nómade Travel - Viajes de Aventura' },
   quicknotes: { src: quicknotes1, alt: 'Quick Notes - Desktop App' },
   mlscouting: { src: mlscouting1, alt: 'ML Scouting - Plataforma de Scouting Deportivo' },
+  eyas: { src: eyas1, alt: 'EYAS Psicología - Landing Page' },
 };
 
 export const getProjects = (t) => [
@@ -69,6 +71,7 @@ export const getProjects = (t) => [
   { key: 'brewandco', name: 'Brew & Co.', category: 'landing', tag: 'Landing', description: t.projects.brewandco.description, duration: t.projects.brewandco.duration },
   { key: 'nomadetravel', name: 'Nómade Travel', category: 'landing', tag: 'Landing', description: t.projects.nomadetravel.description, duration: t.projects.nomadetravel.duration },
   { key: 'mlscouting', name: 'ML Scouting', category: ['webapp', 'landing'], tag: 'Web App', description: t.projects.mlscouting.description, duration: t.projects.mlscouting.duration },
+  { key: 'eyas', name: 'EYAS Psicología', category: 'landing', tag: 'Landing', description: t.projects.eyas.description, duration: t.projects.eyas.duration },
 ];
 
 const HOME_LIMIT = 4;

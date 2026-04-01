@@ -193,6 +193,11 @@ export const translations = {
         duration: '2 semanas',
         description: 'Plataforma de scouting deportivo con portal de jugadores, panel admin, CRM, cursos y analíticas',
       },
+      eyas: {
+        period: 'Abr 2026',
+        duration: '1 semana',
+        description: 'Landing premium para consultorio de psicoterapia online para mujeres, con SEO y Open Graph',
+      },
 
       // Modals
       modals: {
@@ -836,6 +841,34 @@ export const translations = {
             status: { label: 'Estado', value: 'Completado - Mar 2026' },
           },
         },
+        eyas: {
+          role: 'Desarrollo frontend completo y diseño UI/UX. Rediseño premium de la landing page existente, consolidación de 17 secciones en 11, sistema de diseño con CSS custom properties, SEO, Open Graph y deploy en Vercel.',
+          description: 'Landing page premium para EYAS Psicología, consultorio de psicoterapia online para mujeres dirigido por Guadalupe Delfino. Incluye secciones de libro, masterclass, programa Conecta, podcast, testimonios, newsletter y formulario de contacto. Diseño con tipografías serif/sans-serif, paleta coral/teal/verde, animaciones CSS-only con IntersectionObserver y CSS Modules.',
+          features: [
+            'Hero con CTA y estadísticas de confianza',
+            'Sección de libro con enlace a Amazon',
+            'Masterclass con video embed',
+            'Programa Conecta con timeline horizontal y pilares',
+            'Testimonios con grid de cards',
+            'Sección About con trayectoria internacional',
+            'Podcast con embed de Spotify',
+            'Newsletter con formulario inline',
+            'Formulario de contacto completo',
+            'Favicon SVG personalizado',
+            'SEO + Open Graph para WhatsApp/redes',
+          ],
+          tech: {
+            frontend: { label: 'Frontend', value: 'React 19, Vite 8, TypeScript, CSS Modules' },
+            design: { label: 'Diseño', value: 'CSS custom properties, Google Fonts, responsive' },
+            features: { label: 'Features', value: 'IntersectionObserver, SEO, Open Graph, Schema.org' },
+            deploy: { label: 'Deploy', value: 'Vercel' },
+          },
+          details: {
+            platform: { label: 'Plataforma', value: 'Web (responsive)' },
+            type: { label: 'Tipo', value: 'Landing para cliente' },
+            status: { label: 'Estado', value: 'Completado - Abr 2026' },
+          },
+        },
       },
     },
 
@@ -1285,6 +1318,11 @@ export const translations = {
         period: 'Mar 2026',
         duration: '2 weeks',
         description: 'Sports scouting platform with player portal, admin panel, CRM, courses and analytics',
+      },
+      eyas: {
+        period: 'Apr 2026',
+        duration: '1 week',
+        description: 'Premium landing page for online psychotherapy practice for women, with SEO and Open Graph',
       },
 
       // Modals
@@ -1923,6 +1961,34 @@ export const translations = {
             platform: { label: 'Platform', value: 'Web (responsive)' },
             type: { label: 'Type', value: 'Client Prototype' },
             status: { label: 'Status', value: 'Completed - Mar 2026' },
+          },
+        },
+        eyas: {
+          role: 'Full frontend development and UI/UX design. Premium redesign of existing landing page, consolidated 17 sections into 11, design system with CSS custom properties, SEO, Open Graph and Vercel deployment.',
+          description: 'Premium landing page for EYAS Psicología, an online psychotherapy practice for women led by Guadalupe Delfino. Includes book, masterclass, Conecta program, podcast, testimonials, newsletter and contact form sections. Designed with serif/sans-serif fonts, coral/teal/green palette, CSS-only animations with IntersectionObserver and CSS Modules.',
+          features: [
+            'Hero with CTA and trust statistics',
+            'Book section with Amazon link',
+            'Masterclass with video embed',
+            'Conecta Program with horizontal timeline and pillars',
+            'Testimonials with card grid',
+            'About section with international career',
+            'Podcast with Spotify embed',
+            'Newsletter with inline form',
+            'Full contact form',
+            'Custom SVG favicon',
+            'SEO + Open Graph for WhatsApp/social media',
+          ],
+          tech: {
+            frontend: { label: 'Frontend', value: 'React 19, Vite 8, TypeScript, CSS Modules' },
+            design: { label: 'Design', value: 'CSS custom properties, Google Fonts, responsive' },
+            features: { label: 'Features', value: 'IntersectionObserver, SEO, Open Graph, Schema.org' },
+            deploy: { label: 'Deploy', value: 'Vercel' },
+          },
+          details: {
+            platform: { label: 'Platform', value: 'Web (responsive)' },
+            type: { label: 'Type', value: 'Client Landing' },
+            status: { label: 'Status', value: 'Completed - Apr 2026' },
           },
         },
       },

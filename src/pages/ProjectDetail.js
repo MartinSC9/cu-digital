@@ -38,6 +38,7 @@ import brewandco1 from '../assets/projects/brew-and-co/1.webp';
 import nomadetravel1 from '../assets/projects/nomade-travel/1.webp';
 import quicknotes1 from '../assets/projects/quick-notes/1.png';
 import mlscouting1 from '../assets/projects/ml-scouting/1.png';
+import eyas1 from '../assets/projects/eyas/1.png';
 
 const projectsData = {
   prikly: {
@@ -289,6 +290,18 @@ const projectsData = {
     links: (t) => [
       { url: 'https://ml-scouting-prototype.vercel.app/login', label: t.projects.viewApp },
       { url: 'https://ml-scouting-prototype.vercel.app/', label: t.projects.viewLanding },
+    ],
+    sections: (t, modal) => [
+      { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
+      { type: 'list', title: t.projects.modals.mainFeatures, items: modal.features },
+      { type: 'techGrid', title: t.projects.modals.technologiesUsed, items: modal.tech },
+    ],
+  },
+  eyas: {
+    name: 'EYAS Psicología',
+    images: [eyas1],
+    links: () => [
+      { url: 'https://eyaspsicologia-prototype.vercel.app/', label: 'Landing' },
     ],
     sections: (t, modal) => [
       { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
