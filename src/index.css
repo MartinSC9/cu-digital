@@ -628,9 +628,10 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.18;
+  opacity: 0.22;
   pointer-events: none;
   z-index: 0;
+  transition: opacity 1.2s ease-in-out;
 }
 
 .section-bg-overlay {
@@ -843,6 +844,250 @@ body {
   .about-description p {
     text-align: center;
   }
+}
+
+/* ── Hero entrance animation ── */
+.hero-anim {
+  opacity: 0;
+  transform: translateY(24px);
+  filter: blur(4px);
+  animation: heroEntrance 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: calc(var(--anim-order, 1) * 0.15s);
+}
+
+@keyframes heroEntrance {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-anim {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    animation: none;
+  }
+}
+
+/* ── Honeycomb background pattern ── */
+.bg-honeycomb {
+  position: relative;
+}
+
+.bg-honeycomb::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100'%3E%3Cpath d='M28 66L0 50V16L28 0l28 16v34L28 66zm0 34L0 84V50l28-16 28 16v34L28 100z' fill='none' stroke='%231a6fb5' stroke-width='0.6' opacity='0.18'/%3E%3C/svg%3E");
+  background-size: 56px 100px;
+  mask-image: linear-gradient(180deg, transparent 0%, black 10%, black 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, black 10%, black 90%, transparent 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bg-honeycomb > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Manifesto ── */
+.manifesto {
+  position: relative;
+  padding: 64px 5vw 56px;
+  background: var(--background);
+  overflow: hidden;
+}
+
+.manifesto__bg-quote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -58%);
+  font-family: var(--font-heading);
+  font-size: clamp(10rem, 20vw, 16rem);
+  font-weight: 700;
+  line-height: 0.85;
+  color: rgba(26, 111, 181, 0.06);
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+.manifesto__container {
+  position: relative;
+  z-index: 1;
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.manifesto__kicker-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.manifesto__kicker-line {
+  display: inline-block;
+  width: 32px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(26, 111, 181, 0.5) 100%);
+}
+
+.manifesto__kicker-row > .manifesto__kicker-line:last-child {
+  background: linear-gradient(90deg, rgba(26, 111, 181, 0.5) 0%, transparent 100%);
+}
+
+.manifesto__kicker {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: rgba(26, 111, 181, 0.78);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.manifesto__statement {
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 4.5vw, 5.4rem);
+  font-weight: 700;
+  color: var(--foreground);
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+  margin: 0;
+  text-wrap: balance;
+  max-width: 14ch;
+}
+
+.manifesto__word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  filter: blur(6px);
+  transition:
+    opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.manifesto__word--visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+.manifesto__highlight {
+  display: inline;
+}
+
+.manifesto__highlight .manifesto__word {
+  -webkit-text-fill-color: var(--primary);
+  color: var(--primary);
+}
+
+.manifesto__statement > .manifesto__word:last-child {
+  -webkit-text-fill-color: var(--primary);
+  color: var(--primary);
+}
+
+.manifesto__tagline {
+  font-family: var(--font-body);
+  font-size: clamp(1.05rem, 1.45vw, 1.2rem);
+  font-weight: 500;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 4px 0 0;
+  max-width: 600px;
+}
+
+.manifesto__tagline strong {
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .manifesto {
+    padding: 48px 5vw 40px;
+  }
+  .manifesto__container {
+    gap: 28px;
+  }
+  .manifesto__statement {
+    max-width: 14ch;
+    line-height: 1.12;
+  }
+  .manifesto__bg-quote {
+    font-size: clamp(16rem, 60vw, 22rem);
+    transform: translate(-50%, -55%);
+  }
+  .manifesto__kicker-line {
+    width: 22px;
+  }
+  .manifesto__kicker {
+    font-size: 0.68rem;
+    letter-spacing: 0.22em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .manifesto__word {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+  .manifesto__highlight {
+    background-size: 100% 78%;
+    transition: none;
+  }
+}
+
+/* ── Section video background ── */
+.section-video-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.10;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.section-video-bg + * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Video Crossfade ── */
+.hero-video-bg--next {
+  opacity: 0;
+  z-index: 0;
+}
+
+.hero-video-bg--fading {
+  opacity: 0 !important;
+  filter: blur(4px) brightness(1.2);
+  transition: opacity 1.4s cubic-bezier(0.4, 0, 0.2, 1),
+              filter 1.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-video-bg--entering {
+  opacity: 0.22;
+  filter: blur(0) brightness(1);
+  transition: opacity 1.4s cubic-bezier(0.4, 0, 0.2, 1),
+              filter 1.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 0;
 }
 
 /* Botones */
@@ -1772,6 +2017,7 @@ body {
   .services-cards {
     grid-template-columns: 1fr;
     max-width: 100%;
+    gap: 0.75rem;
   }
 
   .service-card {
@@ -4340,6 +4586,11 @@ body.modal-open {
 .process-step {
   text-align: center;
   position: relative;
+  background: rgba(var(--background-rgb), 0.3);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.2rem 1.5rem;
 }
 
 .process-step-number {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useTheme } from '../contexts/ThemeContext';
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -6,6 +6,7 @@ import SkillsShowcase from '../components/SkillsShowcase';
 import GitTimeline from '../components/GitTimeline';
 import SEO from '../components/SEO';
 import Footer from '../components/Footer/Footer';
+import Manifesto from '../components/Manifesto/Manifesto';
 
 import {
   FaWhatsapp,
@@ -25,8 +26,11 @@ import {
 import avatarImage from '../assets/logo-cu-new.png';
 import heroBg1 from '../assets/videos/hero-bg-1.mp4';
 import heroBg2 from '../assets/videos/hero-bg-2.mp4';
+import heroBg3 from '../assets/videos/hero-bg-3.mp4';
+import heroBg4 from '../assets/videos/hero-bg-4.mp4';
+import heroBg5 from '../assets/videos/hero-bg-5.mp4';
 
-const heroVideos = [heroBg2, heroBg1];
+const heroVideos = [heroBg2, heroBg1, heroBg5];
 
 // Las imágenes de proyectos se importan en GitTimeline.js donde se utilizan
 
@@ -36,14 +40,39 @@ export default function Portfolio() {
   const [expandedService, setExpandedService] = useState(null);
   const [expandedFaq, setExpandedFaq] = useState(null);
   const [currentVideo, setCurrentVideo] = useState(0);
+  const [nextVideo, setNextVideo] = useState(1);
+  const [transitioning, setTransitioning] = useState(false);
   const videoRef = useRef(null);
+  const nextVideoRef = useRef(null);
 
+  const VIDEO_DURATION = 4000; // cada video dura 4 segundos antes de crossfade
+
+  // Crossfade entre videos
+  const handleVideoEnd = useCallback(() => {
+    const next = (currentVideo + 1) % heroVideos.length;
+    setNextVideo(next);
+    setTransitioning(true);
+
+    if (nextVideoRef.current) {
+      nextVideoRef.current.load();
+      nextVideoRef.current.play().catch(() => {});
+    }
+
+    setTimeout(() => {
+      setCurrentVideo(next);
+      setTransitioning(false);
+    }, 1400);
+  }, [currentVideo]);
+
+  // Timer para cortar el video después de VIDEO_DURATION
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.load();
       videoRef.current.play().catch(() => {});
     }
-  }, [currentVideo]);
+    const timer = setTimeout(handleVideoEnd, VIDEO_DURATION);
+    return () => clearTimeout(timer);
+  }, [currentVideo, handleVideoEnd]);
 
   const scrollToSection = (sectionId) => {
     const el = document.getElementById(sectionId);
@@ -86,35 +115,41 @@ export default function Portfolio() {
 
         {/* Hero Section */}
           <section className="hero" style={{ position: 'relative' }}>
-          <video
-            ref={videoRef}
-            className="hero-video-bg"
-            autoPlay
-            muted
-            playsInline
-            aria-hidden="true"
-            src={heroVideos[currentVideo]}
-            onEnded={() => {
-              const next = (currentVideo + 1) % heroVideos.length;
-              setCurrentVideo(next);
-            }}
-          />
+            {/* Video actual */}
+            <video
+              ref={videoRef}
+              className={`hero-video-bg${transitioning ? ' hero-video-bg--fading' : ''}`}
+              autoPlay
+              muted
+              playsInline
+              aria-hidden="true"
+              src={heroVideos[currentVideo]}
+            />
+            {/* Video siguiente para crossfade */}
+            <video
+              ref={nextVideoRef}
+              className={`hero-video-bg hero-video-bg--next${transitioning ? ' hero-video-bg--entering' : ''}`}
+              muted
+              playsInline
+              aria-hidden="true"
+              src={heroVideos[nextVideo]}
+            />
           <div className="section-bg-overlay"></div>
             <div className="hero-container">
               <div className="hero-content hero-content--with-avatar">
                 <div className="hero-center">
-                  <h1 className="hero-title">
+                  <h1 className="hero-title hero-anim" style={{ '--anim-order': 1 }}>
                     {t.hero.title}
-                    <span className="hero-subtitle">
+                    <span className="hero-subtitle hero-anim" style={{ '--anim-order': 2 }}>
                       {t.hero.subtitle}
                     </span>
                   </h1>
                   {t.hero.description && (
-                    <p className="hero-description">
+                    <p className="hero-description hero-anim" style={{ '--anim-order': 3 }}>
                       {t.hero.description}
                     </p>
                   )}
-                  <div className="hero-buttons">
+                  <div className="hero-buttons hero-anim" style={{ '--anim-order': 4 }}>
                     <button
                       className="btn btn-primary"
                       onClick={() => scrollToSection('services')}
@@ -129,7 +164,7 @@ export default function Portfolio() {
                     </button>
                   </div>
                 </div>
-                <div className="hero-avatar">
+                <div className="hero-avatar hero-anim" style={{ '--anim-order': 5 }}>
                   <img src={avatarImage} alt="CU Digital" className="hero-avatar-img" />
                 </div>
               </div>
@@ -137,7 +172,7 @@ export default function Portfolio() {
           </section>
 
         {/* Services Section */}
-          <section id="services" className="services-section">
+          <section id="services" className="services-section bg-honeycomb">
             <div className="services-container">
               <div className="services-header">
                 <h2 className="section-title section-title-center">
@@ -198,8 +233,11 @@ export default function Portfolio() {
             </div>
           </section>
 
+        {/* Manifesto */}
+          <Manifesto />
+
         {/* Process Section */}
-          <section id="process" className="process-section">
+          <section id="process" className="process-section bg-honeycomb">
             <div className="process-container">
               <div className="process-header">
                 <h2 className="section-title section-title-center">
@@ -246,7 +284,8 @@ export default function Portfolio() {
             </section>
 
         {/* About Section */}
-          <section id="about" className="about">
+          <section id="about" className="about" style={{ position: 'relative', overflow: 'hidden' }}>
+            <video className="section-video-bg" autoPlay muted loop playsInline aria-hidden="true" src={heroBg4} />
             <div className="about-container">
               <div className="about-content">
                 <div className="about-text" style={{ maxWidth: '100%' }}>
@@ -279,7 +318,7 @@ export default function Portfolio() {
           </section>
 
         {/* Experience Section */}
-          <section id="experience" className="experience">
+          <section id="experience" className="experience bg-honeycomb">
             <div className="experience-container">
               <div className="experience-header">
                 <h2 className="section-title section-title-center">
@@ -315,7 +354,7 @@ export default function Portfolio() {
           <SkillsShowcase />
 
         {/* FAQ Section */}
-          <section id="faq" className="faq-section">
+          <section id="faq" className="faq-section bg-honeycomb">
             <div className="faq-container">
               <div className="faq-header">
                 <h2 className="section-title section-title-center">
@@ -364,7 +403,8 @@ export default function Portfolio() {
           </section>
 
         {/* Contact Section */}
-          <section id="contact" className="contact">
+          <section id="contact" className="contact" style={{ position: 'relative', overflow: 'hidden' }}>
+            <video className="section-video-bg" autoPlay muted loop playsInline aria-hidden="true" src={heroBg4} />
             <div className="contact-container">
               <div className="contact-header">
                 <h2 className="section-title section-title-center">

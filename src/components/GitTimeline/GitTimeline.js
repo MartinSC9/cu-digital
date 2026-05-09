@@ -118,12 +118,13 @@ const GitTimeline = () => {
     <div className={styles.wrapper}>
       {/* Grid */}
       <div className={styles.projectsGrid}>
-        {visibleProjects.map((project) => {
+        {visibleProjects.map((project, i) => {
           const image = projectImages[project.key];
           return (
             <div
               key={project.key}
               className={styles.gridCard}
+              style={{ '--card-index': i }}
               onClick={() => goToProject(project.key)}
             >
               <div className={styles.gridCardImage}>

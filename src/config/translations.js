@@ -32,6 +32,13 @@ export const translations = {
       viewProjects: 'Ver proyectos',
     },
 
+    // Manifesto
+    manifesto: {
+      kicker: 'Lo que nos mueve',
+      words: ['Tu', 'idea', 'merece', 'existir'],
+      tagline: { before: 'Nosotros la llevamos a ', bold: 'producción', after: '.' },
+    },
+
     // About
     about: {
       title: 'Sobre nosotros',
@@ -1295,6 +1302,13 @@ export const translations = {
       cta: 'Services',
       ctaSecondary: 'View projects',
       viewProjects: 'View projects',
+    },
+
+    // Manifesto
+    manifesto: {
+      kicker: 'What drives us',
+      words: ['Your', 'idea', 'deserves', 'to exist'],
+      tagline: { before: 'We take it to ', bold: 'production', after: '.' },
     },
 
     // About

@@ -100,12 +100,13 @@ export default function Projects() {
             className={styles.projectsGrid}
             style={{ '--grid-cols': cols }}
           >
-            {filtered.map((project) => {
+            {filtered.map((project, i) => {
               const image = projectImages[project.key];
               return (
                 <div
                   key={project.key}
                   className={styles.gridCard}
+                  style={{ '--card-index': i }}
                   onClick={() => goToProject(project.key)}
                 >
                   <div className={styles.gridCardImage}>
