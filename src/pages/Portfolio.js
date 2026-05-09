@@ -26,7 +26,6 @@ import {
 import avatarImage from '../assets/logo-cu-new.png';
 import heroBg1 from '../assets/videos/hero-bg-1.mp4';
 import heroBg2 from '../assets/videos/hero-bg-2.mp4';
-import heroBg3 from '../assets/videos/hero-bg-3.mp4';
 import heroBg4 from '../assets/videos/hero-bg-4.mp4';
 import heroBg5 from '../assets/videos/hero-bg-5.mp4';
 
