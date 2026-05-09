@@ -14,10 +14,14 @@ import {
   SiDotnet,
   SiNestjs,
   SiMysql,
+  SiPostgresql,
   SiVercel,
   SiCloudinary,
   SiGithubactions,
   SiRender,
+  SiDocker,
+  SiMqtt,
+  SiSocketdotio,
 } from 'react-icons/si';
 import { useLanguage } from '../../contexts/LanguageContext';
 import styles from './SkillsShowcase.module.css';
@@ -34,13 +38,17 @@ const row1 = [
 const row2 = [
   { name: 'NestJS', icon: <SiNestjs size={28} /> },
   { name: 'C#/.NET', icon: <SiDotnet size={28} /> },
+  { name: 'PostgreSQL', icon: <SiPostgresql size={28} /> },
   { name: 'MySQL', icon: <SiMysql size={28} /> },
   { name: 'SQL Server', icon: <FaDatabase size={28} /> },
   { name: 'AWS', icon: <FaAws size={28} /> },
   { name: 'Vercel', icon: <SiVercel size={28} /> },
+  { name: 'Docker', icon: <SiDocker size={28} /> },
 ];
 
 const row3 = [
+  { name: 'MQTT', icon: <SiMqtt size={28} /> },
+  { name: 'Socket.IO', icon: <SiSocketdotio size={28} /> },
   { name: 'Cloudinary', icon: <SiCloudinary size={28} /> },
   { name: 'Render', icon: <SiRender size={28} /> },
   { name: 'CI/CD', icon: <FaCogs size={28} /> },

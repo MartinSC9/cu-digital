@@ -963,7 +963,7 @@ export const translations = {
     // Skills
     skills: {
       title: 'Tecnologías',
-      description: 'Equipo de desarrollo con experiencia en tecnologías modernas. React, Node.js, React Native y TypeScript. Gestionamos el ciclo completo: diseño, desarrollo, bases de datos y despliegue.',
+      description: 'Equipo de desarrollo con experiencia en tecnologías modernas. React, Node.js, React Native, TypeScript, PostgreSQL, Docker, MQTT y Socket.IO. Gestionamos el ciclo completo: diseño, desarrollo, IoT, bases de datos y despliegue.',
       showAll: 'Ver todas las tecnologías',
       categories: {
         ia: 'IA',
@@ -2223,7 +2223,7 @@ export const translations = {
     // Skills
     skills: {
       title: 'Technologies',
-      description: 'Development team with experience in modern technologies. React, Node.js, React Native and TypeScript. We manage the full cycle: design, development, databases and deployment.',
+      description: 'Development team with experience in modern technologies. React, Node.js, React Native, TypeScript, PostgreSQL, Docker, MQTT and Socket.IO. We manage the full cycle: design, development, IoT, databases and deployment.',
       showAll: 'View all technologies',
       categories: {
         ia: 'AI',
