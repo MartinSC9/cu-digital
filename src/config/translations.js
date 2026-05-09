@@ -36,9 +36,9 @@ export const translations = {
     about: {
       title: 'Sobre nosotros',
       description: [
-        'Somos <a href="https://www.linkedin.com/in/joaquin-urtasun/" target="_blank" rel="noopener noreferrer" class="about-name-link">Joaquín Urtasun</a> y <a href="https://www.linkedin.com/in/martincontrera/" target="_blank" rel="noopener noreferrer" class="about-name-link">Martín Contrera</a>, un equipo de desarrolladores con experiencia llevando proyectos reales a producción. Nos especializamos en crear landing pages, aplicaciones web y apps móviles a medida para negocios y emprendedores.',
+        'Somos <a href="https://www.linkedin.com/in/joaquin-urtasun/" target="_blank" rel="noopener noreferrer" class="about-name-link">Joaquín Urtasun</a> y <a href="https://www.linkedin.com/in/martincontrera/" target="_blank" rel="noopener noreferrer" class="about-name-link">Martín Contrera</a>, un equipo de desarrolladores con experiencia llevando proyectos reales a producción. Nos especializamos en crear landing pages, aplicaciones web, apps móviles y plataformas IoT a medida para negocios y emprendedores.',
         'Somos de Argentina y Japón, y trabajamos con clientes en Australia, Perú, Japón y Argentina. Nos encargamos de todo: diseño, desarrollo, publicación y soporte. Vos solo te preocupás por tu negocio.',
-        'Usamos las últimas tecnologías para que tu producto sea rápido, seguro y se vea profesional en cualquier dispositivo.',
+        'Desarrollamos plataformas IoT industriales con dashboards en tiempo real, MQTT y sensores, liderando múltiples IAs en paralelo para llevar proyectos a producción.',
       ],
       location: 'Argentina & Japón',
     },
@@ -52,12 +52,11 @@ export const translations = {
         period: '2022 - Actualidad',
         description: [
           '+20 proyectos entregados para clientes en Argentina, Australia, Perú y Japón',
+          'TRISO (Ingeniería, Córdoba): Plataforma IoT completa — 2 productos (BatterySense + Hospital Monitor), backend unificado, dashboards en tiempo real, alertas, MQTT, reportes PDF y panel admin. Landing corporativa con 11 versiones',
           'Plataforma SaaS de gestión para salones de belleza con 50+ locales activos en producción',
           'Plataforma web + mobile con marketplace, red social, pagos online y 270+ endpoints',
-          'Sistema de sorteos nacional con 200.000 códigos encriptados y publicación automática',
           'Landing pages corporativas de alto impacto con múltiples rondas de revisión hasta la versión final',
           'Apps web interactivas con inteligencia artificial, dashboards en tiempo real y monitoreo IoT',
-          'Gestión de servidores, migraciones de base de datos sin interrupciones y soporte continuo',
         ],
       },
     },
@@ -88,6 +87,18 @@ export const translations = {
       viewAllProjects: 'Ver todos los proyectos',
 
       // Project descriptions
+      batterysense: {
+        period: 'Mar 2026 - Actualidad',
+        duration: '+3 meses',
+        description:
+          'Plataforma IoT para monitoreo de bancos de baterías industriales en tiempo real con alertas y reportes',
+      },
+      hospitalmonitor: {
+        period: 'Mar 2026 - Actualidad',
+        duration: '+3 meses',
+        description:
+          'Sistema de monitoreo en tiempo real de equipos de aislación eléctrica en salas hospitalarias',
+      },
       prikly: {
         period: 'Dic 2022 - Dic 2024',
         duration: '2 años',
@@ -198,6 +209,12 @@ export const translations = {
         duration: '1 semana',
         description: 'Landing premium para consultorio de psicoterapia online para mujeres, con SEO y Open Graph',
       },
+      laboralforge: {
+        period: 'May 2026',
+        duration: '1 semana',
+        description:
+          'Landing para consultoría de empleabilidad con criterio de RRHH: sesiones, sprint y workshops',
+      },
 
       // Modals
       modals: {
@@ -241,6 +258,58 @@ export const translations = {
           refName: 'Carla González',
           refTitle: 'Innovation Lead',
           refDesc: 'Design Thinking • Strategic Innovation • Experience Design',
+        },
+
+        batterysense: {
+          role: 'Desarrollo Full Stack como único desarrollador. Arquitectura completa del sistema IoT, backend con integración Ubidots, frontend con dashboards en tiempo real, sistema de alertas y reportes PDF.',
+          description:
+            'Plataforma de monitoreo inteligente para bancos de baterías industriales (data centers, telecom, hospitales). Recibe datos de sensores ESP32 cada 15 minutos vía Ubidots, los procesa y muestra en dashboards interactivos con alertas configurables.',
+          features: [
+            'Dashboard con KPIs y gauges en tiempo real',
+            'Gráficos históricos con agregación por 24h, 7d, 30d',
+            'Alertas por umbrales (voltaje, temperatura, corriente)',
+            'Heatmap de celdas individuales',
+            'Indicadores SOH/SOC (salud y carga)',
+            'Comparativa entre bancos con color coding',
+            'Gráficos de correlación (temperatura vs voltaje)',
+            'Reportes PDF y exportación CSV',
+            'Calculadora de autonomía',
+            'Health score por banco',
+            'Sistema multi-tenant con roles (admin, técnico, cliente)',
+          ],
+          tech: {
+            frontend: { label: 'Frontend', value: 'React 18, Vite, Tailwind, Recharts' },
+            backend: { label: 'Backend', value: 'Node.js, Express, PostgreSQL' },
+            iot: { label: 'IoT', value: 'ESP32, Ubidots, MQTT, sensores industriales' },
+            deploy: { label: 'Deploy', value: 'Vercel + Render' },
+          },
+        },
+        hospitalmonitor: {
+          role: 'Desarrollo Full Stack como único desarrollador. Diseño UI/UX, arquitectura frontend completa con 10+ páginas, integración WebSocket para datos en tiempo real, sistema de alarmas con escalamiento y panel admin.',
+          description:
+            'Sistema de monitoreo centralizado de equipos de aislación eléctrica hospitalaria. Mide THC (Total Hazard Current) en salas quirúrgicas y áreas críticas, con alarmas automáticas, verificación pre-quirúrgica, plano interactivo y modo kiosco para pantallas de pasillo.',
+          features: [
+            'Dashboard multi-sala con semáforo de estado',
+            'Gauge de THC con visualización por gradiente',
+            'Alarmas con reconocimiento y silenciamiento temporizado',
+            'Modo kiosco (rotación automática fullscreen)',
+            'Plano interactivo SVG del hospital',
+            'Checklist de verificación pre-quirúrgica',
+            'Calendario de mantenimiento',
+            'Dashboard ejecutivo con KPIs',
+            'Carga de datos operativos manuales',
+            'Comparativa entre salas',
+            'Alertas sonoras por severidad',
+            'Notificaciones por email',
+            'Sistema de tickets',
+            'Audit log completo',
+          ],
+          tech: {
+            frontend: { label: 'Frontend', value: 'React 18, Vite, Tailwind, Recharts' },
+            backend: { label: 'Backend', value: 'Node.js, Express, PostgreSQL, Socket.IO' },
+            iot: { label: 'IoT', value: 'MODBUS RS485, sensores THC, MQTT' },
+            deploy: { label: 'Deploy', value: 'Vercel + Render' },
+          },
         },
 
         // Prikly modal
@@ -869,6 +938,25 @@ export const translations = {
             status: { label: 'Estado', value: 'Completado - Abr 2026' },
           },
         },
+        laboralforge: {
+          role: 'Diseño y desarrollo completo de landing page dark premium para consultoría de empleabilidad.',
+          description:
+            'Landing dark premium para Laboral Forge, consultoría de empleabilidad tech-enabled. Diseño con partículas animadas, gradientes, y contacto directo por WhatsApp.',
+          sections: [
+            'Hero dark con partículas animadas',
+            'Servicios: sesiones individuales, sprint grupal, workshops',
+            'Proceso de trabajo en 3 pasos',
+            'Equipo con perfiles profesionales',
+            'Testimonios de clientes',
+            'CTA con contacto por WhatsApp',
+          ],
+          tech: {
+            frontend: { label: 'Frontend', value: 'React, Vite, Tailwind CSS' },
+            animations: { label: 'Animaciones', value: 'Framer Motion, partículas CSS' },
+            design: { label: 'Diseño', value: 'Dark theme, gradientes, responsive' },
+            deploy: { label: 'Deploy', value: 'Vercel' },
+          },
+        },
       },
     },
 
@@ -917,28 +1005,45 @@ export const translations = {
       // Service cards
       landing: {
         title: 'Landing Page',
-        tag: 'Desde $150 USD',
+        tag: 'A medida',
         badge: 'Popular',
         description: 'Tu página web profesional, lista para recibir clientes.',
-        price: 'Desde $150 USD',
       },
       webapp: {
         title: 'App Web',
         tag: 'A medida',
         description: 'Un sistema online completo para gestionar tu negocio.',
-        price: 'A definir en reunión',
       },
       mobile: {
         title: 'App Mobile',
         tag: 'A medida',
         description: 'Tu app en el celular de tus clientes, Android e iOS.',
-        price: 'A definir en reunión',
       },
       desktop: {
         title: 'App de Escritorio',
         tag: 'A medida',
         description: 'Un programa instalable en tu computadora.',
-        price: 'A definir en reunión',
+      },
+      upgrade: {
+        title: 'Mejora de Producto',
+        tag: 'A medida',
+        description: 'Tu app ya existe pero necesita mejoras o nuevas funciones.',
+      },
+      automation: {
+        title: 'Automatizaciones con IA',
+        tag: 'Nuevo',
+        badge: 'IA',
+        description: 'Automatizá tareas repetitivas con inteligencia artificial.',
+      },
+      iot: {
+        title: 'IoT & Monitoreo',
+        tag: 'Especializado',
+        description: 'Dashboards en tiempo real conectados a sensores y dispositivos.',
+      },
+      consulting: {
+        title: 'Consultoría Técnica',
+        tag: 'Por sesión',
+        description: 'Revisión de arquitectura, auditoría de código y asesoramiento.',
       },
       // Services page
       pageTitle: '¿Cómo trabajamos?',
@@ -975,6 +1080,39 @@ export const translations = {
         'Funciona sin internet',
         'Soporte continuo',
       ],
+      upgradeIncludes: [
+        'Análisis del producto actual',
+        'Nuevas funcionalidades',
+        'Mejora de rendimiento',
+        'Modernización de UI/UX',
+        'Migración de tecnologías',
+        'Soporte continuo',
+      ],
+      automationIncludes: [
+        'Análisis de procesos',
+        'Integración con IA',
+        'Reportes automáticos',
+        'Bots y asistentes',
+        'Workflows inteligentes',
+        'Soporte continuo',
+      ],
+      iotIncludes: [
+        'Conexión con sensores',
+        'Dashboard en tiempo real',
+        'Alertas y alarmas',
+        'Protocolos MQTT/WebSocket',
+        'Historial y reportes',
+        'Soporte continuo',
+      ],
+      consultingIncludes: [
+        'Auditoría de código',
+        'Revisión de arquitectura',
+        'Plan de escalabilidad',
+        'Mejores prácticas',
+        'Recomendaciones de stack',
+        'Informe detallado',
+      ],
+      viewExamples: 'Ver ejemplos',
       // Process steps
       processTitle: 'El proceso',
       steps: [
@@ -1162,9 +1300,9 @@ export const translations = {
     about: {
       title: 'About us',
       description: [
-        'We are <a href="https://www.linkedin.com/in/joaquin-urtasun/" target="_blank" rel="noopener noreferrer" class="about-name-link">Joaquín Urtasun</a> and <a href="https://www.linkedin.com/in/martincontrera/" target="_blank" rel="noopener noreferrer" class="about-name-link">Martín Contrera</a>, a development team with experience shipping real projects to production. We specialize in creating landing pages, web apps and mobile apps for businesses and entrepreneurs.',
+        'We are <a href="https://www.linkedin.com/in/joaquin-urtasun/" target="_blank" rel="noopener noreferrer" class="about-name-link">Joaquín Urtasun</a> and <a href="https://www.linkedin.com/in/martincontrera/" target="_blank" rel="noopener noreferrer" class="about-name-link">Martín Contrera</a>, a development team with experience shipping real projects to production. We specialize in creating landing pages, web apps, mobile apps and custom IoT platforms for businesses and entrepreneurs.',
         'Based in Argentina and Japan, we work with clients in Australia, Peru, Japan and Argentina. We handle everything: design, development, deployment and support. You just focus on your business.',
-        'We use the latest technologies to make your product fast, secure and professional-looking on any device.',
+        'We build industrial IoT platforms with real-time dashboards, MQTT and sensors, leading multiple AIs in parallel to ship projects to production.',
       ],
       location: 'Argentina & Japan',
     },
@@ -1178,12 +1316,11 @@ export const translations = {
         period: '2022 - Present',
         description: [
           '20+ projects delivered for clients in Argentina, Australia, Peru and Japan',
+          'TRISO (Engineering, Córdoba): Complete IoT platform — 2 products (BatterySense + Hospital Monitor), unified backend, real-time dashboards, alerts, MQTT, PDF reports and admin panel. Corporate landing with 11 versions',
           'SaaS management platform for beauty salons with 50+ active locations in production',
           'Web + mobile platform with marketplace, social network, online payments and 270+ endpoints',
-          'National lottery system with 200,000 encrypted codes and automated deployment',
           'High-impact corporate landing pages with multiple revision rounds to final version',
           'Interactive web apps with AI, real-time dashboards and IoT monitoring',
-          'Server management, zero-downtime database migrations and ongoing support',
         ],
       },
     },
@@ -1214,6 +1351,18 @@ export const translations = {
       viewAllProjects: 'View all projects',
 
       // Project descriptions
+      batterysense: {
+        period: 'Mar 2026 - Present',
+        duration: '+3 months',
+        description:
+          'IoT platform for real-time industrial battery bank monitoring with alerts and reports',
+      },
+      hospitalmonitor: {
+        period: 'Mar 2026 - Present',
+        duration: '+3 months',
+        description:
+          'Real-time monitoring system for electrical isolation equipment in hospital rooms',
+      },
       prikly: {
         period: 'Dec 2022 - Dec 2024',
         duration: '2 years',
@@ -1324,6 +1473,12 @@ export const translations = {
         duration: '1 week',
         description: 'Premium landing page for online psychotherapy practice for women, with SEO and Open Graph',
       },
+      laboralforge: {
+        period: 'May 2026',
+        duration: '1 week',
+        description:
+          'Landing for employability consulting with HR criteria: sessions, sprint and workshops',
+      },
 
       // Modals
       modals: {
@@ -1367,6 +1522,58 @@ export const translations = {
           refName: 'Carla González',
           refTitle: 'Innovation Lead',
           refDesc: 'Design Thinking • Strategic Innovation • Experience Design',
+        },
+
+        batterysense: {
+          role: 'Full Stack development as sole developer. Complete IoT system architecture, backend with Ubidots integration, frontend with real-time dashboards, alert system and PDF reports.',
+          description:
+            'Intelligent monitoring platform for industrial battery banks (data centers, telecom, hospitals). Receives ESP32 sensor data every 15 minutes via Ubidots, processes it and displays in interactive dashboards with configurable alerts.',
+          features: [
+            'Dashboard with real-time KPIs and gauges',
+            'Historical charts with 24h, 7d, 30d aggregation',
+            'Threshold alerts (voltage, temperature, current)',
+            'Individual cell heatmap',
+            'SOH/SOC indicators (health and charge)',
+            'Bank comparison with color coding',
+            'Correlation charts (temperature vs voltage)',
+            'PDF reports and CSV export',
+            'Autonomy calculator',
+            'Health score per bank',
+            'Multi-tenant system with roles (admin, technician, client)',
+          ],
+          tech: {
+            frontend: { label: 'Frontend', value: 'React 18, Vite, Tailwind, Recharts' },
+            backend: { label: 'Backend', value: 'Node.js, Express, PostgreSQL' },
+            iot: { label: 'IoT', value: 'ESP32, Ubidots, MQTT, industrial sensors' },
+            deploy: { label: 'Deploy', value: 'Vercel + Render' },
+          },
+        },
+        hospitalmonitor: {
+          role: 'Full Stack development as sole developer. UI/UX design, complete frontend architecture with 10+ pages, WebSocket integration for real-time data, alarm system with escalation and admin panel.',
+          description:
+            'Centralized monitoring system for hospital electrical isolation equipment. Measures THC (Total Hazard Current) in operating rooms and critical areas, with automatic alarms, pre-surgical verification, interactive floor plan and kiosk mode for hallway screens.',
+          features: [
+            'Multi-room dashboard with traffic light status',
+            'THC gauge with gradient visualization',
+            'Alarms with acknowledgment and timed silencing',
+            'Kiosk mode (automatic fullscreen rotation)',
+            'Interactive SVG hospital floor plan',
+            'Pre-surgical verification checklist',
+            'Maintenance calendar',
+            'Executive dashboard with KPIs',
+            'Manual operational data entry',
+            'Room comparison',
+            'Sound alerts by severity',
+            'Email notifications',
+            'Ticket system',
+            'Complete audit log',
+          ],
+          tech: {
+            frontend: { label: 'Frontend', value: 'React 18, Vite, Tailwind, Recharts' },
+            backend: { label: 'Backend', value: 'Node.js, Express, PostgreSQL, Socket.IO' },
+            iot: { label: 'IoT', value: 'MODBUS RS485, THC sensors, MQTT' },
+            deploy: { label: 'Deploy', value: 'Vercel + Render' },
+          },
         },
 
         // Prikly modal
@@ -1991,6 +2198,25 @@ export const translations = {
             status: { label: 'Status', value: 'Completed - Apr 2026' },
           },
         },
+        laboralforge: {
+          role: 'Complete design and development of dark premium landing page for employability consulting.',
+          description:
+            'Dark premium landing for Laboral Forge, tech-enabled employability consulting. Design with animated particles, gradients, and direct WhatsApp contact.',
+          sections: [
+            'Dark hero with animated particles',
+            'Services: individual sessions, group sprint, workshops',
+            'Work process in 3 steps',
+            'Team with professional profiles',
+            'Client testimonials',
+            'CTA with WhatsApp contact',
+          ],
+          tech: {
+            frontend: { label: 'Frontend', value: 'React, Vite, Tailwind CSS' },
+            animations: { label: 'Animations', value: 'Framer Motion, CSS particles' },
+            design: { label: 'Design', value: 'Dark theme, gradients, responsive' },
+            deploy: { label: 'Deploy', value: 'Vercel' },
+          },
+        },
       },
     },
 
@@ -2039,28 +2265,45 @@ export const translations = {
       // Service cards
       landing: {
         title: 'Landing Page',
-        tag: 'From $150 USD',
+        tag: 'Custom',
         badge: 'Popular',
         description: 'Your professional website, ready to welcome clients.',
-        price: 'From $150 USD',
       },
       webapp: {
         title: 'Web App',
         tag: 'Custom',
         description: 'A complete online system to manage your business.',
-        price: 'To be defined in a meeting',
       },
       mobile: {
         title: 'Mobile App',
         tag: 'Custom',
         description: 'Your app on your clients\' phones, Android & iOS.',
-        price: 'To be defined in a meeting',
       },
       desktop: {
         title: 'Desktop App',
         tag: 'Custom',
         description: 'A program you can install on your computer.',
-        price: 'To be defined in a meeting',
+      },
+      upgrade: {
+        title: 'Product Improvement',
+        tag: 'Custom',
+        description: 'Your app already exists but needs improvements or new features.',
+      },
+      automation: {
+        title: 'AI Automations',
+        tag: 'New',
+        badge: 'AI',
+        description: 'Automate repetitive tasks with artificial intelligence.',
+      },
+      iot: {
+        title: 'IoT & Monitoring',
+        tag: 'Specialized',
+        description: 'Real-time dashboards connected to sensors and devices.',
+      },
+      consulting: {
+        title: 'Technical Consulting',
+        tag: 'Per session',
+        description: 'Architecture review, code audit and advisory.',
       },
       // Services page
       pageTitle: 'How do we work?',
@@ -2097,6 +2340,39 @@ export const translations = {
         'Works offline',
         'Ongoing support',
       ],
+      upgradeIncludes: [
+        'Current product analysis',
+        'New features',
+        'Performance improvement',
+        'UI/UX modernization',
+        'Technology migration',
+        'Ongoing support',
+      ],
+      automationIncludes: [
+        'Process analysis',
+        'AI integration',
+        'Automated reports',
+        'Bots and assistants',
+        'Smart workflows',
+        'Ongoing support',
+      ],
+      iotIncludes: [
+        'Sensor connection',
+        'Real-time dashboard',
+        'Alerts and alarms',
+        'MQTT/WebSocket protocols',
+        'History and reports',
+        'Ongoing support',
+      ],
+      consultingIncludes: [
+        'Code audit',
+        'Architecture review',
+        'Scalability plan',
+        'Best practices',
+        'Stack recommendations',
+        'Detailed report',
+      ],
+      viewExamples: 'View examples',
       // Process steps
       processTitle: 'The process',
       steps: [

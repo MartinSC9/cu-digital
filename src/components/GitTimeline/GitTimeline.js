@@ -25,6 +25,10 @@ import nomadetravel1 from '../../assets/projects/nomade-travel/1.webp';
 import quicknotes1 from '../../assets/projects/quick-notes/1.png';
 import mlscouting1 from '../../assets/projects/ml-scouting/1.png';
 import eyas1 from '../../assets/projects/eyas/1.png';
+import laboralforge1 from '../../assets/projects/laboral-forge/1.png';
+import batterysense1 from '../../assets/projects/batterysense/1.png';
+import hospitalmonitor1 from '../../assets/projects/hospital-monitor/1.png';
+import theriapp2 from '../../assets/projects/theriapp/2.png';
 
 export const projectImages = {
   viuti: { src: viutiMain, alt: 'Dashboard de Viutify' },
@@ -48,9 +52,29 @@ export const projectImages = {
   quicknotes: { src: quicknotes1, alt: 'Quick Notes - Desktop App' },
   mlscouting: { src: mlscouting1, alt: 'ML Scouting - Plataforma de Scouting Deportivo' },
   eyas: { src: eyas1, alt: 'EYAS Psicología - Landing Page' },
+  theriapp: { src: theriapp2, alt: 'TheriApp - Preguntas del quiz' },
+  laboralforge: { src: laboralforge1, alt: 'Laboral Forge - Consultoría de Empleabilidad' },
+  batterysense: { src: batterysense1, alt: 'BatterySense - Monitoreo de Baterías Industriales' },
+  hospitalmonitor: { src: hospitalmonitor1, alt: 'Hospital Monitor - Monitoreo de Salas Hospitalarias' },
 };
 
 export const getProjects = (t) => [
+  {
+    key: 'batterysense',
+    name: 'BatterySense',
+    category: 'webapp',
+    tag: 'IoT',
+    description: t.projects.batterysense.description,
+    duration: t.projects.batterysense.duration,
+  },
+  {
+    key: 'hospitalmonitor',
+    name: 'Hospital Monitor',
+    category: 'webapp',
+    tag: 'IoT',
+    description: t.projects.hospitalmonitor.description,
+    duration: t.projects.hospitalmonitor.duration,
+  },
   { key: 'prikly', name: 'Prikly', category: ['webapp', 'landing'], tag: 'SaaS', description: t.projects.prikly.description, duration: t.projects.prikly.duration },
   { key: 'miarbol', name: 'Mi Árbol en el Mundo', category: ['mobile', 'landing'], tag: 'Web + Mobile', description: t.projects.miarbol.description, duration: t.projects.miarbol.duration },
   { key: 'quicknotes', name: 'Quick Notes', category: 'desktop', tag: 'Desktop', description: t.projects.quicknotes.description, duration: t.projects.quicknotes.duration },
@@ -59,6 +83,7 @@ export const getProjects = (t) => [
   { key: 'djdivito', name: 'DJ DiVito', category: 'landing', tag: 'Landing', description: t.projects.djdivito.description, duration: t.projects.djdivito.duration },
   { key: 'viuti', name: 'Viutify', category: 'webapp', tag: 'SaaS', description: t.projects.viuti.description, duration: t.projects.viuti.duration },
   { key: 'lolinails', name: 'Loli Nails', category: 'landing', tag: 'Landing', description: t.projects.lolinails.description, duration: t.projects.lolinails.duration },
+  { key: 'theriapp', name: 'TheriApp', category: 'mobile', tag: 'Mobile + IA', description: t.projects.theriapp.description, duration: t.projects.theriapp.duration },
   { key: 'refugioandino', name: 'Refugio Andino', category: 'landing', tag: 'Landing', description: t.projects.refugioandino.description, duration: t.projects.refugioandino.duration },
   { key: 'laspiedras', name: 'Cabañas Las Piedras', category: 'landing', tag: 'Landing', description: t.projects.laspiedras.description, duration: t.projects.laspiedras.duration },
   { key: 'ateliervalentina', name: 'Atelier Valentina', category: 'landing', tag: 'Landing', description: t.projects.ateliervalentina.description, duration: t.projects.ateliervalentina.duration },
@@ -72,6 +97,7 @@ export const getProjects = (t) => [
   { key: 'nomadetravel', name: 'Nómade Travel', category: 'landing', tag: 'Landing', description: t.projects.nomadetravel.description, duration: t.projects.nomadetravel.duration },
   { key: 'mlscouting', name: 'ML Scouting', category: ['webapp', 'landing'], tag: 'Web App', description: t.projects.mlscouting.description, duration: t.projects.mlscouting.duration },
   { key: 'eyas', name: 'EYAS Psicología', category: 'landing', tag: 'Landing', description: t.projects.eyas.description, duration: t.projects.eyas.duration },
+  { key: 'laboralforge', name: 'Laboral Forge', category: 'landing', tag: 'Landing', description: t.projects.laboralforge.description, duration: t.projects.laboralforge.duration },
 ];
 
 const HOME_LIMIT = 4;

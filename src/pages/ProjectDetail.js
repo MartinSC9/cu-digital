@@ -39,8 +39,32 @@ import nomadetravel1 from '../assets/projects/nomade-travel/1.webp';
 import quicknotes1 from '../assets/projects/quick-notes/1.png';
 import mlscouting1 from '../assets/projects/ml-scouting/1.png';
 import eyas1 from '../assets/projects/eyas/1.png';
+import theriapp2 from '../assets/projects/theriapp/2.png';
+import laboralforge1 from '../assets/projects/laboral-forge/1.png';
+import batterysense1 from '../assets/projects/batterysense/1.png';
+import hospitalmonitor1 from '../assets/projects/hospital-monitor/1.png';
 
 const projectsData = {
+  batterysense: {
+    name: 'BatterySense',
+    images: [batterysense1],
+    links: () => [],
+    sections: (t, modal) => [
+      { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
+      { type: 'list', title: t.projects.modals.mainFeatures, items: modal.features },
+      { type: 'techGrid', title: t.projects.modals.technologiesUsed, items: modal.tech },
+    ],
+  },
+  hospitalmonitor: {
+    name: 'Hospital Monitor',
+    images: [hospitalmonitor1],
+    links: () => [],
+    sections: (t, modal) => [
+      { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
+      { type: 'list', title: t.projects.modals.mainFeatures, items: modal.features },
+      { type: 'techGrid', title: t.projects.modals.technologiesUsed, items: modal.tech },
+    ],
+  },
   prikly: {
     name: 'Prikly',
     images: [prikly1, prikly3, prikly4, prikly12, prikly15, prikly17],
@@ -124,6 +148,18 @@ const projectsData = {
     sections: (t, modal) => [
       { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
       { type: 'list', title: t.projects.modals.implementedSections, items: modal.sections },
+      { type: 'techGrid', title: t.projects.modals.technologiesUsed, items: modal.tech },
+    ],
+  },
+  theriapp: {
+    name: 'TheriApp',
+    images: [theriapp2],
+    links: (t) => [
+      { url: 'https://theriapp.vercel.app/', label: t.projects.viewApp },
+    ],
+    sections: (t, modal) => [
+      { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
+      { type: 'list', title: t.projects.modals.mainFeatures, items: modal.features },
       { type: 'techGrid', title: t.projects.modals.technologiesUsed, items: modal.tech },
     ],
   },
@@ -306,6 +342,18 @@ const projectsData = {
     sections: (t, modal) => [
       { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
       { type: 'list', title: t.projects.modals.mainFeatures, items: modal.features },
+      { type: 'techGrid', title: t.projects.modals.technologiesUsed, items: modal.tech },
+    ],
+  },
+  laboralforge: {
+    name: 'Laboral Forge',
+    images: [laboralforge1],
+    links: () => [
+      { url: 'https://laboral-forge.vercel.app/', label: 'Landing' },
+    ],
+    sections: (t, modal) => [
+      { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
+      { type: 'list', title: t.projects.modals.implementedSections, items: modal.sections },
       { type: 'techGrid', title: t.projects.modals.technologiesUsed, items: modal.tech },
     ],
   },

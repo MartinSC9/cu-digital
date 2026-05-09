@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useTheme } from '../contexts/ThemeContext';
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -17,9 +17,17 @@ import {
   FaShieldAlt,
   FaClock,
   FaSyncAlt,
+  FaRocket,
+  FaRobot,
+  FaMicrochip,
+  FaUserTie,
+  FaArrowRight,
 } from 'react-icons/fa';
 import avatarImage from '../assets/logo-cu.svg';
+import heroBg1 from '../assets/videos/hero-bg-1.mp4';
+import heroBg2 from '../assets/videos/hero-bg-2.mp4';
 
+const heroVideos = [heroBg2, heroBg1];
 
 // Las imágenes de proyectos se importan en GitTimeline.js donde se utilizan
 
@@ -28,6 +36,15 @@ export default function Portfolio() {
   const { t } = useLanguage();
   const [expandedService, setExpandedService] = useState(null);
   const [expandedFaq, setExpandedFaq] = useState(null);
+  const [currentVideo, setCurrentVideo] = useState(0);
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.load();
+      videoRef.current.play().catch(() => {});
+    }
+  }, [currentVideo]);
 
   const scrollToSection = (sectionId) => {
     const el = document.getElementById(sectionId);
@@ -70,7 +87,20 @@ export default function Portfolio() {
 
         {/* Hero Section */}
           <section className="hero" style={{ position: 'relative' }}>
-            <div className="section-bg-overlay"></div>
+          <video
+            ref={videoRef}
+            className="hero-video-bg"
+            autoPlay
+            muted
+            playsInline
+            aria-hidden="true"
+            src={heroVideos[currentVideo]}
+            onEnded={() => {
+              const next = (currentVideo + 1) % heroVideos.length;
+              setCurrentVideo(next);
+            }}
+          />
+          <div className="section-bg-overlay"></div>
             <div className="hero-container">
               <div className="hero-content hero-content--with-avatar">
                 <div className="hero-center">
@@ -118,10 +148,14 @@ export default function Portfolio() {
               </div>
               <div className="services-cards">
                 {[
-                  { icon: FaGlobe, ...t.services.landing, includes: t.services.landingIncludes, highlight: true },
-                  { icon: FaLaptopCode, ...t.services.webapp, includes: t.services.webappIncludes },
-                  { icon: FaMobileAlt, ...t.services.mobile, includes: t.services.mobileIncludes },
-                  { icon: FaDesktop, ...t.services.desktop, includes: t.services.desktopIncludes },
+                  { icon: FaGlobe, ...t.services.landing, includes: t.services.landingIncludes, highlight: true, filterCategory: 'landing' },
+                  { icon: FaLaptopCode, ...t.services.webapp, includes: t.services.webappIncludes, filterCategory: 'webapp' },
+                  { icon: FaMobileAlt, ...t.services.mobile, includes: t.services.mobileIncludes, filterCategory: 'mobile' },
+                  { icon: FaDesktop, ...t.services.desktop, includes: t.services.desktopIncludes, filterCategory: 'desktop' },
+                  { icon: FaRocket, ...t.services.upgrade, includes: t.services.upgradeIncludes },
+                  { icon: FaRobot, ...t.services.automation, includes: t.services.automationIncludes },
+                  { icon: FaMicrochip, ...t.services.iot, includes: t.services.iotIncludes },
+                  { icon: FaUserTie, ...t.services.consulting, includes: t.services.consultingIncludes },
                 ].map((service, i) => {
                   const Icon = service.icon;
                   const isExpanded = expandedService === i;

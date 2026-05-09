@@ -1,14 +1,14 @@
 export const portfolioInfo = {
   lastUpdate: {
-    date: '1 de abril de 2026',
+    date: '9 de mayo de 2026',
     time: '12:00',
-    full: '1 de abril de 2026, 12:00',
+    full: '9 de mayo de 2026, 12:00',
   },
 
   developer: {
     name: 'CU Digital',
     title: 'Estudio de Desarrollo',
-    specialization: 'Landings, apps web y apps móviles a medida',
+    specialization: 'software, IoT y automatizaciones con IA',
     location: 'Argentina',
   },
 
