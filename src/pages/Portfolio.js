@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useTheme } from '../contexts/ThemeContext';
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -21,7 +21,6 @@ import {
   FaRobot,
   FaMicrochip,
   FaUserTie,
-  FaArrowRight,
 } from 'react-icons/fa';
 import avatarImage from '../assets/logo-cu.svg';
 import heroBg1 from '../assets/videos/hero-bg-1.mp4';
