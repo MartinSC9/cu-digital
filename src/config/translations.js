@@ -128,17 +128,17 @@ export const translations = {
       },
       theriapp: {
         period: 'Feb 2026',
-        duration: '1 semana',
+        duration: '2 semanas',
         description: 'App web divertida que te dice con qué animal te identificás usando inteligencia artificial',
       },
       djdivito: {
         period: 'Feb 2026',
-        duration: '1 semana',
+        duration: '2 semanas',
         description: 'Página web profesional para una DJ de Australia con formulario de reservas y emails automáticos',
       },
       triso: {
         period: 'Mar 2026',
-        duration: '3 semanas',
+        duration: '6 semanas',
         description: 'Página web corporativa para empresa de ingeniería, con galería de proyectos y formulario de contacto',
       },
       lolinails: {
@@ -148,17 +148,17 @@ export const translations = {
       },
       quicknotes: {
         period: 'Mar 2026',
-        duration: '1 semana',
+        duration: '3 semanas',
         description: 'App de escritorio para notas rápidas con diseño nativo Windows 11 y macOS, modo oscuro y claro',
       },
       refugioandino: {
         period: 'Mar 2026',
-        duration: '1 semana',
+        duration: '2 semanas',
         description: 'Landing premium para complejo de cabañas en Villa La Angostura, Patagonia, con reservas y galería',
       },
       laspiedras: {
         period: 'Mar 2026',
-        duration: '1 semana',
+        duration: '2 semanas',
         description: 'Landing para cabañas rústicas en La Cumbrecita, Sierras de Córdoba, con tarifas y actividades',
       },
       ateliervalentina: {
@@ -168,7 +168,7 @@ export const translations = {
       },
       roblemuebles: {
         period: 'Mar 2026',
-        duration: '1 semana',
+        duration: '2 semanas',
         description: 'Landing para mueblería con catálogo de productos, showroom y financiación',
       },
       fitnesscoach: {
@@ -178,32 +178,32 @@ export const translations = {
       },
       cursosonline: {
         period: 'Mar 2026',
-        duration: '1 semana',
+        duration: '3 semanas',
         description: 'Plataforma de cursos online con catálogo, pricing y testimonios de alumnos',
       },
       veterinaria: {
         period: 'Mar 2026',
-        duration: '1 semana',
+        duration: '2 semanas',
         description: 'Landing para clínica veterinaria con servicios, equipo médico y emergencias 24hs',
       },
       hquniversitario: {
         period: 'Mar 2026',
-        duration: '1 semana',
+        duration: '2 semanas',
         description: 'Landing para cursos de ingreso universitario con carreras, estadísticas y FAQ',
       },
       arcoestudio: {
         period: 'Mar 2026',
-        duration: '1 semana',
+        duration: '3 semanas',
         description: 'Landing premium para estudio de arquitectura con portfolio de proyectos, timeline de proceso y cursor personalizado',
       },
       brewandco: {
         period: 'Mar 2026',
-        duration: '1 semana',
+        duration: '2 semanas',
         description: 'Landing para cafetería artesanal con menú interactivo por categorías, orígenes de café y galería de fotos',
       },
       nomadetravel: {
         period: 'Mar 2026',
-        duration: '1 semana',
+        duration: '4 semanas',
         description: 'Landing para agencia de viajes de aventura con paquetes turísticos, destinos destacados y próximas salidas',
       },
       mlscouting: {
@@ -213,12 +213,12 @@ export const translations = {
       },
       eyas: {
         period: 'Abr 2026',
-        duration: '1 semana',
+        duration: '2 semanas',
         description: 'Landing premium para consultorio de psicoterapia online para mujeres, con SEO y Open Graph',
       },
       laboralforge: {
         period: 'May 2026',
-        duration: '1 semana',
+        duration: '6 semanas',
         description:
           'Landing para consultoría de empleabilidad con criterio de RRHH: sesiones, sprint y workshops',
       },
