@@ -2,7 +2,6 @@ export const chatData = {
   es: {
     quickQuestions: [
       { id: 'servicios', label: '¿Qué servicios ofrecen?' },
-      { id: 'proyectos', label: '¿Qué proyectos realizaron?' },
       { id: 'tecnologias', label: '¿Qué tecnologías manejan?' },
       { id: 'proyectoComplejo', label: '¿Cuál fue el proyecto más complejo?' },
       { id: 'equipo', label: '¿Quiénes son?' },
@@ -92,7 +91,6 @@ Tu app en el celular de tus clientes, para Android e iOS.<br/><br/>
   en: {
     quickQuestions: [
       { id: 'servicios', label: 'What services do you offer?' },
-      { id: 'proyectos', label: 'What projects have you built?' },
       { id: 'tecnologias', label: 'What technologies do you use?' },
       { id: 'proyectoComplejo', label: 'What was the most complex project?' },
       { id: 'equipo', label: 'Who are you?' },
