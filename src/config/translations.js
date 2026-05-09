@@ -43,8 +43,8 @@ export const translations = {
     about: {
       title: 'Sobre nosotros',
       description: [
-        'Somos <a href="https://www.linkedin.com/in/joaquin-urtasun/" target="_blank" rel="noopener noreferrer" class="about-name-link">Joaquín Urtasun</a> y <a href="https://www.linkedin.com/in/martincontrera/" target="_blank" rel="noopener noreferrer" class="about-name-link">Martín Contrera</a>, un equipo de desarrolladores con experiencia llevando proyectos reales a producción. Nos especializamos en crear landing pages, aplicaciones web, apps móviles y plataformas IoT a medida para negocios y emprendedores.',
-        'Somos de Argentina y Japón, y trabajamos con clientes en Australia, Perú, Japón y Argentina. Nos encargamos de todo: diseño, desarrollo, publicación y soporte. Vos solo te preocupás por tu negocio.',
+        'Somos <a href="https://www.linkedin.com/in/joaquin-urtasun/" target="_blank" rel="noopener noreferrer" class="about-name-link">Joaquín Urtasun</a> y <a href="https://www.linkedin.com/in/martincontrera/" target="_blank" rel="noopener noreferrer" class="about-name-link">Martín Contrera</a>, un equipo de desarrolladores con experiencia llevando proyectos reales a producción. Nos conocimos trabajando en proyectos de tecnología y decidimos armar nuestro propio estudio para ofrecer soluciones a medida, sin intermediarios.',
+        'Nos especializamos en crear landing pages, aplicaciones web, apps móviles y plataformas IoT a medida para negocios y emprendedores. Somos de Argentina y Japón, y trabajamos con clientes en Australia, Perú, Japón y Argentina. Nos encargamos de todo: diseño, desarrollo, publicación y soporte. Vos solo te preocupás por tu negocio.',
         'Desarrollamos plataformas IoT industriales con dashboards en tiempo real, MQTT y sensores, liderando múltiples IAs en paralelo para llevar proyectos a producción.',
       ],
       location: 'Argentina & Japón',
