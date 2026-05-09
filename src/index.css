@@ -363,6 +363,12 @@ body {
   transform: scale(1.1);
 }
 
+.logo-icon {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+}
+
 .logo-text {
   font-family: var(--font-heading);
   font-size: 1.25rem;
@@ -672,14 +678,18 @@ body {
 .hero-avatar {
   flex-shrink: 0;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
+
 .hero-avatar-img {
-  height: 220px;
+  height: 240px;
   width: auto;
-  border-radius: 0;
   object-fit: contain;
-  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.12));
 }
 
 

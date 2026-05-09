@@ -5,6 +5,7 @@ import { useLanguage } from '../../contexts/LanguageContext';
 import { FiArrowLeft } from 'react-icons/fi';
 import LanguageToggle from '../LanguageToggle/LanguageToggle';
 import MobileNavbar, { MobileNavToggle } from '../MobileNavbar';
+import logoImg from '../../assets/logo-cu-icon.png';
 
 const Header = () => {
   const { currentTheme } = useTheme();
@@ -89,7 +90,7 @@ const Header = () => {
               }}
               style={{ cursor: 'pointer' }}
             >
-              <span className="logo-text">CU Digital</span>
+              <img src={logoImg} alt="CU Digital" className="logo-icon" />
             </div>
           ) : (
             <button

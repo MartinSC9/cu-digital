@@ -5,8 +5,8 @@ import { chatData } from '../../config/chatData';
 import { FaLinkedinIn, FaPaintBrush, FaServer, FaCloud, FaRobot } from 'react-icons/fa';
 import { FiMessageCircle, FiExternalLink } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-import avatarImg1 from '../../assets/logo-cu.svg';
-import avatarImg2 from '../../assets/logo-cu.svg';
+import avatarImg1 from '../../assets/logo-cu-icon.png';
+import avatarImg2 from '../../assets/logo-cu-icon.png';
 import styles from './ChatWidget.module.css';
 
 const STORAGE_KEY = 'chat-widget-state';

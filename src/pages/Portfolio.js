@@ -22,7 +22,7 @@ import {
   FaMicrochip,
   FaUserTie,
 } from 'react-icons/fa';
-import avatarImage from '../assets/logo-cu.svg';
+import avatarImage from '../assets/logo-cu-new.png';
 import heroBg1 from '../assets/videos/hero-bg-1.mp4';
 import heroBg2 from '../assets/videos/hero-bg-2.mp4';
 
@@ -78,7 +78,7 @@ export default function Portfolio() {
   return (
     <>
       <SEO
-        title="Portfolio"
+        title={t.seo.pageTitle}
         description={t.seo.description}
         keywords={t.seo.keywords}
       />

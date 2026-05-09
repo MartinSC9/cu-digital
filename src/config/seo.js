@@ -92,5 +92,5 @@ export const buildUrl = (path = '') => {
 
 export const buildPageTitle = (pageTitle = '') => {
   if (!pageTitle) return SEO_CONFIG.defaultMeta.title;
-  return `${pageTitle} | CU Digital`;
+  return `CU Digital | ${pageTitle}`;
 };

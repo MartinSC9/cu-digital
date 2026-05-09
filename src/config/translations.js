@@ -1255,6 +1255,7 @@ export const translations = {
 
     // SEO
     seo: {
+      pageTitle: 'Desarrollo a Medida',
       language: 'es-AR',
       locale: 'es_AR',
       jobTitle: 'Estudio de Desarrollo',
@@ -2515,6 +2516,7 @@ export const translations = {
 
     // SEO
     seo: {
+      pageTitle: 'Custom Development',
       language: 'en-US',
       locale: 'en_US',
       jobTitle: 'Development Studio',
