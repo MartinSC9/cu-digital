@@ -349,7 +349,7 @@ const projectsData = {
     name: 'Laboral Forge',
     images: [laboralforge1],
     links: () => [
-      { url: 'https://laboralforge-landing.vercel.app/', label: 'Landing' },
+      { url: 'https://laboralforge.com/', label: 'Landing' },
     ],
     sections: (t, modal) => [
       { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
