@@ -41,6 +41,8 @@ import mlscouting1 from '../assets/projects/ml-scouting/1.png';
 import eyas1 from '../assets/projects/eyas/1.png';
 import theriapp2 from '../assets/projects/theriapp/2.png';
 import laboralforge1 from '../assets/projects/laboral-forge/1.png';
+import elyfitness1 from '../assets/projects/elyfitness/1.png';
+import elyfitness2 from '../assets/projects/elyfitness/2.png';
 import batterysense1 from '../assets/projects/batterysense/1.png';
 import hospitalmonitor1 from '../assets/projects/hospital-monitor/1.png';
 
@@ -354,6 +356,18 @@ const projectsData = {
     sections: (t, modal) => [
       { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
       { type: 'list', title: t.projects.modals.implementedSections, items: modal.sections },
+      { type: 'techGrid', title: t.projects.modals.technologiesUsed, items: modal.tech },
+    ],
+  },
+  elyfitness: {
+    name: 'Ely Fitness',
+    images: [elyfitness1, elyfitness2],
+    links: () => [
+      { url: 'https://elyfitness-prototype.vercel.app/', label: 'Landing' },
+    ],
+    sections: (t, modal) => [
+      { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
+      { type: 'list', title: t.projects.modals.mainFeatures, items: modal.features },
       { type: 'techGrid', title: t.projects.modals.technologiesUsed, items: modal.tech },
     ],
   },

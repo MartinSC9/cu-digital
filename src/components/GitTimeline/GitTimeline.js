@@ -26,6 +26,8 @@ import quicknotes1 from '../../assets/projects/quick-notes/1.png';
 import mlscouting1 from '../../assets/projects/ml-scouting/1.png';
 import eyas1 from '../../assets/projects/eyas/1.png';
 import laboralforge1 from '../../assets/projects/laboral-forge/1.png';
+import elyfitness1 from '../../assets/projects/elyfitness/1.png';
+import elyfitness2 from '../../assets/projects/elyfitness/2.png';
 import batterysense1 from '../../assets/projects/batterysense/1.png';
 import hospitalmonitor1 from '../../assets/projects/hospital-monitor/1.png';
 import theriapp2 from '../../assets/projects/theriapp/2.png';
@@ -54,6 +56,7 @@ export const projectImages = {
   eyas: { src: eyas1, alt: 'EYAS Psicología - Landing Page' },
   theriapp: { src: theriapp2, alt: 'TheriApp - Preguntas del quiz' },
   laboralforge: { src: laboralforge1, alt: 'Laboral Forge - Consultoría de Empleabilidad' },
+  elyfitness: { src: elyfitness1, alt: 'Ely Fitness - Landing + Admin Panel' },
   batterysense: { src: batterysense1, alt: 'BatterySense - Monitoreo de Baterías Industriales' },
   hospitalmonitor: { src: hospitalmonitor1, alt: 'Hospital Monitor - Monitoreo de Salas Hospitalarias' },
 };
@@ -98,6 +101,7 @@ export const getProjects = (t) => [
   { key: 'mlscouting', name: 'ML Scouting', category: ['webapp', 'landing'], tag: 'Web App', description: t.projects.mlscouting.description, duration: t.projects.mlscouting.duration },
   { key: 'eyas', name: 'EYAS Psicología', category: 'landing', tag: 'Landing', description: t.projects.eyas.description, duration: t.projects.eyas.duration },
   { key: 'laboralforge', name: 'Laboral Forge', category: 'landing', tag: 'Landing', description: t.projects.laboralforge.description, duration: t.projects.laboralforge.duration },
+  { key: 'elyfitness', name: 'Ely Fitness', category: ['landing', 'webapp'], tag: 'Prototipo', description: t.projects.elyfitness.description, duration: t.projects.elyfitness.duration },
 ];
 
 const HOME_LIMIT = 4;

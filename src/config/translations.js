@@ -222,6 +222,11 @@ export const translations = {
         description:
           'Landing para consultoría de empleabilidad con criterio de RRHH: sesiones, sprint y workshops',
       },
+      elyfitness: {
+        period: 'Mayo 2026',
+        duration: '2 semanas',
+        description: 'Landing + panel admin para coach de fitness y nutrición (España). Prototipo para migración de Wix.',
+      },
 
       // Modals
       modals: {
@@ -964,6 +969,21 @@ export const translations = {
             deploy: { label: 'Deploy', value: 'Vercel' },
           },
         },
+        elyfitness: {
+          role: 'Desarrollador Full Stack — diseño y desarrollo del prototipo completo',
+          description: 'Prototipo de landing page profesional y panel de administración para Ely Fitness, dietista y entrenadora personal IFBB de España. Diseñado para demostrar las ventajas de migrar de Wix a una web custom.',
+          features: [
+            'Landing con hero animado, shop con carrito, planes de precios',
+            'Panel admin con dashboard, CRM, productos, pedidos, leads, agenda, blog y cursos',
+            'Navbar dinámico que cambia según la sección (claro/oscuro)',
+            'Animaciones con Framer Motion y marquee infinito',
+            'Diseño responsive premium con Tailwind CSS 4',
+          ],
+          tech: [
+            { label: 'Frontend', value: 'React 19, Vite, Tailwind CSS 4, Framer Motion' },
+            { label: 'Deploy', value: 'Vercel' },
+          ],
+        },
       },
     },
 
@@ -1493,6 +1513,11 @@ export const translations = {
         duration: '1 week',
         description:
           'Landing for employability consulting with HR criteria: sessions, sprint and workshops',
+      },
+      elyfitness: {
+        period: 'May 2026',
+        duration: '2 weeks',
+        description: 'Landing + admin panel for fitness & nutrition coach (Spain). Prototype for Wix migration.',
       },
 
       // Modals
@@ -2231,6 +2256,21 @@ export const translations = {
             design: { label: 'Design', value: 'Dark theme, gradients, responsive' },
             deploy: { label: 'Deploy', value: 'Vercel' },
           },
+        },
+        elyfitness: {
+          role: 'Full Stack Developer — designed and built the complete prototype',
+          description: 'Professional landing page and admin panel prototype for Ely Fitness, a dietitian and IFBB personal trainer from Spain. Designed to showcase the advantages of migrating from Wix to a custom web solution.',
+          features: [
+            'Landing with animated hero, shop with cart, pricing plans',
+            'Admin panel with dashboard, CRM, products, orders, leads, calendar, blog and courses',
+            'Dynamic navbar that changes based on section (light/dark)',
+            'Animations with Framer Motion and infinite marquee',
+            'Premium responsive design with Tailwind CSS 4',
+          ],
+          tech: [
+            { label: 'Frontend', value: 'React 19, Vite, Tailwind CSS 4, Framer Motion' },
+            { label: 'Deploy', value: 'Vercel' },
+          ],
         },
       },
     },
