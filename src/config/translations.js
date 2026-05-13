@@ -224,7 +224,7 @@ export const translations = {
       },
       elyfitness: {
         period: 'Mayo 2026',
-        duration: '2 semanas',
+        duration: '1 semana',
         description: 'Landing + panel admin para coach de fitness y nutrición (España). Prototipo para migración de Wix.',
       },
 
@@ -1516,7 +1516,7 @@ export const translations = {
       },
       elyfitness: {
         period: 'May 2026',
-        duration: '2 weeks',
+        duration: '1 week',
         description: 'Landing + admin panel for fitness & nutrition coach (Spain). Prototype for Wix migration.',
       },
 
