@@ -363,7 +363,8 @@ const projectsData = {
     name: 'Ely Fitness',
     images: [elyfitness1, elyfitness2],
     links: () => [
-      { url: 'https://elyfitness-prototype.vercel.app/', label: 'Landing' },
+      { url: 'https://elyfitness-landing-v2.vercel.app/', label: 'v2' },
+      { url: 'https://elyfitness-prototype.vercel.app/landing', label: 'v1' },
     ],
     sections: (t, modal) => [
       { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
