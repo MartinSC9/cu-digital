@@ -22,6 +22,7 @@ import {
   FaRobot,
   FaMicrochip,
   FaUserTie,
+  FaLinkedinIn,
 } from 'react-icons/fa';
 import avatarImage from '../assets/logo-cu-new.png';
 import martinPhoto from '../assets/martin-profile.jpg';
@@ -323,6 +324,9 @@ export default function Portfolio() {
                       <span className="about-team-name">Martín Contrera</span>
                       <span className="about-team-role">Full-Stack Developer</span>
                     </div>
+                    <a href="https://www.linkedin.com/in/martincontrera/" target="_blank" rel="noopener noreferrer" className="about-team-linkedin" aria-label="LinkedIn de Martín Contrera">
+                      <FaLinkedinIn />
+                    </a>
                   </div>
                   <div className="about-team-member">
                     <div className="about-team-photo-wrapper">
@@ -332,6 +336,9 @@ export default function Portfolio() {
                       <span className="about-team-name">Joaquín Urtasun</span>
                       <span className="about-team-role">Full-Stack Developer</span>
                     </div>
+                    <a href="https://www.linkedin.com/in/joaquin-urtasun/" target="_blank" rel="noopener noreferrer" className="about-team-linkedin" aria-label="LinkedIn de Joaquín Urtasun">
+                      <FaLinkedinIn />
+                    </a>
                   </div>
                 </div>
               </div>
