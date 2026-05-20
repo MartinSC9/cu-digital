@@ -1418,7 +1418,7 @@ body {
   background: rgba(var(--primary-rgb), 0.06);
   border: 1px solid rgba(var(--primary-rgb), 0.12);
   backdrop-filter: blur(8px);
-  min-width: 240px;
+  width: 280px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
