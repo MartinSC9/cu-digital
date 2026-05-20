@@ -1406,37 +1406,75 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .about-team-member {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 0.75rem;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  background: rgba(var(--primary-rgb), 0.06);
+  border: 1px solid rgba(var(--primary-rgb), 0.12);
+  backdrop-filter: blur(8px);
+  min-width: 240px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-team-member:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.about-team-photo-wrapper {
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  padding: 2px;
+  background: linear-gradient(135deg, var(--primary), rgba(var(--primary-rgb), 0.4));
 }
 
 .about-team-photo {
-  width: 130px;
-  height: 130px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid var(--primary);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  object-position: center top;
+  border: 2px solid var(--background);
+}
+
+.about-team-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
 }
 
 .about-team-name {
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--foreground);
+  white-space: nowrap;
+}
+
+.about-team-role {
+  font-size: 0.8rem;
+  color: var(--muted);
+  white-space: nowrap;
 }
 
 @media (max-width: 1023px) {
   .about-team {
     flex-direction: row;
     justify-content: center;
-    gap: 2.5rem;
+    flex-wrap: wrap;
+    gap: 1.25rem;
     margin-top: 2rem;
+  }
+
+  .about-team-member {
+    min-width: auto;
   }
 }
 

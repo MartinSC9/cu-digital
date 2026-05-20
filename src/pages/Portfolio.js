@@ -316,12 +316,22 @@ export default function Portfolio() {
                 </div>
                 <div className="about-team">
                   <div className="about-team-member">
-                    <img src={martinPhoto} alt="Martín Contrera" className="about-team-photo" />
-                    <span className="about-team-name">Martín Contrera</span>
+                    <div className="about-team-photo-wrapper">
+                      <img src={martinPhoto} alt="Martín Contrera" className="about-team-photo" />
+                    </div>
+                    <div className="about-team-info">
+                      <span className="about-team-name">Martín Contrera</span>
+                      <span className="about-team-role">Full-Stack Developer</span>
+                    </div>
                   </div>
                   <div className="about-team-member">
-                    <img src={joaquinPhoto} alt="Joaquín Urtasun" className="about-team-photo" />
-                    <span className="about-team-name">Joaquín Urtasun</span>
+                    <div className="about-team-photo-wrapper">
+                      <img src={joaquinPhoto} alt="Joaquín Urtasun" className="about-team-photo" />
+                    </div>
+                    <div className="about-team-info">
+                      <span className="about-team-name">Joaquín Urtasun</span>
+                      <span className="about-team-role">Full-Stack Developer</span>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -1,8 +1,8 @@
 export const portfolioInfo = {
   lastUpdate: {
     date: '20 de mayo de 2026',
-    time: '00:15',
-    full: '20 de mayo de 2026, 00:15',
+    time: '00:30',
+    full: '20 de mayo de 2026, 00:30',
   },
 
   developer: {
