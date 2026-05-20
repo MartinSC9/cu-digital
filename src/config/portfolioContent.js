@@ -12,7 +12,7 @@ export const portfolioContent = {
     title: 'Sobre nosotros',
     description: [
       'Somos Joaquín Urtasun y Martín Contrera. Nos conocimos trabajando en proyectos de tecnología y decidimos armar nuestro propio estudio para ofrecer soluciones digitales a medida, sin intermediarios.',
-      'Martín lidera todo el desarrollo técnico: arquitectura, código y puesta en producción. Joaquín se encarga de la parte comercial: buscar clientes, entender sus necesidades y acompañarlos durante todo el proceso.',
+      'Martín se encarga de todo el desarrollo técnico: arquitectura, código y puesta en producción. Joaquín maneja la parte comercial: encontrar oportunidades, entender lo que necesitás y acompañarte durante todo el proceso.',
       'Nos especializamos en landing pages, aplicaciones web, apps móviles y plataformas IoT. Trabajamos con clientes en Argentina, Japón, Australia y Perú. Nos encargamos de todo: diseño, desarrollo, publicación y soporte. Vos solo te preocupás por tu negocio.',
     ],
   },

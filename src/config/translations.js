@@ -44,7 +44,7 @@ export const translations = {
       title: 'Sobre nosotros',
       description: [
         'Somos <a href="https://www.linkedin.com/in/joaquin-urtasun/" target="_blank" rel="noopener noreferrer" class="about-name-link">Joaquín Urtasun</a> y <a href="https://www.linkedin.com/in/martincontrera/" target="_blank" rel="noopener noreferrer" class="about-name-link">Martín Contrera</a>. Nos conocimos trabajando en proyectos de tecnología y decidimos armar nuestro propio estudio para ofrecer soluciones digitales a medida, sin intermediarios.',
-        'Martín lidera todo el desarrollo técnico: arquitectura, código y puesta en producción. Joaquín se encarga de la parte comercial: buscar clientes, entender sus necesidades y acompañarlos durante todo el proceso.',
+        'Martín se encarga de todo el desarrollo técnico: arquitectura, código y puesta en producción. Joaquín maneja la parte comercial: encontrar oportunidades, entender lo que necesitás y acompañarte durante todo el proceso.',
         'Nos especializamos en landing pages, aplicaciones web, apps móviles y plataformas IoT. Trabajamos con clientes en Argentina, Japón, Australia y Perú. Nos encargamos de todo: diseño, desarrollo, publicación y soporte. Vos solo te preocupás por tu negocio.',
       ],
       location: 'Argentina & Japón',
@@ -1336,7 +1336,7 @@ export const translations = {
       title: 'About us',
       description: [
         'We are <a href="https://www.linkedin.com/in/joaquin-urtasun/" target="_blank" rel="noopener noreferrer" class="about-name-link">Joaquín Urtasun</a> and <a href="https://www.linkedin.com/in/martincontrera/" target="_blank" rel="noopener noreferrer" class="about-name-link">Martín Contrera</a>. We met working on tech projects and decided to build our own studio to offer custom digital solutions, with no middlemen.',
-        'Martín leads all technical development: architecture, code and deployment. Joaquín handles the business side: finding clients, understanding their needs and guiding them through the entire process.',
+        'Martín handles all technical development: architecture, code and deployment. Joaquín runs the business side: finding opportunities, understanding what you need and supporting you throughout the entire process.',
         'We specialize in landing pages, web apps, mobile apps and IoT platforms. We work with clients in Argentina, Japan, Australia and Peru. We handle everything: design, development, deployment and support. You just focus on your business.',
       ],
       location: 'Argentina & Japan',
