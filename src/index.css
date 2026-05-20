@@ -1495,8 +1495,20 @@ body {
     margin-top: 2rem;
   }
 
+  .about-team {
+    flex-wrap: nowrap;
+  }
+
   .about-team-member {
-    min-width: auto;
+    width: 280px;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .about-team {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
