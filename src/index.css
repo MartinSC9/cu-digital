@@ -1279,8 +1279,8 @@ body {
 
 .about-content {
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 2rem;
+  grid-template-columns: 1fr auto;
+  gap: 3rem;
   align-items: center;
 }
 
@@ -1289,8 +1289,11 @@ body {
 }
 
 .about-text {
+  order: 1;
+}
+
+.about-team {
   order: 2;
-  max-width: 32rem;
 }
 
 .section-title {
@@ -1400,9 +1403,10 @@ body {
 
 .about-team {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  gap: 2.5rem;
-  margin: 2rem 0;
+  gap: 2rem;
 }
 
 .about-team-member {
@@ -1413,8 +1417,8 @@ body {
 }
 
 .about-team-photo {
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--primary);
@@ -1425,6 +1429,15 @@ body {
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--foreground);
+}
+
+@media (max-width: 1023px) {
+  .about-team {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 2rem;
+  }
 }
 
 .about-info {
@@ -2810,7 +2823,7 @@ body {
   }
 
   .about-content {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto;
   }
 
   .footer-content {
@@ -2860,7 +2873,7 @@ body {
 
 @media (min-width: 1024px) {
   .about-content {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto;
   }
 
 

@@ -289,7 +289,7 @@ export default function Portfolio() {
             <video className="section-video-bg" autoPlay muted loop playsInline aria-hidden="true" src={heroBg4} />
             <div className="about-container">
               <div className="about-content">
-                <div className="about-text" style={{ maxWidth: '100%' }}>
+                <div className="about-text">
                   <h2 className="section-title">
                     {t.about.title}
                   </h2>
@@ -297,16 +297,6 @@ export default function Portfolio() {
                     {t.about.description.map((paragraph, index) => (
                       <p key={index} dangerouslySetInnerHTML={{ __html: paragraph }} />
                     ))}
-                  </div>
-                  <div className="about-team">
-                    <div className="about-team-member">
-                      <img src={martinPhoto} alt="Martín Contrera" className="about-team-photo" />
-                      <span className="about-team-name">Martín Contrera</span>
-                    </div>
-                    <div className="about-team-member">
-                      <img src={joaquinPhoto} alt="Joaquín Urtasun" className="about-team-photo" />
-                      <span className="about-team-name">Joaquín Urtasun</span>
-                    </div>
                   </div>
                   <div className="about-info">
                     <div className="info-item">
@@ -322,6 +312,16 @@ export default function Portfolio() {
                       </svg>
                       {t.about.location}
                     </div>
+                  </div>
+                </div>
+                <div className="about-team">
+                  <div className="about-team-member">
+                    <img src={martinPhoto} alt="Martín Contrera" className="about-team-photo" />
+                    <span className="about-team-name">Martín Contrera</span>
+                  </div>
+                  <div className="about-team-member">
+                    <img src={joaquinPhoto} alt="Joaquín Urtasun" className="about-team-photo" />
+                    <span className="about-team-name">Joaquín Urtasun</span>
                   </div>
                 </div>
               </div>
