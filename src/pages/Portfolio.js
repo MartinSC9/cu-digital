@@ -24,6 +24,8 @@ import {
   FaUserTie,
 } from 'react-icons/fa';
 import avatarImage from '../assets/logo-cu-new.png';
+import martinPhoto from '../assets/martin-profile.jpg';
+import joaquinPhoto from '../assets/joaquin-profile.jpg';
 import heroBg1 from '../assets/videos/hero-bg-1.mp4';
 import heroBg2 from '../assets/videos/hero-bg-2.mp4';
 import heroBg4 from '../assets/videos/hero-bg-4.mp4';
@@ -295,6 +297,16 @@ export default function Portfolio() {
                     {t.about.description.map((paragraph, index) => (
                       <p key={index} dangerouslySetInnerHTML={{ __html: paragraph }} />
                     ))}
+                  </div>
+                  <div className="about-team">
+                    <div className="about-team-member">
+                      <img src={martinPhoto} alt="Martín Contrera" className="about-team-photo" />
+                      <span className="about-team-name">Martín Contrera</span>
+                    </div>
+                    <div className="about-team-member">
+                      <img src={joaquinPhoto} alt="Joaquín Urtasun" className="about-team-photo" />
+                      <span className="about-team-name">Joaquín Urtasun</span>
+                    </div>
                   </div>
                   <div className="about-info">
                     <div className="info-item">
