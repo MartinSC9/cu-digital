@@ -322,7 +322,7 @@ export default function Portfolio() {
                     </div>
                     <div className="about-team-info">
                       <span className="about-team-name">Martín Contrera</span>
-                      <span className="about-team-role">Full-Stack Developer</span>
+                      <span className="about-team-role">Lead Developer</span>
                     </div>
                     <a href="https://www.linkedin.com/in/martincontrera/" target="_blank" rel="noopener noreferrer" className="about-team-linkedin" aria-label="LinkedIn de Martín Contrera">
                       <FaLinkedinIn />
@@ -334,7 +334,7 @@ export default function Portfolio() {
                     </div>
                     <div className="about-team-info">
                       <span className="about-team-name">Joaquín Urtasun</span>
-                      <span className="about-team-role">Full-Stack Developer</span>
+                      <span className="about-team-role">Business Development</span>
                     </div>
                     <a href="https://www.linkedin.com/in/joaquin-urtasun/" target="_blank" rel="noopener noreferrer" className="about-team-linkedin" aria-label="LinkedIn de Joaquín Urtasun">
                       <FaLinkedinIn />

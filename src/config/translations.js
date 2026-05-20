@@ -43,9 +43,9 @@ export const translations = {
     about: {
       title: 'Sobre nosotros',
       description: [
-        'Somos <a href="https://www.linkedin.com/in/joaquin-urtasun/" target="_blank" rel="noopener noreferrer" class="about-name-link">Joaquín Urtasun</a> y <a href="https://www.linkedin.com/in/martincontrera/" target="_blank" rel="noopener noreferrer" class="about-name-link">Martín Contrera</a>, un equipo de desarrolladores con experiencia llevando proyectos reales a producción. Nos conocimos trabajando en proyectos de tecnología y decidimos armar nuestro propio estudio para ofrecer soluciones a medida, sin intermediarios.',
-        'Nos especializamos en crear landing pages, aplicaciones web, apps móviles y plataformas IoT a medida para negocios y emprendedores. Somos de Argentina y Japón, y trabajamos con clientes en Australia, Perú, Japón y Argentina. Nos encargamos de todo: diseño, desarrollo, publicación y soporte. Vos solo te preocupás por tu negocio.',
-        'Desarrollamos plataformas IoT industriales con dashboards en tiempo real, MQTT y sensores, liderando múltiples IAs en paralelo para llevar proyectos a producción.',
+        'Somos <a href="https://www.linkedin.com/in/joaquin-urtasun/" target="_blank" rel="noopener noreferrer" class="about-name-link">Joaquín Urtasun</a> y <a href="https://www.linkedin.com/in/martincontrera/" target="_blank" rel="noopener noreferrer" class="about-name-link">Martín Contrera</a>. Nos conocimos trabajando en proyectos de tecnología y decidimos armar nuestro propio estudio para ofrecer soluciones digitales a medida, sin intermediarios.',
+        'Martín lidera todo el desarrollo técnico: arquitectura, código y puesta en producción. Joaquín se encarga de la parte comercial: buscar clientes, entender sus necesidades y acompañarlos durante todo el proceso.',
+        'Nos especializamos en landing pages, aplicaciones web, apps móviles y plataformas IoT. Trabajamos con clientes en Argentina, Japón, Australia y Perú. Nos encargamos de todo: diseño, desarrollo, publicación y soporte. Vos solo te preocupás por tu negocio.',
       ],
       location: 'Argentina & Japón',
     },
@@ -1335,9 +1335,9 @@ export const translations = {
     about: {
       title: 'About us',
       description: [
-        'We are <a href="https://www.linkedin.com/in/joaquin-urtasun/" target="_blank" rel="noopener noreferrer" class="about-name-link">Joaquín Urtasun</a> and <a href="https://www.linkedin.com/in/martincontrera/" target="_blank" rel="noopener noreferrer" class="about-name-link">Martín Contrera</a>, a development team with experience shipping real projects to production. We specialize in creating landing pages, web apps, mobile apps and custom IoT platforms for businesses and entrepreneurs.',
-        'Based in Argentina and Japan, we work with clients in Australia, Peru, Japan and Argentina. We handle everything: design, development, deployment and support. You just focus on your business.',
-        'We build industrial IoT platforms with real-time dashboards, MQTT and sensors, leading multiple AIs in parallel to ship projects to production.',
+        'We are <a href="https://www.linkedin.com/in/joaquin-urtasun/" target="_blank" rel="noopener noreferrer" class="about-name-link">Joaquín Urtasun</a> and <a href="https://www.linkedin.com/in/martincontrera/" target="_blank" rel="noopener noreferrer" class="about-name-link">Martín Contrera</a>. We met working on tech projects and decided to build our own studio to offer custom digital solutions, with no middlemen.',
+        'Martín leads all technical development: architecture, code and deployment. Joaquín handles the business side: finding clients, understanding their needs and guiding them through the entire process.',
+        'We specialize in landing pages, web apps, mobile apps and IoT platforms. We work with clients in Argentina, Japan, Australia and Peru. We handle everything: design, development, deployment and support. You just focus on your business.',
       ],
       location: 'Argentina & Japan',
     },
