@@ -227,6 +227,11 @@ export const translations = {
         duration: '1 semana',
         description: 'Landing + panel admin para coach de fitness y nutrición (España). Prototipo para migración de Wix.',
       },
+      audiotranscriber: {
+        period: 'Mayo 2026',
+        duration: '1 día',
+        description: 'App web para transcribir archivos de audio a texto usando IA (Whisper). Producto de pago mensual.',
+      },
 
       // Modals
       modals: {
@@ -984,6 +989,23 @@ export const translations = {
             { label: 'Deploy', value: 'Vercel' },
           ],
         },
+        audiotranscriber: {
+          role: 'Desarrollador Full Stack — diseño, desarrollo y deploy completo',
+          description: 'Aplicación web SaaS para transcripción de audio a texto usando inteligencia artificial. El usuario sube un archivo de audio y recibe la transcripción completa en segundos. Producto de pago mensual que incluye API key de IA.',
+          features: [
+            'Subida de archivos por drag & drop o click',
+            'Transcripción con Whisper Large V3 (IA de última generación)',
+            'Soporte para MP3, WAV, M4A, OGG, FLAC, WebM (hasta 25MB)',
+            'Detección automática de idioma o selección manual',
+            'Copia rápida del texto transcripto al portapapeles',
+            'Deploy serverless en Vercel con funciones API',
+          ],
+          tech: [
+            { label: 'Backend', value: 'Node.js, Express, Groq Whisper API' },
+            { label: 'Frontend', value: 'HTML, CSS, JavaScript vanilla' },
+            { label: 'Deploy', value: 'Vercel (Serverless Functions)' },
+          ],
+        },
       },
     },
 
@@ -1518,6 +1540,11 @@ export const translations = {
         period: 'May 2026',
         duration: '1 week',
         description: 'Landing + admin panel for fitness & nutrition coach (Spain). Prototype for Wix migration.',
+      },
+      audiotranscriber: {
+        period: 'May 2026',
+        duration: '1 day',
+        description: 'Web app to transcribe audio files to text using AI (Whisper). Monthly subscription product.',
       },
 
       // Modals
@@ -2270,6 +2297,23 @@ export const translations = {
           tech: [
             { label: 'Frontend', value: 'React 19, Vite, Tailwind CSS 4, Framer Motion' },
             { label: 'Deploy', value: 'Vercel' },
+          ],
+        },
+        audiotranscriber: {
+          role: 'Full Stack Developer — design, development and full deployment',
+          description: 'SaaS web application for audio-to-text transcription using artificial intelligence. Users upload an audio file and receive the full transcription in seconds. Monthly subscription product that includes an AI API key.',
+          features: [
+            'File upload via drag & drop or click',
+            'Transcription with Whisper Large V3 (state-of-the-art AI)',
+            'Support for MP3, WAV, M4A, OGG, FLAC, WebM (up to 25MB)',
+            'Automatic language detection or manual selection',
+            'Quick copy of transcribed text to clipboard',
+            'Serverless deployment on Vercel with API functions',
+          ],
+          tech: [
+            { label: 'Backend', value: 'Node.js, Express, Groq Whisper API' },
+            { label: 'Frontend', value: 'HTML, CSS, vanilla JavaScript' },
+            { label: 'Deploy', value: 'Vercel (Serverless Functions)' },
           ],
         },
       },

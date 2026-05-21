@@ -45,6 +45,7 @@ import elyfitness1 from '../assets/projects/elyfitness/1.png';
 import elyfitness2 from '../assets/projects/elyfitness/2.png';
 import batterysense1 from '../assets/projects/batterysense/1.png';
 import hospitalmonitor1 from '../assets/projects/hospital-monitor/1.png';
+import audiotranscriber1 from '../assets/projects/audio-transcriber/1.png';
 
 const projectsData = {
   batterysense: {
@@ -365,6 +366,18 @@ const projectsData = {
     links: () => [
       { url: 'https://elyfitness-landing-v2.vercel.app/', label: 'v2' },
       { url: 'https://elyfitness-prototype.vercel.app/landing', label: 'v1' },
+    ],
+    sections: (t, modal) => [
+      { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
+      { type: 'list', title: t.projects.modals.mainFeatures, items: modal.features },
+      { type: 'techGrid', title: t.projects.modals.technologiesUsed, items: modal.tech },
+    ],
+  },
+  audiotranscriber: {
+    name: 'Audio Transcriber',
+    images: [audiotranscriber1],
+    links: () => [
+      { url: 'https://audio-transcriber-ebon.vercel.app', label: 'App' },
     ],
     sections: (t, modal) => [
       { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
