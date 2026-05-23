@@ -199,6 +199,72 @@
   opacity: 1;
 }
 
+/* Search box */
+.searchBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 0.65rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  pointer-events: none;
+}
+
+.searchInput {
+  padding: 0.45rem 2rem 0.45rem 2rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background: #f4f6f8;
+  font-size: 0.85rem;
+  font-family: var(--font-body);
+  color: var(--foreground);
+  width: 180px;
+  transition: all 0.2s ease;
+}
+
+.searchInput::placeholder {
+  color: var(--muted);
+  opacity: 0.7;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: var(--primary);
+  background: #fff;
+  width: 220px;
+}
+
+.searchClear {
+  position: absolute;
+  right: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 0.2rem;
+  font-size: 0.85rem;
+}
+
+.searchClear:hover {
+  color: var(--foreground);
+}
+
+/* No results */
+.noResults {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.95rem;
+  padding: 3rem 1rem;
+}
+
 /* Grid toggle */
 .gridToggle {
   display: flex;
@@ -207,7 +273,6 @@
   border: 1px solid #e5e7eb;
   border-radius: 6px;
   padding: 0.2rem;
-  margin-left: auto;
 }
 
 .gridToggleBtn {
@@ -290,6 +355,25 @@
 
   .filterBtn {
     flex-shrink: 0;
+  }
+
+  .toolbar {
+    flex-wrap: wrap;
+  }
+
+  .searchBox {
+    width: 100%;
+    margin-left: 0;
+    order: -1;
+    margin-bottom: 0.5rem;
+  }
+
+  .searchInput {
+    width: 100%;
+  }
+
+  .searchInput:focus {
+    width: 100%;
   }
 
   .gridCardImage {

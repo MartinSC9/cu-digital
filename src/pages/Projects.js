@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
 import { projectImages, getProjects } from '../components/GitTimeline/GitTimeline';
 import styles from '../components/GitTimeline/GitTimeline.module.css';
-import { FiGrid, FiList } from 'react-icons/fi';
+import { FiGrid, FiList, FiSearch, FiX } from 'react-icons/fi';
 import SEO from '../components/SEO';
 import Footer from '../components/Footer/Footer';
 
 const CATEGORIES = {
+  featured: 'filterFeatured',
   all: 'filterAll',
   landing: 'filterLanding',
   webapp: 'filterWebApp',
@@ -25,11 +26,13 @@ export default function Projects() {
   const navigate = useNavigate();
 
   const [activeFilter, setActiveFilter] = useState(() => {
-    try { return sessionStorage.getItem('projects-filter') || 'all'; } catch { return 'all'; }
+    try { return sessionStorage.getItem('projects-filter') || 'featured'; } catch { return 'featured'; }
   });
   const [cols, setCols] = useState(() => {
     try { return parseInt(sessionStorage.getItem('projects-cols'), 10) || 4; } catch { return 4; }
   });
+  const [search, setSearch] = useState('');
+  const searchRef = useRef(null);
 
   useEffect(() => {
     try {
@@ -48,9 +51,26 @@ export default function Projects() {
   };
 
   const projects = getProjects(t);
-  const filtered = activeFilter === 'all'
-    ? projects
-    : projects.filter((p) => Array.isArray(p.category) ? p.category.includes(activeFilter) : p.category === activeFilter);
+
+  const searchNorm = search.toLowerCase().trim();
+  const filtered = projects.filter((p) => {
+    if (searchNorm && !p.name.toLowerCase().includes(searchNorm)) return false;
+    if (activeFilter === 'featured') return p.featured;
+    if (activeFilter === 'all') return true;
+    return Array.isArray(p.category)
+      ? p.category.includes(activeFilter)
+      : p.category === activeFilter;
+  });
+
+  const getCategoryCount = (key) => {
+    if (key === 'featured') return projects.filter((p) => p.featured).length;
+    if (key === 'all') return projects.length;
+    return projects.filter((p) =>
+      Array.isArray(p.category)
+        ? p.category.includes(key)
+        : p.category === key
+    ).length;
+  };
 
   return (
     <>
@@ -66,7 +86,7 @@ export default function Projects() {
             <span className="breadcrumb-current">{t.nav.projects}</span>
           </nav>
 
-          {/* Toolbar: filters + grid toggle */}
+          {/* Toolbar: filters + search + grid toggle */}
           <div className={styles.toolbar}>
             <div className={styles.filters}>
               {Object.entries(CATEGORIES).map(([key, labelKey]) => (
@@ -77,10 +97,30 @@ export default function Projects() {
                 >
                   {t.projects[labelKey]}
                   <span className={styles.filterCount}>
-                    {key === 'all' ? projects.length : projects.filter(p => Array.isArray(p.category) ? p.category.includes(key) : p.category === key).length}
+                    {getCategoryCount(key)}
                   </span>
                 </button>
               ))}
+            </div>
+            <div className={styles.searchBox}>
+              <FiSearch className={styles.searchIcon} />
+              <input
+                ref={searchRef}
+                type="text"
+                className={styles.searchInput}
+                placeholder={t.projects.searchPlaceholder}
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+              />
+              {search && (
+                <button
+                  className={styles.searchClear}
+                  onClick={() => { setSearch(''); searchRef.current?.focus(); }}
+                  aria-label="Clear search"
+                >
+                  <FiX />
+                </button>
+              )}
             </div>
             <div className={styles.gridToggle}>
               {GRID_OPTIONS.map(({ cols: c, icon: Icon }) => (
@@ -96,12 +136,10 @@ export default function Projects() {
             </div>
           </div>
 
-          <div
-            className={styles.projectsGrid}
-            style={{ '--grid-cols': cols }}
-          >
+          <div className={styles.projectsGrid} style={{ '--grid-cols': cols }}>
             {filtered.map((project, i) => {
               const image = projectImages[project.key];
+              const cardVideo = project.videos ? project.videos[0] : project.video;
               return (
                 <div
                   key={project.key}
@@ -110,11 +148,22 @@ export default function Projects() {
                   onClick={() => goToProject(project.key)}
                 >
                   <div className={styles.gridCardImage}>
-                    <img
-                      src={image.src}
-                      alt={image.alt}
-                      className={styles.gridCardSlide}
-                    />
+                    {cardVideo ? (
+                      <video
+                        src={cardVideo}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className={styles.gridCardSlide}
+                      />
+                    ) : (
+                      <img
+                        src={image.src}
+                        alt={image.alt}
+                        className={styles.gridCardSlide}
+                      />
+                    )}
                     <span className={styles.gridCardTag}>{project.tag}</span>
                   </div>
                   <div className={styles.gridCardBody}>
@@ -128,6 +177,10 @@ export default function Projects() {
               );
             })}
           </div>
+
+          {filtered.length === 0 && (
+            <p className={styles.noResults}>{t.projects.noResults}</p>
+          )}
         </div>
       </div>
       <Footer />
