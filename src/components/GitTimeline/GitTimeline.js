@@ -30,6 +30,7 @@ import elyfitness1 from '../../assets/projects/elyfitness/1.png';
 import batterysense1 from '../../assets/projects/batterysense/1.png';
 import hospitalmonitor1 from '../../assets/projects/hospital-monitor/1.png';
 import audiotranscriber1 from '../../assets/projects/audio-transcriber/1.png';
+import bookly1 from '../../assets/projects/bookly/1.png';
 import theriapp2 from '../../assets/projects/theriapp/2.png';
 
 export const projectImages = {
@@ -60,6 +61,7 @@ export const projectImages = {
   batterysense: { src: batterysense1, alt: 'BatterySense - Monitoreo de Baterías Industriales' },
   hospitalmonitor: { src: hospitalmonitor1, alt: 'Hospital Monitor - Monitoreo de Salas Hospitalarias' },
   audiotranscriber: { src: audiotranscriber1, alt: 'Audio Transcriber - Transcripción de audio a texto' },
+  bookly: { src: bookly1, alt: 'Bookly - Sistema de reservas para barberías' },
 };
 
 export const getProjects = (t) => [
@@ -104,6 +106,7 @@ export const getProjects = (t) => [
   { key: 'laboralforge', name: 'Laboral Forge', category: 'landing', tag: 'Landing', description: t.projects.laboralforge.description, duration: t.projects.laboralforge.duration },
   { key: 'elyfitness', name: 'Ely Fitness', category: ['landing', 'webapp'], tag: 'Prototipo', description: t.projects.elyfitness.description, duration: t.projects.elyfitness.duration },
   { key: 'audiotranscriber', name: 'Audio Transcriber', category: 'webapp', tag: 'SaaS', description: t.projects.audiotranscriber.description, duration: t.projects.audiotranscriber.duration },
+  { key: 'bookly', name: 'Bookly', category: 'webapp', tag: 'SaaS', description: t.projects.bookly.description, duration: t.projects.bookly.duration },
 ];
 
 const HOME_LIMIT = 4;

@@ -232,6 +232,11 @@ export const translations = {
         duration: '1 día',
         description: 'App web para transcribir archivos de audio a texto usando IA (Whisper). Producto de pago mensual.',
       },
+      bookly: {
+        period: 'Marzo — Mayo 2026',
+        duration: '3 meses',
+        description: 'Sistema de reservas online para barberías y salones. Los clientes reservan turnos desde el celular y el dueño gestiona todo desde un panel admin.',
+      },
 
       // Modals
       modals: {
@@ -1006,6 +1011,26 @@ export const translations = {
             { label: 'Deploy', value: 'Vercel (Serverless Functions)' },
           ],
         },
+        bookly: {
+          role: 'Desarrollador Full Stack — diseño, backend, frontend y deploy',
+          description: 'Plataforma de reservas de turnos online para barberías y salones. Los clientes acceden por link o slug del local, eligen servicio, barbero, fecha y hora, y reservan en segundos. El dueño gestiona turnos, barberos, servicios, horarios y configuración desde un panel admin completo.',
+          features: [
+            'Flujo de reserva público mobile-first con selección de servicio, barbero, fecha y hora',
+            'Panel admin con gestión de turnos, barberos, servicios, horarios y bloqueos',
+            'Sistema de roles: owner (dueño) y barber (empleado) con PINs hasheados (bcrypt)',
+            'Modos de aprobación de turnos: automático, admin o barbero',
+            'Notificaciones por WhatsApp con mensajes pre-armados',
+            'Tema personalizable por local (colores custom via JSONB)',
+            'Confirmación/cancelación de turnos por link con token UUID',
+            'Subida de imágenes a Cloudinary (logo y cover del local)',
+          ],
+          tech: [
+            { label: 'Backend', value: 'Express 5, TypeScript, PostgreSQL (raw SQL), JWT, bcrypt' },
+            { label: 'Frontend', value: 'Next.js 15, React, Tailwind CSS, App Router' },
+            { label: 'Servicios', value: 'Cloudinary, Google Maps Static API' },
+            { label: 'Deploy', value: 'Vercel (web) + Render (server + PostgreSQL)' },
+          ],
+        },
       },
     },
 
@@ -1545,6 +1570,11 @@ export const translations = {
         period: 'May 2026',
         duration: '1 day',
         description: 'Web app to transcribe audio files to text using AI (Whisper). Monthly subscription product.',
+      },
+      bookly: {
+        period: 'March — May 2026',
+        duration: '3 months',
+        description: 'Online booking system for barbershops and salons. Clients book appointments from their phone and the owner manages everything from an admin panel.',
       },
 
       // Modals
@@ -2314,6 +2344,26 @@ export const translations = {
             { label: 'Backend', value: 'Node.js, Express, Groq Whisper API' },
             { label: 'Frontend', value: 'HTML, CSS, vanilla JavaScript' },
             { label: 'Deploy', value: 'Vercel (Serverless Functions)' },
+          ],
+        },
+        bookly: {
+          role: 'Full Stack Developer — design, backend, frontend and deployment',
+          description: 'Online appointment booking platform for barbershops and salons. Clients access via link or shop slug, choose service, barber, date and time, and book in seconds. The owner manages appointments, barbers, services, schedules and settings from a full admin panel.',
+          features: [
+            'Public mobile-first booking flow with service, barber, date and time selection',
+            'Admin panel with appointment, barber, service, schedule and block management',
+            'Role system: owner and barber with hashed PINs (bcrypt)',
+            'Appointment approval modes: automatic, admin or barber',
+            'WhatsApp notifications with pre-built messages',
+            'Customizable theme per shop (custom colors via JSONB)',
+            'Appointment confirmation/cancellation via link with UUID token',
+            'Image upload to Cloudinary (shop logo and cover)',
+          ],
+          tech: [
+            { label: 'Backend', value: 'Express 5, TypeScript, PostgreSQL (raw SQL), JWT, bcrypt' },
+            { label: 'Frontend', value: 'Next.js 15, React, Tailwind CSS, App Router' },
+            { label: 'Services', value: 'Cloudinary, Google Maps Static API' },
+            { label: 'Deploy', value: 'Vercel (web) + Render (server + PostgreSQL)' },
           ],
         },
       },

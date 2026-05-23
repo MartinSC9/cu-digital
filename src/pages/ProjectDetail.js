@@ -46,6 +46,7 @@ import elyfitness2 from '../assets/projects/elyfitness/2.png';
 import batterysense1 from '../assets/projects/batterysense/1.png';
 import hospitalmonitor1 from '../assets/projects/hospital-monitor/1.png';
 import audiotranscriber1 from '../assets/projects/audio-transcriber/1.png';
+import bookly1 from '../assets/projects/bookly/1.png';
 
 const projectsData = {
   batterysense: {
@@ -181,6 +182,7 @@ const projectsData = {
   quicknotes: {
     name: 'Quick Notes',
     images: [quicknotes1],
+    video: '/videos/quick-notes.mp4',
     links: (t) => [
       { url: 'https://martinsc9.github.io/landings-portfolio/quick-notes/', label: t.projects.viewLanding },
       { url: 'https://github.com/MartinSC9/QuickNotes', label: 'GitHub' },
@@ -376,9 +378,21 @@ const projectsData = {
   audiotranscriber: {
     name: 'Audio Transcriber',
     images: [audiotranscriber1],
+    video: '/videos/audio-transcriber.mp4',
     links: () => [
       { url: 'https://audio-transcriber-ebon.vercel.app', label: 'App' },
     ],
+    sections: (t, modal) => [
+      { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
+      { type: 'list', title: t.projects.modals.mainFeatures, items: modal.features },
+      { type: 'techGrid', title: t.projects.modals.technologiesUsed, items: modal.tech },
+    ],
+  },
+  bookly: {
+    name: 'Bookly',
+    images: [bookly1],
+    videos: ['/videos/bookly-1.mp4', '/videos/bookly-2.mp4'],
+    links: () => [],
     sections: (t, modal) => [
       { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
       { type: 'list', title: t.projects.modals.mainFeatures, items: modal.features },
@@ -476,10 +490,44 @@ const ProjectDetail = () => {
         <div className={styles.heroRow}>
           {/* Galería */}
           <div className={styles.galleryCol}>
-            <div className={styles.galleryMain} onClick={() => openGallery(currentImageIndex)}>
-              <img src={project.images[currentImageIndex]} alt={`${project.name} - principal`} />
+            <div className={styles.galleryMain} onClick={(project.video || project.videos) ? undefined : () => openGallery(currentImageIndex)}>
+              {project.video ? (
+                <video
+                  src={project.video}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className={styles.galleryVideo}
+                />
+              ) : project.videos ? (
+                <video
+                  key={currentImageIndex}
+                  src={project.videos[currentImageIndex]}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className={styles.galleryVideo}
+                />
+              ) : (
+                <img src={project.images[currentImageIndex]} alt={`${project.name} - principal`} />
+              )}
             </div>
-            {project.images.length > 1 && (
+            {project.videos && project.videos.length > 1 && (
+              <div className={styles.galleryThumbs}>
+                {project.videos.map((_, i) => (
+                  <button
+                    key={i}
+                    className={`${styles.galleryThumb} ${i === currentImageIndex ? styles.galleryThumbActive : ''}`}
+                    onClick={() => setCurrentImageIndex(i)}
+                  >
+                    <span className={styles.videoThumbLabel}>Video {i + 1}</span>
+                  </button>
+                ))}
+              </div>
+            )}
+            {!project.videos && project.images.length > 1 && (
               <div className={styles.galleryThumbs}>
                 {project.images.map((img, i) => (
                   <button
