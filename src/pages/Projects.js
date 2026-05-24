@@ -156,6 +156,7 @@ export default function Projects() {
                         muted
                         playsInline
                         className={styles.gridCardSlide}
+                        onLoadedMetadata={(e) => { e.target.currentTime = e.target.duration / 2; }}
                       />
                     ) : (
                       <img
