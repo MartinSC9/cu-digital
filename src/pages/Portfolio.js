@@ -319,7 +319,7 @@ export default function Portfolio() {
                 <div className="about-team">
                   <div className="about-team-member">
                     <div className="about-team-photo-wrapper">
-                      <img src={martinPhoto} alt="Martín Contrera" className="about-team-photo" />
+                      <img src={joaquinPhoto} alt="Martín Contrera" className="about-team-photo" />
                     </div>
                     <div className="about-team-info">
                       <span className="about-team-name">Martín Contrera</span>
@@ -331,7 +331,7 @@ export default function Portfolio() {
                   </div>
                   <div className="about-team-member">
                     <div className="about-team-photo-wrapper">
-                      <img src={joaquinPhoto} alt="Joaquín Urtasun" className="about-team-photo" />
+                      <img src={martinPhoto} alt="Joaquín Urtasun" className="about-team-photo" />
                     </div>
                     <div className="about-team-info">
                       <span className="about-team-name">Joaquín Urtasun</span>
