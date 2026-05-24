@@ -1263,6 +1263,25 @@ export const translations = {
       ],
     },
 
+    // Lead Form
+    leadForm: {
+      title: 'Contanos tu idea',
+      subtitle: 'Completá el formulario y te contactamos en menos de 24hs.',
+      namePlaceholder: 'Nombre y apellido',
+      emailPlaceholder: 'Tu email',
+      servicePlaceholder: '¿Qué necesitás?',
+      messagePlaceholder: 'Contanos brevemente tu idea o necesidad (opcional)',
+      services: {
+        landing: 'Crear una landing para vender más',
+        webapp: 'Crear una app web',
+        app: 'Crear una app móvil',
+        redesign: 'Mejorar el diseño de mi web/app',
+        scalability: 'Mejorar escalabilidad/performance',
+        other: 'Otra cosa',
+      },
+      submit: 'Enviar por WhatsApp',
+    },
+
     // Contact
     contact: {
       title: 'Empezá tu proyecto',
@@ -2569,6 +2588,25 @@ export const translations = {
         { icon: 'clock', text: 'Response in less than 24 hours' },
         { icon: 'refresh', text: '30 days of post-launch support' },
       ],
+    },
+
+    // Lead Form
+    leadForm: {
+      title: 'Tell us your idea',
+      subtitle: 'Fill the form and we\'ll contact you within 24hs.',
+      namePlaceholder: 'Full name',
+      emailPlaceholder: 'Your email',
+      servicePlaceholder: 'What do you need?',
+      messagePlaceholder: 'Briefly describe your idea or need (optional)',
+      services: {
+        landing: 'Create a landing page to sell more',
+        webapp: 'Create a web app',
+        app: 'Create a mobile app',
+        redesign: 'Improve my web/app design',
+        scalability: 'Improve scalability/performance',
+        other: 'Something else',
+      },
+      submit: 'Send via WhatsApp',
     },
 
     // Contact

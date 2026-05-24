@@ -1,0 +1,285 @@
+/* Lead Form - Modal */
+.lead-form-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.lead-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+/* Card */
+.lead-form-card {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  width: 100%;
+  overflow: hidden;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.lead-form-card--modal {
+  position: relative;
+  max-width: 760px;
+  z-index: 1;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  animation: leadFormSlideUp 0.3s ease;
+}
+
+@keyframes leadFormSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.lead-form-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0.2rem 0.5rem;
+  border-radius: 50%;
+  transition: background 0.2s;
+  z-index: 2;
+}
+
+.lead-form-close:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Two-column layout */
+.lead-form-layout {
+  display: flex;
+}
+
+.lead-form-content {
+  flex: 1;
+  padding: 2rem;
+  min-width: 0;
+}
+
+.lead-form-photo {
+  width: 280px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.lead-form-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Header */
+.lead-form-header {
+  margin-bottom: 1.25rem;
+}
+
+.lead-form-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin-bottom: 0.4rem;
+}
+
+.lead-form-subtitle {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Form */
+.lead-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.lead-form-field {
+  width: 100%;
+}
+
+.lead-form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--backgroundSoft, var(--background-soft, #f8fafc));
+  color: var(--foreground);
+  font-size: 0.9rem;
+  font-family: var(--font-body);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.lead-form-input::placeholder {
+  color: var(--muted);
+  opacity: 0.7;
+}
+
+.lead-form-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(var(--primary-rgb), 0.1);
+}
+
+.lead-form-select {
+  appearance: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2364748b' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+}
+
+.lead-form-textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+
+.lead-form-submit {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.lead-form-submit:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.lead-form-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.lead-form-submit--whatsapp {
+  background: #25d366;
+}
+
+.lead-form-submit--whatsapp:hover {
+  background: #20bd5a;
+}
+.lead-form-success {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.lead-form-success-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--primary) 100%);
+  color: #fff;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.lead-form-success p {
+  color: var(--foreground);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Error */
+.lead-form-error {
+  color: #dc2626;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* WhatsApp link */
+.lead-form-whatsapp {
+  margin-top: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lead-form-divider-text {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.lead-form-whatsapp-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #25d366;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.lead-form-whatsapp-link:hover {
+  opacity: 0.8;
+}
+
+/* Mobile: stack photo below or hide */
+@media (max-width: 700px) {
+  .lead-form-layout {
+    flex-direction: column-reverse;
+  }
+
+  .lead-form-photo {
+    width: 100%;
+    height: 180px;
+  }
+
+  .lead-form-content {
+    padding: 1.5rem;
+  }
+
+  .lead-form-title {
+    font-size: 1.3rem;
+  }
+
+  .lead-form-card--modal {
+    max-width: 95vw;
+  }
+}

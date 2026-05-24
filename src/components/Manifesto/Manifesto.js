@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { useInViewReveal } from '../../hooks/useInViewReveal';
+import { useScrollScale } from '../../hooks/useScrollScale';
 import { useLanguage } from '../../contexts/LanguageContext';
-import heroBg5 from '../../assets/videos/hero-bg-5.mp4';
+import manifestoBg from '../../assets/manifesto-bg.jpg';
 
 const STAGGER_MS = 95;
 
@@ -17,12 +18,25 @@ function RevealWord({ children, index, visible }) {
 }
 
 export default function Manifesto() {
-  const [ref, visible] = useInViewReveal({ threshold: 0.25 });
+  const [revealRef, visible] = useInViewReveal({ threshold: 0.25 });
+  const [scaleRef, scale] = useScrollScale(1.15);
   const { t } = useLanguage();
 
+  // Combine both refs
+  const combinedRef = useCallback((node) => {
+    revealRef.current = node;
+    scaleRef.current = node;
+  }, [revealRef, scaleRef]);
+
   return (
-    <section ref={ref} className={`manifesto${visible ? ' manifesto--revealed' : ''}`}>
-      <video className="section-video-bg" autoPlay muted loop playsInline aria-hidden="true" src={heroBg5} />
+    <section ref={combinedRef} className={`manifesto${visible ? ' manifesto--revealed' : ''}`}>
+      <img
+        className="section-video-bg"
+        src={manifestoBg}
+        alt=""
+        aria-hidden="true"
+        style={{ transform: `scale(${scale})`, transition: 'transform 0.1s linear' }}
+      />
 
       <div className="manifesto__container">
         <div className="manifesto__kicker-row" aria-hidden="true">

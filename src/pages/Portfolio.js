@@ -7,10 +7,11 @@ import GitTimeline from '../components/GitTimeline';
 import SEO from '../components/SEO';
 import Footer from '../components/Footer/Footer';
 import Manifesto from '../components/Manifesto/Manifesto';
+import LeadForm from '../components/LeadForm/LeadForm';
+import { useScrollScale } from '../hooks/useScrollScale';
 
 import {
   FaWhatsapp,
-  FaCalendarAlt,
   FaGlobe,
   FaLaptopCode,
   FaMobileAlt,
@@ -42,6 +43,18 @@ export default function Portfolio() {
   const { t } = useLanguage();
   const [expandedService, setExpandedService] = useState(null);
   const [expandedFaq, setExpandedFaq] = useState(null);
+  const [showLeadModal, setShowLeadModal] = useState(false);
+  const [aboutRef, aboutScale] = useScrollScale(1.15);
+
+  // Auto-show lead modal after 3s (once per session)
+  useEffect(() => {
+    if (sessionStorage.getItem('lead_modal_shown')) return;
+    const timer = setTimeout(() => {
+      setShowLeadModal(true);
+      sessionStorage.setItem('lead_modal_shown', '1');
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
   const [currentVideo, setCurrentVideo] = useState(0);
   const [nextVideo, setNextVideo] = useState(1);
   const [transitioning, setTransitioning] = useState(false);
@@ -287,8 +300,8 @@ export default function Portfolio() {
             </section>
 
         {/* About Section */}
-          <section id="about" className="about" style={{ position: 'relative', overflow: 'hidden' }}>
-            <video className="section-video-bg" autoPlay muted loop playsInline aria-hidden="true" src={heroBg4} />
+          <section id="about" ref={aboutRef} className="about" style={{ position: 'relative', overflow: 'hidden' }}>
+            <video className="section-video-bg" autoPlay muted loop playsInline aria-hidden="true" src={heroBg4} style={{ transform: `scale(${aboutScale})`, transition: 'transform 0.1s linear' }} />
             <div className="about-container">
               <div className="about-content">
                 <div className="about-text">
@@ -319,7 +332,7 @@ export default function Portfolio() {
                 <div className="about-team">
                   <div className="about-team-member">
                     <div className="about-team-photo-wrapper">
-                      <img src={joaquinPhoto} alt="Martín Contrera" className="about-team-photo" />
+                      <img src={martinPhoto} alt="Martín Contrera" className="about-team-photo" />
                     </div>
                     <div className="about-team-info">
                       <span className="about-team-name">Martín Contrera</span>
@@ -331,7 +344,7 @@ export default function Portfolio() {
                   </div>
                   <div className="about-team-member">
                     <div className="about-team-photo-wrapper">
-                      <img src={martinPhoto} alt="Joaquín Urtasun" className="about-team-photo" />
+                      <img src={joaquinPhoto} alt="Joaquín Urtasun" className="about-team-photo" />
                     </div>
                     <div className="about-team-info">
                       <span className="about-team-name">Joaquín Urtasun</span>
@@ -460,27 +473,15 @@ export default function Portfolio() {
                     <FaWhatsapp style={{ fontSize: '1.4rem' }} />
                     {t.contact.send}
                   </a>
-                  <a
-                    href="https://bookly-five-steel.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="contact-submit"
-                    style={{
-                      display: 'inline-flex',
-                      alignItems: 'center',
-                      gap: '0.6rem',
-                      textDecoration: 'none',
-                      fontSize: '1.1rem',
-                      padding: '1rem 2.5rem',
-                    }}
-                  >
-                    <FaCalendarAlt style={{ fontSize: '1.4rem' }} />
-                    {t.contact.bookly}
-                  </a>
                 </div>
               </div>
             </div>
           </section>
+
+        {/* Lead Form Modal - auto popup */}
+        {showLeadModal && (
+          <LeadForm onClose={() => setShowLeadModal(false)} />
+        )}
 
         <Footer />
 
