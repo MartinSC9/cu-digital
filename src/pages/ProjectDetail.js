@@ -27,7 +27,6 @@ import lolinails1 from '../assets/projects/loli-nails/1.png';
 import lolinails2 from '../assets/projects/loli-nails/2.png';
 import refugioandino1 from '../assets/projects/refugio-andino/1.webp';
 import laspiedras1 from '../assets/projects/las-piedras/1.webp';
-import ateliervalentina1 from '../assets/projects/atelier-valentina/1.webp';
 import roblemuebles1 from '../assets/projects/roble-muebles/1.webp';
 import fitnesscoach1 from '../assets/projects/fitness-coach/1.webp';
 import cursosonline1 from '../assets/projects/cursos-online/1.webp';
@@ -210,18 +209,6 @@ const projectsData = {
     images: [laspiedras1],
     links: () => [
       { url: 'https://martinsc9.github.io/landings-portfolio/las-piedras/', label: 'Landing' },
-    ],
-    sections: (t, modal) => [
-      { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
-      { type: 'list', title: t.projects.modals.implementedSections, items: modal.sections },
-      { type: 'techGrid', title: t.projects.modals.technologiesUsed, items: modal.tech },
-    ],
-  },
-  ateliervalentina: {
-    name: 'Atelier Valentina',
-    images: [ateliervalentina1],
-    links: () => [
-      { url: 'https://martinsc9.github.io/landings-portfolio/moda-atelier/', label: 'Landing' },
     ],
     sections: (t, modal) => [
       { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },

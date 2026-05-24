@@ -164,11 +164,6 @@ export const translations = {
         duration: '2 semanas',
         description: 'Landing para cabañas rústicas en La Cumbrecita, Sierras de Córdoba, con tarifas y actividades',
       },
-      ateliervalentina: {
-        period: 'Mar 2026',
-        duration: '1 semana',
-        description: 'Landing elegante para atelier de alta costura y diseño de modas en Buenos Aires',
-      },
       roblemuebles: {
         period: 'Mar 2026',
         duration: '2 semanas',
@@ -695,33 +690,6 @@ export const translations = {
             animations: { label: 'Animaciones', value: 'AOS, CSS marquee, hover effects' },
             seo: { label: 'SEO', value: 'Open Graph, Twitter Cards, Schema.org (JSON-LD)' },
             design: { label: 'Diseño', value: 'Mobile-first, responsive, Google Fonts' },
-            deploy: { label: 'Deploy', value: 'GitHub Pages' },
-          },
-        },
-
-        // Atelier Valentina modal
-        ateliervalentina: {
-          role: 'Diseño y desarrollo completo de landing page elegante para atelier de alta costura y diseño de modas.',
-          description: 'Landing sofisticada para Atelier Valentina, estudio de diseño de modas en Palermo, Buenos Aires. Estética high-fashion con paleta negro + dorado. Incluye colecciones, proceso creativo, feed de Instagram, testimonios y sistema de citas.',
-          sections: [
-            'Hero fullscreen con animación scroll line',
-            'Marquee animado infinito de servicios',
-            'About con foto doble y firma de diseñadora',
-            '3 colecciones con hover overlay',
-            '4 servicios de moda',
-            'Galería split (4 fotos + 1 grande con CTA)',
-            'Proceso en 4 pasos',
-            'Testimonios',
-            'Sección de prensa (VOGUE, ELLE, etc.)',
-            'Feed de Instagram con hover dorado',
-            'Formulario de citas',
-            'CTA con fondo fashion',
-          ],
-          tech: {
-            frontend: { label: 'Frontend', value: 'HTML5, CSS3, JavaScript vanilla' },
-            animations: { label: 'Animaciones', value: 'AOS, CSS marquee, parallax, hover effects' },
-            seo: { label: 'SEO', value: 'Open Graph, Twitter Cards, Schema.org (JSON-LD)' },
-            design: { label: 'Diseño', value: 'Mobile-first, responsive, Cormorant Garamond + Montserrat' },
             deploy: { label: 'Deploy', value: 'GitHub Pages' },
           },
         },
@@ -1301,6 +1269,7 @@ export const translations = {
       subtitle: 'Escribinos por WhatsApp y te respondemos en minutos.',
       defaultMessage: 'Hola! Vi su página y me interesan sus servicios de desarrollo digital.',
       send: 'Escribinos por WhatsApp',
+      bookly: 'Reservar turno',
     },
 
     // Footer
@@ -1505,11 +1474,6 @@ export const translations = {
         period: 'Mar 2026',
         duration: '1 week',
         description: 'Landing page for rustic cabins in La Cumbrecita, Córdoba Mountains, with rates and activities',
-      },
-      ateliervalentina: {
-        period: 'Mar 2026',
-        duration: '1 week',
-        description: 'Elegant landing page for a haute couture atelier and fashion design studio in Buenos Aires',
       },
       roblemuebles: {
         period: 'Mar 2026',
@@ -2035,32 +1999,6 @@ export const translations = {
             animations: { label: 'Animations', value: 'AOS, CSS marquee, hover effects' },
             seo: { label: 'SEO', value: 'Open Graph, Twitter Cards, Schema.org (JSON-LD)' },
             design: { label: 'Design', value: 'Mobile-first, responsive, Google Fonts' },
-            deploy: { label: 'Deploy', value: 'GitHub Pages' },
-          },
-        },
-
-        ateliervalentina: {
-          role: 'Full design and development of an elegant landing page for a haute couture fashion design atelier.',
-          description: 'Sophisticated landing page for Atelier Valentina, a fashion design studio in Palermo, Buenos Aires. High-fashion aesthetic with black + gold palette. Includes collections, creative process, Instagram feed, testimonials and appointment booking.',
-          sections: [
-            'Fullscreen hero with scroll line animation',
-            'Infinite animated service marquee',
-            'About with double photo and designer signature',
-            '3 collections with hover overlay',
-            '4 fashion services',
-            'Split gallery (4 photos + 1 large with CTA)',
-            '4-step process timeline',
-            'Client testimonials',
-            'Press section (VOGUE, ELLE, etc.)',
-            'Instagram feed with gold hover',
-            'Appointment booking form',
-            'Fashion CTA with background image',
-          ],
-          tech: {
-            frontend: { label: 'Frontend', value: 'HTML5, CSS3, vanilla JavaScript' },
-            animations: { label: 'Animations', value: 'AOS, CSS marquee, parallax, hover effects' },
-            seo: { label: 'SEO', value: 'Open Graph, Twitter Cards, Schema.org (JSON-LD)' },
-            design: { label: 'Design', value: 'Mobile-first, responsive, Cormorant Garamond + Montserrat' },
             deploy: { label: 'Deploy', value: 'GitHub Pages' },
           },
         },
@@ -2639,6 +2577,7 @@ export const translations = {
       subtitle: 'Message us on WhatsApp and we\'ll reply in minutes.',
       defaultMessage: 'Hi! I saw your website and I\'m interested in your digital development services.',
       send: 'Message us on WhatsApp',
+      bookly: 'Book an appointment',
     },
 
     // Footer

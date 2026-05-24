@@ -13,7 +13,6 @@ import triso1 from '../../assets/projects/triso/1.png';
 import lolinails1 from '../../assets/projects/loli-nails/1.png';
 import refugioandino1 from '../../assets/projects/refugio-andino/1.webp';
 import laspiedras1 from '../../assets/projects/las-piedras/1.webp';
-import ateliervalentina1 from '../../assets/projects/atelier-valentina/1.webp';
 import roblemuebles1 from '../../assets/projects/roble-muebles/1.webp';
 import fitnesscoach1 from '../../assets/projects/fitness-coach/1.webp';
 import cursosonline1 from '../../assets/projects/cursos-online/1.webp';
@@ -43,7 +42,6 @@ export const projectImages = {
   lolinails: { src: lolinails1, alt: 'Loli Nails - Landing page' },
   refugioandino: { src: refugioandino1, alt: 'Refugio Andino - Cabañas Patagonia' },
   laspiedras: { src: laspiedras1, alt: 'Las Piedras - Cabañas Córdoba' },
-  ateliervalentina: { src: ateliervalentina1, alt: 'Atelier Valentina - Diseño de Modas' },
   roblemuebles: { src: roblemuebles1, alt: 'Roble Muebles - Mueblería' },
   fitnesscoach: { src: fitnesscoach1, alt: 'FitPro - Personal Trainer' },
   cursosonline: { src: cursosonline1, alt: 'Aprende Digital - Cursos Online' },
@@ -85,7 +83,6 @@ export const getProjects = (t) => [
   { key: 'hquniversitario', name: 'HQ Universitario', category: 'landing', tag: 'Landing', description: t.projects.hquniversitario.description, duration: t.projects.hquniversitario.duration },
   { key: 'refugioandino', name: 'Refugio Andino', category: 'landing', tag: 'Landing', description: t.projects.refugioandino.description, duration: t.projects.refugioandino.duration },
   { key: 'laspiedras', name: 'Cabañas Las Piedras', category: 'landing', tag: 'Landing', description: t.projects.laspiedras.description, duration: t.projects.laspiedras.duration },
-  { key: 'ateliervalentina', name: 'Atelier Valentina', category: 'landing', tag: 'Landing', description: t.projects.ateliervalentina.description, duration: t.projects.ateliervalentina.duration },
   { key: 'roblemuebles', name: 'Roble Muebles', category: 'landing', tag: 'Landing', description: t.projects.roblemuebles.description, duration: t.projects.roblemuebles.duration },
   { key: 'fitnesscoach', name: 'FitPro', category: 'landing', tag: 'Landing', description: t.projects.fitnesscoach.description, duration: t.projects.fitnesscoach.duration },
   { key: 'veterinaria', name: 'PetVida', category: 'landing', tag: 'Landing', description: t.projects.veterinaria.description, duration: t.projects.veterinaria.duration },

@@ -10,6 +10,7 @@ import Manifesto from '../components/Manifesto/Manifesto';
 
 import {
   FaWhatsapp,
+  FaCalendarAlt,
   FaGlobe,
   FaLaptopCode,
   FaMobileAlt,
@@ -458,6 +459,23 @@ export default function Portfolio() {
                   >
                     <FaWhatsapp style={{ fontSize: '1.4rem' }} />
                     {t.contact.send}
+                  </a>
+                  <a
+                    href="https://bookly-five-steel.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="contact-submit"
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '0.6rem',
+                      textDecoration: 'none',
+                      fontSize: '1.1rem',
+                      padding: '1rem 2.5rem',
+                    }}
+                  >
+                    <FaCalendarAlt style={{ fontSize: '1.4rem' }} />
+                    {t.contact.bookly}
                   </a>
                 </div>
               </div>
