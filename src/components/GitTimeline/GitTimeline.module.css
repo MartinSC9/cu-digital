@@ -361,6 +361,10 @@
     flex-wrap: wrap;
   }
 
+  .gridToggle {
+    display: none;
+  }
+
   .searchBox {
     width: 100%;
     margin-left: 0;
