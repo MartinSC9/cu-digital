@@ -3,7 +3,6 @@ import { useTheme } from '../contexts/ThemeContext';
 import { useLanguage } from '../contexts/LanguageContext';
 
 import SkillsShowcase from '../components/SkillsShowcase';
-import GitTimeline from '../components/GitTimeline';
 import ProjectShowcase from '../components/ProjectShowcase/ProjectShowcase';
 import SEO from '../components/SEO';
 import Footer from '../components/Footer/Footer';
