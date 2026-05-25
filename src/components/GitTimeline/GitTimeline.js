@@ -74,7 +74,7 @@ export const getProjects = (t) => [
   { key: 'theriapp', name: 'TheriApp', category: 'mobile', tag: 'Mobile + IA', featured: true, description: t.projects.theriapp.description, duration: t.projects.theriapp.duration },
   { key: 'mlscouting', name: 'ML Scouting', category: ['webapp', 'landing'], tag: 'Web App', featured: true, description: t.projects.mlscouting.description, duration: t.projects.mlscouting.duration },
   { key: 'laboralforge', name: 'Laboral Forge', category: 'landing', tag: 'Landing', featured: true, description: t.projects.laboralforge.description, duration: t.projects.laboralforge.duration },
-  { key: 'audiotranscriber', name: 'Audio Transcriber', category: 'webapp', tag: 'SaaS', featured: true, video: '/videos/audio-transcriber.mp4', description: t.projects.audiotranscriber.description, duration: t.projects.audiotranscriber.duration },
+  { key: 'audiotranscriber', name: 'Audio Transcriber', category: 'webapp', tag: 'SaaS', featured: true, description: t.projects.audiotranscriber.description, duration: t.projects.audiotranscriber.duration },
   { key: 'elyfitness', name: 'Ely Fitness', category: ['landing', 'webapp'], tag: 'Prototipo', featured: true, description: t.projects.elyfitness.description, duration: t.projects.elyfitness.duration },
   { key: 'triso', name: 'Triso', category: 'landing', tag: 'Landing', featured: true, description: t.projects.triso.description, duration: t.projects.triso.duration },
   { key: 'djdivito', name: 'DJ DiVito', category: 'landing', tag: 'Landing', featured: true, description: t.projects.djdivito.description, duration: t.projects.djdivito.duration },
