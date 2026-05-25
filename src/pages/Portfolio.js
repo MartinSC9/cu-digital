@@ -52,7 +52,7 @@ export default function Portfolio() {
     const timer = setTimeout(() => {
       setShowLeadModal(true);
       sessionStorage.setItem('lead_modal_shown', '1');
-    }, 3000);
+    }, 15000);
     return () => clearTimeout(timer);
   }, []);
   const [currentVideo, setCurrentVideo] = useState(0);

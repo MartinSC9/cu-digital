@@ -23,7 +23,7 @@ Es una plataforma completa de plantación de árboles con marketplace y red soci
         response: `<strong>Somos CU Digital</strong><br/><br/>
 <strong>Joaquín Urtasun</strong> y <strong>Martín Contrera</strong>, desarrolladores de Argentina y Japón.<br/><br/>
 Nos especializamos en crear landing pages, aplicaciones web y apps móviles a medida para negocios y emprendedores.<br/><br/>
-Trabajamos con clientes en Australia, Perú, Japón y Argentina. Nos encargamos de todo: diseño, desarrollo, publicación y soporte.`,
+Trabajamos con clientes en Australia, Perú, Japón, Argentina, España y Colombia. Nos encargamos de todo: diseño, desarrollo, publicación y soporte.`,
       },
       tecnologias: {
         keywords: ['tecnologia', 'tecnologías', 'tecnologias', 'stack', 'tech', 'herramientas', 'tools', 'lenguaje', 'framework'],
@@ -112,7 +112,7 @@ A complete tree planting platform with marketplace and social network.`,
         response: `<strong>We are CU Digital</strong><br/><br/>
 <strong>Joaquín Urtasun</strong> and <strong>Martín Contrera</strong>, developers from Argentina and Japan.<br/><br/>
 We specialize in building landing pages, web apps and mobile apps for businesses and entrepreneurs.<br/><br/>
-We work with clients in Australia, Peru, Japan and Argentina. We handle everything: design, development, deployment and support.`,
+We work with clients in Australia, Peru, Japan, Argentina, Spain and Colombia. We handle everything: design, development, deployment and support.`,
       },
       tecnologias: {
         keywords: ['technology', 'technologies', 'stack', 'tech', 'tools', 'language', 'framework', 'tecnologia'],

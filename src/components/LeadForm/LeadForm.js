@@ -6,20 +6,10 @@ import './LeadForm.css';
 
 const JOAQUIN_NUMBER = '5492804195492';
 
-const SERVICE_OPTIONS = [
-  { value: 'landing', labelKey: 'landing' },
-  { value: 'webapp', labelKey: 'webapp' },
-  { value: 'app', labelKey: 'app' },
-  { value: 'redesign', labelKey: 'redesign' },
-  { value: 'scalability', labelKey: 'scalability' },
-  { value: 'other', labelKey: 'other' },
-];
-
 export default function LeadForm({ onClose }) {
   const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: '',
-    service_needed: '',
     message: '',
   });
 
@@ -28,13 +18,8 @@ export default function LeadForm({ onClose }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const serviceName = formData.service_needed
-      ? texts.services[formData.service_needed] || formData.service_needed
-      : '';
-
     const lines = [
       `Hola! Soy *${formData.name}*`,
-      serviceName ? `Necesito: ${serviceName}` : '',
       formData.message ? `Idea: ${formData.message}` : '',
       '',
       '(Enviado desde cudigital.com)',
@@ -73,22 +58,7 @@ export default function LeadForm({ onClose }) {
                 />
               </div>
 
-              <div className="lead-form-field">
-                <select
-                  value={formData.service_needed}
-                  onChange={(e) => setFormData({ ...formData, service_needed: e.target.value })}
-                  className="lead-form-input lead-form-select"
-                >
-                  <option value="">{texts.servicePlaceholder}</option>
-                  {SERVICE_OPTIONS.map((opt) => (
-                    <option key={opt.value} value={opt.value}>
-                      {texts.services[opt.labelKey]}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              <div className="lead-form-field">
+<div className="lead-form-field">
                 <textarea
                   placeholder={texts.messagePlaceholder}
                   value={formData.message}

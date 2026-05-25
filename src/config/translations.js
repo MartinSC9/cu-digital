@@ -45,7 +45,7 @@ export const translations = {
       description: [
         'Somos <a href="https://www.linkedin.com/in/joaquin-urtasun/" target="_blank" rel="noopener noreferrer" class="about-name-link">Joaquín Urtasun</a> y <a href="https://www.linkedin.com/in/martincontrera/" target="_blank" rel="noopener noreferrer" class="about-name-link">Martín Contrera</a>. Nos conocimos trabajando en proyectos de tecnología y decidimos armar nuestro propio estudio para ofrecer soluciones digitales a medida, sin intermediarios.',
         'Martín se encarga de todo el desarrollo técnico: arquitectura, código y puesta en producción. Joaquín maneja la parte comercial: encontrar oportunidades, entender lo que necesitás y acompañarte durante todo el proceso.',
-        'Nos especializamos en landing pages, aplicaciones web, apps móviles y plataformas IoT. Trabajamos con clientes en Argentina, Japón, Australia y Perú. Nos encargamos de todo: diseño, desarrollo, publicación y soporte. Vos solo te preocupás por tu negocio.',
+        'Nos especializamos en landing pages, aplicaciones web, apps móviles y plataformas IoT. Trabajamos con clientes en Argentina, Japón, Australia, Perú, España y Colombia. Nos encargamos de todo: diseño, desarrollo, publicación y soporte. Vos solo te preocupás por tu negocio.',
       ],
       location: 'Argentina & Japón',
     },
@@ -58,7 +58,7 @@ export const translations = {
         company: 'CU Digital — Argentina & Japón',
         period: '2022 - Actualidad',
         description: [
-          '+20 proyectos entregados para clientes en Argentina, Australia, Perú y Japón',
+          '+20 proyectos entregados para clientes en Argentina, Australia, Perú, Japón, España y Colombia',
           'TRISO (Ingeniería, Córdoba): Plataforma IoT completa — 2 productos (BatterySense + Hospital Monitor), backend unificado, dashboards en tiempo real, alertas, MQTT, reportes PDF y panel admin. Landing corporativa con 11 versiones',
           'Plataforma SaaS de gestión para salones de belleza con 50+ locales activos en producción',
           'Plataforma web + mobile con marketplace, red social, pagos online y 270+ endpoints',
@@ -1045,7 +1045,7 @@ export const translations = {
       stats: [
         { value: '9+', label: 'Proyectos entregados' },
         { value: '4+', label: 'Años de experiencia' },
-        { value: '2', label: 'Países' },
+        { value: '6', label: 'Países' },
       ],
       // Service cards
       landing: {
@@ -1375,7 +1375,7 @@ export const translations = {
       description: [
         'We are <a href="https://www.linkedin.com/in/joaquin-urtasun/" target="_blank" rel="noopener noreferrer" class="about-name-link">Joaquín Urtasun</a> and <a href="https://www.linkedin.com/in/martincontrera/" target="_blank" rel="noopener noreferrer" class="about-name-link">Martín Contrera</a>. We met working on tech projects and decided to build our own studio to offer custom digital solutions, with no middlemen.',
         'Martín handles all technical development: architecture, code and deployment. Joaquín runs the business side: finding opportunities, understanding what you need and supporting you throughout the entire process.',
-        'We specialize in landing pages, web apps, mobile apps and IoT platforms. We work with clients in Argentina, Japan, Australia and Peru. We handle everything: design, development, deployment and support. You just focus on your business.',
+        'We specialize in landing pages, web apps, mobile apps and IoT platforms. We work with clients in Argentina, Japan, Australia, Peru, Spain and Colombia. We handle everything: design, development, deployment and support. You just focus on your business.',
       ],
       location: 'Argentina & Japan',
     },
@@ -1388,7 +1388,7 @@ export const translations = {
         company: 'CU Digital — Argentina & Japan',
         period: '2022 - Present',
         description: [
-          '20+ projects delivered for clients in Argentina, Australia, Peru and Japan',
+          '20+ projects delivered for clients in Argentina, Australia, Peru, Japan, Spain and Colombia',
           'TRISO (Engineering, Córdoba): Complete IoT platform — 2 products (BatterySense + Hospital Monitor), unified backend, real-time dashboards, alerts, MQTT, PDF reports and admin panel. Corporate landing with 11 versions',
           'SaaS management platform for beauty salons with 50+ active locations in production',
           'Web + mobile platform with marketplace, social network, online payments and 270+ endpoints',
@@ -2372,7 +2372,7 @@ export const translations = {
       stats: [
         { value: '9+', label: 'Projects delivered' },
         { value: '4+', label: 'Years of experience' },
-        { value: '2', label: 'Countries' },
+        { value: '6', label: 'Countries' },
       ],
       // Service cards
       landing: {
