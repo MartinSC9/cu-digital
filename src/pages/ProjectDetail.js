@@ -135,7 +135,7 @@ const projectsData = {
     name: 'Triso',
     images: [triso1],
     links: () => [
-      { url: 'https://triso-landing.vercel.app/', label: 'final' },
+      { url: 'https://www.triso.com.ar/', label: 'final' },
       { url: 'https://triso-landing-v11.vercel.app/', label: 'v11' },
       { url: 'https://triso-landing-v10.vercel.app/', label: 'v10' },
       { url: 'https://triso-landing-v9.vercel.app/', label: 'v9' },
