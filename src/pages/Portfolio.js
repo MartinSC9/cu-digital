@@ -4,6 +4,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 
 import SkillsShowcase from '../components/SkillsShowcase';
 import GitTimeline from '../components/GitTimeline';
+import ProjectShowcase from '../components/ProjectShowcase/ProjectShowcase';
 import SEO from '../components/SEO';
 import Footer from '../components/Footer/Footer';
 import Manifesto from '../components/Manifesto/Manifesto';
@@ -293,9 +294,9 @@ export default function Portfolio() {
                   <h2 className="section-title section-title-center">
                     {t.projects.title}
                   </h2>
-                  <p className="projects-subtitle">{t.projects.subtitle}</p>
+                  <p className="projects-subtitle" dangerouslySetInnerHTML={{ __html: t.projects.subtitle }} />
                 </div>
-                <GitTimeline />
+                <ProjectShowcase />
               </div>
             </section>
 
@@ -473,6 +474,13 @@ export default function Portfolio() {
                     <FaWhatsapp style={{ fontSize: '1.4rem' }} />
                     {t.contact.send}
                   </a>
+                  <div className="contact-response-badge">
+                    <div className="contact-response-avatar-wrapper">
+                      <img src={joaquinPhoto} alt="Joaquín Urtasun" className="contact-response-avatar" />
+                      <span className="contact-response-dot" />
+                    </div>
+                    <span className="contact-response-text">{t.leadForm.responseTime}</span>
+                  </div>
                 </div>
               </div>
             </div>

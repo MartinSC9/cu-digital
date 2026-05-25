@@ -2,14 +2,24 @@ import React, { useState } from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 import { useLanguage } from '../../contexts/LanguageContext';
 import joaquinPhoto from '../../assets/joaquin-profile.jpg';
+import cuLogo from '../../assets/logo-cu-new.png';
 import './LeadForm.css';
 
 const JOAQUIN_NUMBER = '5492804195492';
+
+const SERVICE_OPTIONS = [
+  { value: 'landing', labelKey: 'landing' },
+  { value: 'webapp', labelKey: 'webapp' },
+  { value: 'app', labelKey: 'app' },
+  { value: 'redesign', labelKey: 'redesign' },
+  { value: 'other', labelKey: 'other' },
+];
 
 export default function LeadForm({ onClose }) {
   const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: '',
+    service: '',
     message: '',
   });
 
@@ -18,9 +28,14 @@ export default function LeadForm({ onClose }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    const serviceName = formData.service
+      ? texts.services[formData.service] || formData.service
+      : '';
+
     const lines = [
       `Hola! Soy *${formData.name}*`,
-      formData.message ? `Idea: ${formData.message}` : '',
+      serviceName ? `Necesito: ${serviceName}` : '',
+      formData.message ? `${formData.message}` : '',
       '',
       '(Enviado desde cudigital.com)',
     ].filter(Boolean);
@@ -58,7 +73,23 @@ export default function LeadForm({ onClose }) {
                 />
               </div>
 
-<div className="lead-form-field">
+              <div className="lead-form-field">
+                <select
+                  value={formData.service}
+                  onChange={(e) => setFormData({ ...formData, service: e.target.value })}
+                  className="lead-form-input lead-form-select"
+                  required
+                >
+                  <option value="">{texts.servicePlaceholder}</option>
+                  {SERVICE_OPTIONS.map((opt) => (
+                    <option key={opt.value} value={opt.value}>
+                      {texts.services[opt.labelKey]}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div className="lead-form-field">
                 <textarea
                   placeholder={texts.messagePlaceholder}
                   value={formData.message}
@@ -76,10 +107,18 @@ export default function LeadForm({ onClose }) {
                 {texts.submit}
               </button>
             </form>
+
+            <div className="lead-form-response-badge">
+              <div className="lead-form-avatar-wrapper">
+                <img src={joaquinPhoto} alt="Joaquín Urtasun" className="lead-form-avatar" />
+                <span className="lead-form-avatar-dot" />
+              </div>
+              <span className="lead-form-response-text">{texts.responseTime}</span>
+            </div>
           </div>
 
           <div className="lead-form-photo">
-            <img src={joaquinPhoto} alt="Joaquín Urtasun" />
+            <img src={cuLogo} alt="CU Digital" />
           </div>
         </div>
       </div>

@@ -1,0 +1,160 @@
+.project-showcase {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  overflow: hidden;
+}
+
+.project-showcase-marquee {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  height: 340px;
+  overflow: hidden;
+  padding: 0 1rem;
+}
+
+/* Fade overlays */
+.project-showcase-fade {
+  position: absolute;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.project-showcase-fade--top {
+  top: 0;
+  height: 100px;
+  background: linear-gradient(to bottom, var(--background) 20%, transparent 100%);
+}
+
+.project-showcase-fade--bottom {
+  bottom: 0;
+  height: 100px;
+  background: linear-gradient(to top, var(--background) 20%, transparent 100%);
+}
+
+/* Columns — all 7 visible on desktop */
+.project-showcase-col {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  min-width: 0;
+}
+
+.project-showcase-track {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  will-change: transform;
+}
+
+/* Scroll animations */
+.project-showcase-col--up .project-showcase-track {
+  animation: showcaseScrollUp 30s linear infinite;
+}
+
+.project-showcase-col--down .project-showcase-track {
+  animation: showcaseScrollDown 30s linear infinite;
+}
+
+/* Different speeds per column for depth */
+.project-showcase-col:nth-child(1) .project-showcase-track { animation-duration: 30s; }
+.project-showcase-col:nth-child(2) .project-showcase-track { animation-duration: 38s; }
+.project-showcase-col:nth-child(3) .project-showcase-track { animation-duration: 26s; }
+.project-showcase-col:nth-child(4) .project-showcase-track { animation-duration: 34s; }
+.project-showcase-col:nth-child(5) .project-showcase-track { animation-duration: 28s; }
+.project-showcase-col:nth-child(6) .project-showcase-track { animation-duration: 36s; }
+.project-showcase-col:nth-child(7) .project-showcase-track { animation-duration: 32s; }
+
+@keyframes showcaseScrollUp {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
+@keyframes showcaseScrollDown {
+  0% { transform: translateY(-50%); }
+  100% { transform: translateY(0); }
+}
+
+/* Items */
+.project-showcase-item {
+  border-radius: var(--radius-md, 0.75rem);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-showcase-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* CTA Button */
+.project-showcase-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.75rem 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: var(--radius-md, 0.75rem);
+  transition: all 0.2s ease;
+  font-family: var(--font-heading);
+  z-index: 3;
+}
+
+.project-showcase-btn:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(var(--primary-rgb), 0.35);
+  opacity: 0.9;
+}
+
+/* Tablet: 5 columns */
+@media (max-width: 1023px) {
+  .project-showcase-col:nth-child(n+6) {
+    display: none;
+  }
+
+  .project-showcase-marquee {
+    height: 360px;
+  }
+}
+
+/* Mobile: 3 columns */
+@media (max-width: 600px) {
+  .project-showcase-marquee {
+    height: 280px;
+    gap: 0.75rem;
+    padding: 0 0.5rem;
+  }
+
+  .project-showcase-col:nth-child(n+4) {
+    display: none;
+  }
+
+  .project-showcase-track {
+    gap: 0.75rem;
+  }
+
+  .project-showcase-btn {
+    width: calc(100% - 2rem);
+    justify-content: center;
+  }
+}

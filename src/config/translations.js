@@ -71,7 +71,7 @@ export const translations = {
     // Projects
     projects: {
       title: 'Proyectos',
-      subtitle: 'Cada proyecto es una solución real llevada a producción.',
+      subtitle: '<span class="projects-stat">+20 proyectos</span> en producción para clientes en <span class="projects-countries">Argentina, España, Colombia, Australia, Perú y Japón</span>.',
       filterFeatured: 'Destacados',
       filterAll: 'Todos',
       filterLanding: 'Landings',
@@ -1265,21 +1265,21 @@ export const translations = {
 
     // Lead Form
     leadForm: {
-      title: 'Contanos tu idea',
+      title: '¿Qué podemos hacer por vos?',
       subtitle: 'Completá el formulario y te contactamos en menos de 24hs.',
       namePlaceholder: 'Nombre y apellido',
       emailPlaceholder: 'Tu email',
       servicePlaceholder: '¿Qué necesitás?',
-      messagePlaceholder: 'Contanos brevemente tu idea o necesidad (opcional)',
+      messagePlaceholder: '¿Algo más que quieras contarnos? (opcional)',
       services: {
-        landing: 'Crear una landing para vender más',
-        webapp: 'Crear una app web',
-        app: 'Crear una app móvil',
-        redesign: 'Mejorar el diseño de mi web/app',
-        scalability: 'Mejorar escalabilidad/performance',
-        other: 'Otra cosa',
+        landing: 'Landing Page',
+        webapp: 'App Web',
+        app: 'App Móvil',
+        redesign: 'Rediseño',
+        other: 'Otro',
       },
       submit: 'Enviar por WhatsApp',
+      responseTime: 'Joaquín te responde en menos de 24h',
     },
 
     // Contact
@@ -1401,7 +1401,7 @@ export const translations = {
     // Projects
     projects: {
       title: 'Projects',
-      subtitle: 'Each project is a real solution shipped to production.',
+      subtitle: '<span class="projects-stat">20+ projects</span> in production for clients in <span class="projects-countries">Argentina, Spain, Colombia, Australia, Peru and Japan</span>.',
       filterFeatured: 'Featured',
       filterAll: 'All',
       filterLanding: 'Landings',
@@ -2592,21 +2592,21 @@ export const translations = {
 
     // Lead Form
     leadForm: {
-      title: 'Tell us your idea',
+      title: 'What can we do for you?',
       subtitle: 'Fill the form and we\'ll contact you within 24hs.',
       namePlaceholder: 'Full name',
       emailPlaceholder: 'Your email',
       servicePlaceholder: 'What do you need?',
-      messagePlaceholder: 'Briefly describe your idea or need (optional)',
+      messagePlaceholder: 'Anything else you\'d like to tell us? (optional)',
       services: {
-        landing: 'Create a landing page to sell more',
-        webapp: 'Create a web app',
-        app: 'Create a mobile app',
-        redesign: 'Improve my web/app design',
-        scalability: 'Improve scalability/performance',
-        other: 'Something else',
+        landing: 'Landing Page',
+        webapp: 'Web App',
+        app: 'Mobile App',
+        redesign: 'Redesign',
+        other: 'Other',
       },
       submit: 'Send via WhatsApp',
+      responseTime: 'Joaquín will reply within 24h',
     },
 
     // Contact
