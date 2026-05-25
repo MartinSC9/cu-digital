@@ -353,8 +353,11 @@ const projectsData = {
     name: 'Ely Fitness',
     images: [elyfitness1, elyfitness2],
     links: () => [
+      { url: 'https://elyfitness-landing-v4.vercel.app/', label: 'v4 (Final)' },
+      { url: 'https://elyfitness-landing-v3.vercel.app/', label: 'v3' },
       { url: 'https://elyfitness-landing-v2.vercel.app/', label: 'v2' },
-      { url: 'https://elyfitness-prototype.vercel.app/landing', label: 'v1' },
+      { url: 'https://elyfitness-landing-v1.vercel.app/', label: 'v1' },
+      { url: 'https://elyfitness-prototype.vercel.app/landing', label: 'Prototipo' },
     ],
     sections: (t, modal) => [
       { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
