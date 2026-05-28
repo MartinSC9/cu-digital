@@ -102,6 +102,12 @@ const Header = () => {
                     const el = document.getElementById('projects');
                     if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
                   }, 100);
+                } else if (location.pathname.startsWith('/project/')) {
+                  if (window.history.state && window.history.state.idx > 0) {
+                    navigate(-1);
+                  } else {
+                    navigate('/projects');
+                  }
                 } else {
                   navigate(-1);
                 }
