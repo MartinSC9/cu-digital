@@ -393,7 +393,10 @@ const projectsData = {
   scrollanimation: {
     name: 'Scroll Animation Prototypes',
     images: [scrollanimation1],
-    links: () => [{ url: 'https://github.com/MartinSC9/scroll-animation-prototype', label: 'GitHub' }],
+    links: () => [
+      { url: 'https://scroll-animation-prototype.vercel.app/', label: 'Demo' },
+      { url: 'https://github.com/MartinSC9/scroll-animation-prototype', label: 'GitHub' },
+    ],
     sections: (t, modal) => [
       { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
       { type: 'list', title: t.projects.modals.mainFeatures, items: modal.features },
