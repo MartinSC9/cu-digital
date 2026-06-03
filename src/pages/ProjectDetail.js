@@ -395,7 +395,6 @@ const projectsData = {
     images: [scrollanimation1],
     links: () => [
       { url: 'https://scroll-animation-prototype.vercel.app/', label: 'Demo' },
-      { url: 'https://github.com/MartinSC9/scroll-animation-prototype', label: 'GitHub' },
     ],
     sections: (t, modal) => [
       { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
