@@ -30,6 +30,7 @@ import batterysense1 from '../../assets/projects/batterysense/1.png';
 import hospitalmonitor1 from '../../assets/projects/hospital-monitor/1.png';
 import audiotranscriber1 from '../../assets/projects/audio-transcriber/1.png';
 import bookly1 from '../../assets/projects/bookly/1.png';
+import scrollanimation1 from '../../assets/projects/scroll-animation/1.png';
 import theriapp2 from '../../assets/projects/theriapp/2.png';
 
 export const projectImages = {
@@ -60,10 +61,12 @@ export const projectImages = {
   hospitalmonitor: { src: hospitalmonitor1, alt: 'Hospital Monitor - Monitoreo de Salas Hospitalarias' },
   audiotranscriber: { src: audiotranscriber1, alt: 'Audio Transcriber - Transcripción de audio a texto' },
   bookly: { src: bookly1, alt: 'Bookly - Sistema de reservas para barberías' },
+  scrollanimation: { src: scrollanimation1, alt: 'Scroll Animation Prototypes - Animaciones estilo Apple' },
 };
 
 export const getProjects = (t) => [
   { key: 'bookly', name: 'Bookly', category: 'webapp', tag: 'SaaS', featured: true, videos: ['/videos/bookly-1.mp4', '/videos/bookly-2.mp4'], description: t.projects.bookly.description, duration: t.projects.bookly.duration },
+  { key: 'scrollanimation', name: 'Scroll Animation Prototypes', category: 'webapp', tag: 'Prototipo', description: t.projects.scrollanimation.description, duration: t.projects.scrollanimation.duration },
   { key: 'batterysense', name: 'BatterySense', category: 'webapp', tag: 'IoT', featured: true, description: t.projects.batterysense.description, duration: t.projects.batterysense.duration },
   { key: 'hospitalmonitor', name: 'Hospital Monitor', category: 'webapp', tag: 'IoT', featured: true, description: t.projects.hospitalmonitor.description, duration: t.projects.hospitalmonitor.duration },
   { key: 'prikly', name: 'Prikly', category: ['webapp', 'landing'], tag: 'SaaS', featured: true, description: t.projects.prikly.description, duration: t.projects.prikly.duration },

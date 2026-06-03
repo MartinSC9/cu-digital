@@ -235,6 +235,11 @@ export const translations = {
         duration: '3 meses',
         description: 'Sistema de reservas online para barberías y salones. Los clientes reservan turnos desde el celular y el dueño gestiona todo desde un panel admin.',
       },
+      scrollanimation: {
+        period: 'Junio 2026',
+        duration: '1 dia',
+        description: 'Prototipos de scroll-driven animation estilo Apple. Secuencia de imagenes (AirPods Pro) y modelo 3D interactivo (MacBook Pro con Three.js).',
+      },
 
       // Modals
       modals: {
@@ -1002,6 +1007,24 @@ export const translations = {
             { label: 'Deploy', value: 'Vercel (web) + Render (server + PostgreSQL)' },
           ],
         },
+        scrollanimation: {
+          role: 'Desarrollador Frontend',
+          description: 'Prototipos de animaciones scroll-driven inspiradas en las paginas de producto de Apple. Incluye dos demos: una basada en secuencia de 147 imagenes renderizadas en canvas, y otra con un modelo 3D de MacBook construido con Three.js que se abre y orbita controlado por scroll.',
+          features: [
+            'Secuencia de 147 frames de AirPods Pro sincronizada con scroll via GSAP ScrollTrigger',
+            'Modelo 3D de MacBook Pro construido con Three.js (geometria pura, sin assets externos)',
+            'Apertura de tapa, rotacion orbital y cambio de angulo de camara controlados por scroll',
+            'Textos overlay con fade in/out sincronizados al progreso del scroll',
+            'Pantalla de carga con barra de progreso para la precarga de frames',
+            'Responsive y optimizado (canvas 2D + object-fit cover)',
+          ],
+          tech: [
+            { label: 'Core', value: 'HTML5 Canvas, JavaScript vanilla' },
+            { label: '3D', value: 'Three.js (WebGL)' },
+            { label: 'Animacion', value: 'GSAP, ScrollTrigger' },
+            { label: 'Assets', value: 'Apple CDN (AirPods Pro frames)' },
+          ],
+        },
       },
     },
 
@@ -1564,6 +1587,11 @@ export const translations = {
         period: 'March — May 2026',
         duration: '3 months',
         description: 'Online booking system for barbershops and salons. Clients book appointments from their phone and the owner manages everything from an admin panel.',
+      },
+      scrollanimation: {
+        period: 'June 2026',
+        duration: '1 day',
+        description: 'Apple-style scroll-driven animation prototypes. Image sequence (AirPods Pro) and interactive 3D model (MacBook Pro with Three.js).',
       },
 
       // Modals
@@ -2327,6 +2355,24 @@ export const translations = {
             { label: 'Frontend', value: 'Next.js 15, React, Tailwind CSS, App Router' },
             { label: 'Services', value: 'Cloudinary, Google Maps Static API' },
             { label: 'Deploy', value: 'Vercel (web) + Render (server + PostgreSQL)' },
+          ],
+        },
+        scrollanimation: {
+          role: 'Frontend Developer',
+          description: 'Scroll-driven animation prototypes inspired by Apple product pages. Includes two demos: one based on a 147-image sequence rendered on canvas, and another with a 3D MacBook model built with Three.js that opens and orbits controlled by scroll.',
+          features: [
+            'AirPods Pro 147-frame sequence synced to scroll via GSAP ScrollTrigger',
+            '3D MacBook Pro model built with Three.js (pure geometry, no external assets)',
+            'Lid opening, orbital rotation and camera angle changes driven by scroll',
+            'Overlay text with fade in/out synced to scroll progress',
+            'Loading screen with progress bar for frame preloading',
+            'Responsive and optimized (2D canvas + object-fit cover)',
+          ],
+          tech: [
+            { label: 'Core', value: 'HTML5 Canvas, vanilla JavaScript' },
+            { label: '3D', value: 'Three.js (WebGL)' },
+            { label: 'Animation', value: 'GSAP, ScrollTrigger' },
+            { label: 'Assets', value: 'Apple CDN (AirPods Pro frames)' },
           ],
         },
       },

@@ -46,6 +46,7 @@ import batterysense1 from '../assets/projects/batterysense/1.png';
 import hospitalmonitor1 from '../assets/projects/hospital-monitor/1.png';
 import audiotranscriber1 from '../assets/projects/audio-transcriber/1.png';
 import bookly1 from '../assets/projects/bookly/1.png';
+import scrollanimation1 from '../assets/projects/scroll-animation/1.png';
 
 const projectsData = {
   batterysense: {
@@ -383,6 +384,16 @@ const projectsData = {
     images: [bookly1],
     videos: ['/videos/bookly-1.mp4', '/videos/bookly-2.mp4'],
     links: () => [],
+    sections: (t, modal) => [
+      { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
+      { type: 'list', title: t.projects.modals.mainFeatures, items: modal.features },
+      { type: 'techGrid', title: t.projects.modals.technologiesUsed, items: modal.tech },
+    ],
+  },
+  scrollanimation: {
+    name: 'Scroll Animation Prototypes',
+    images: [scrollanimation1],
+    links: () => [{ url: 'https://github.com/MartinSC9/scroll-animation-prototype', label: 'GitHub' }],
     sections: (t, modal) => [
       { type: 'text', title: t.projects.modals.projectDescription, content: modal.description },
       { type: 'list', title: t.projects.modals.mainFeatures, items: modal.features },
